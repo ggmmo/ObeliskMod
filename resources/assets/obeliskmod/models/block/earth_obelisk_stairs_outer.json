@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "obeliskmod:block/earth_obelisk_block",
+        "top": "obeliskmod:block/earth_obelisk_block",
+        "side": "obeliskmod:block/earth_obelisk_block"
+    }
+}
