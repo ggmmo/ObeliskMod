@@ -1,0 +1,23 @@
+package fox.obeliskmod.client.render;
+
+import fox.obeliskmod.client.models.ObeliskEntityModel;
+import fox.obeliskmod.entities.TestEntity;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.entity.LivingRenderer;
+import net.minecraft.util.ResourceLocation;
+
+public class ObeliskEntityRender extends LivingRenderer<TestEntity, ObeliskEntityModel>
+{
+
+	public ObeliskEntityRender(EntityRendererManager manager) 
+	{
+		super(manager, new ObeliskEntityModel(), 0f);
+	}
+
+	@Override
+	protected ResourceLocation getEntityTexture(TestEntity entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/dirt_slab" },
+        "type=top": { "model": "obeliskmod:block/dirt_slab_top" },
+        "type=double": { "model": "minecraft:block/dirt" }
+    }
+}

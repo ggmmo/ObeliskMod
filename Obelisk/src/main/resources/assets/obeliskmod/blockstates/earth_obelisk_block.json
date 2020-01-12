@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "obeliskmod:block/earth_obelisk_block" }
+    }
+}

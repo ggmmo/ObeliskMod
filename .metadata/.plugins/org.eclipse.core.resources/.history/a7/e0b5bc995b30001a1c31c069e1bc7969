@@ -1,0 +1,5 @@
+package fox.obeliskmod.client.event;
+
+public class ColorHandlerEvent {
+
+}

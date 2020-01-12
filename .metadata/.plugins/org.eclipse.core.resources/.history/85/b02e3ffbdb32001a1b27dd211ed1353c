@@ -1,0 +1,5 @@
+package fox.obeliskmod.entities;
+
+public class TestEntity {
+
+}

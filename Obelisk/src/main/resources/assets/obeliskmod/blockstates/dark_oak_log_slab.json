@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/dark_oak_log_slab" },
+        "type=top": { "model": "obeliskmod:block/dark_oak_log_slab_top" },
+        "type=double": { "model": "minecraft:block/dark_oak_log" }
+    }
+}

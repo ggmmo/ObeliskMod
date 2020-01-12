@@ -1,0 +1,9 @@
+package fox.obeliskmod.client.models;
+
+import fox.obeliskmod.entities.TestEntity;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+
+public class ObeliskEntityModel extends EntityModel<TestEntity>
+{
+
+}

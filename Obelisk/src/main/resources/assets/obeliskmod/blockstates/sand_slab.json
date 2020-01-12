@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/sand_slab" },
+        "type=top": { "model": "obeliskmod:block/sand_slab_top" },
+        "type=double": { "model": "minecraft:block/sand" }
+    }
+}

@@ -1,0 +1,27 @@
+package fox.obeliskmod.lists;
+
+import fox.obeliskmod.ObeliskMod;
+import net.minecraft.entity.EntityType;
+import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
+import net.minecraftforge.event.RegistryEvent;
+
+public class EntitiesList 
+{
+	public static EntityType<?> TEST_ENTITY;
+	
+	public static void registerEntitySpawnEggs(final RegistryEvent.Register<Item> event) 
+	{
+		event.getRegistry().registerAll
+		(
+				ItemList.test_entity_egg = registerEntitySpawnEgg(TEST_ENTITY, 0x118a31, 0x0ddb44, null)
+		);
+	}
+	
+	public static Item registerEntitySpawnEgg(EntityType<?> type, int color1, int color2, String name) 
+	{
+		SpawnEggItem item = new SpawnEggItem(type, color1, color2, new Item.Properties().group(ObeliskMod.obelisk));
+		item.setRegistryName(ObeliskMod.location(name));
+		return item;
+	}
+}

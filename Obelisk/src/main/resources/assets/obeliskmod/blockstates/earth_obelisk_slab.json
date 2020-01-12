@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/earth_obelisk_slab" },
+        "type=top": { "model": "obeliskmod:block/earth_obelisk_slab_top" },
+        "type=double": { "model": "obeliskmod:block/earth_obelisk_block" }
+    }
+}

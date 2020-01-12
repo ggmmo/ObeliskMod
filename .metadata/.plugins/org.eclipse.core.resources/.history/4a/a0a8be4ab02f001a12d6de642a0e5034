@@ -1,0 +1,14 @@
+package fox.obeliskmod;
+
+import net.minecraft.item.ItemGroup;
+
+public class ObeliskItemGroup extends ItemGroup
+{
+
+	public ObeliskItemGroup() 
+	{
+		super("obelisk");
+		
+	}
+
+}

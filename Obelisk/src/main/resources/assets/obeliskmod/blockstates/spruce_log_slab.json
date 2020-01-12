@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/spruce_log_slab" },
+        "type=top": { "model": "obeliskmod:block/spruce_log_slab_top" },
+        "type=double": { "model": "minecraft:block/spruce_log" }
+    }
+}

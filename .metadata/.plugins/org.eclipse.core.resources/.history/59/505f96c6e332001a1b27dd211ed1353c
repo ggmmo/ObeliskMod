@@ -1,0 +1,5 @@
+package fox.obeliskmod.client.render;
+
+public class ObeliskRenderRegistry {
+
+}

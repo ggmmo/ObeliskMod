@@ -1,0 +1,48 @@
+{
+	//Items
+	"item.obeliskmod.copper_coin": "Copper Coin",
+	"item.obeliskmod.silver_coin": "Silver Coin",
+	"item.obeliskmod.gold_coin": "Gold Coin",
+	
+	//Weapons
+	"item.obeliskmod.stone_dagger": "Stone Dagger",
+	"item.obeliskmod.iron_dagger": "Iron Dagger",
+	"item.obeliskmod.long_sword": "Long Sword",
+	
+	//Entities' Egg
+	"item.obeliskmod.test_entity_egg": "Test Entity Egg",
+	
+	//Entities
+	"entity.obeliskmod.test_entity": "Test Entity",
+	
+	//Blocks
+	"block.obeliskmod.earth_obelisk_block": "Earth Obelisk Block",
+	"block.obeliskmod.earth_obelisk_slab": "Earth Obelisk Slab",
+	"block.obeliskmod.earth_obelisk_stairs": "Earth Obelisk Stairs",
+	"block.obeliskmod.earth_obelisk_wall": "Earth Obelisk Wall",
+	"block.obeliskmod.dirt_wall": "Dirt Wall",
+	"block.obeliskmod.dirt_slab": "Dirt Slab",
+	"block.obeliskmod.dirt_stairs": "Dirt Stairs",
+	"block.obeliskmod.coarse_dirt_wall": "Coarse Dirt Wall",
+	"block.obeliskmod.coarse_dirt_slab": "Coarse Dirt Slab",
+	"block.obeliskmod.coarse_dirt_stairs": "Coarse Dirt Stairs",
+	"block.obeliskmod.plains_beach_grass": "Plains and Beach Grass",
+	"block.obeliskmod.plains_beach_grass_block": "Plains and Beach Grass Block",
+	"block.obeliskmod.sand_slab": "Sand Slab",
+	"block.obeliskmod.sand_wall": "Sand Wall",
+	"block.obeliskmod.sand_stairs": "Sand Stairs",
+	"block.obeliskmod.oak_wood_stairs": "Oak Wood Stairs",
+	"block.obeliskmod.oak_wood_slab": "Oak Wood Slab",
+	"block.obeliskmod.oak_wood_wall": "Oak Wood Wall",
+	"block.obeliskmod.oak_log_stairs": "Oak Log Stairs",
+	"block.obeliskmod.oak_log_slab": "Oak Log Slab",
+	"block.obeliskmod.oak_log_wall": "Oak Log Wall",
+	"block.obeliskmod.spruce_log_stairs": "Spruce Log Stairs",
+	"block.obeliskmod.spruce_log_slab": "Spruce Log Slab",
+	"block.obeliskmod.spruce_log_wall": "Spruce Log Wall",
+	"block.obeliskmod.spruce_wood_stairs": "Spruce Wood Stairs",
+	"block.obeliskmod.spruce_wood_slab": "Spruce Wood Slab",
+	"block.obeliskmod.spruce_wood_wall": "Spruce Wood Wall",
+	
+	"itemGroup.obelisk": "Obelisk Item Group"
+}

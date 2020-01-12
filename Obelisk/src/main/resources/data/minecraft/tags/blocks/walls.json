@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "obeliskmod:earth_obelisk_wall",
+	"obeliskmod:dirt_wall",
+	"obeliskmod:coarse_dirt_wall",
+	"obeliskmod:sand_wall",
+	"obeliskmod:oak_wood_wall",
+	"obeliskmod:oak_log_wall",
+	"obeliskmod:spruce_wood_wall",
+	"obeliskmod:spruce_log_wall",
+	"obeliskmod:dark_oak_log_wall",
+	"obeliskmod:dark_oak_wood_wall",
+	"obeliskmod:birch_log_wall",
+	"obeliskmod:birch_wood_wall"
+  ]
+}
