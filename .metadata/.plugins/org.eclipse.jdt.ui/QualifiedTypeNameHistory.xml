@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.item.ItemTier"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.item.SpawnEggItem"/>
 <fullyQualifiedTypeName name="net.minecraftforge.event.RegistryEvent"/>
@@ -58,6 +57,7 @@
 <fullyQualifiedTypeName name="net.minecraftforge.client.MinecraftForgeClient"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.CustomStairsBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
+<fullyQualifiedTypeName name="fox.obeliskmod.lists.BlockList"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 </qualifiedTypeNameHistroy>
