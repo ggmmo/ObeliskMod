@@ -1,9 +1,0 @@
-{
-	//Items
-	"item.obeliskmod.copper_coin": "Copper Coin",
-	"item.obeliskmod.silver_coin": "Silver Coin",
-	"item.obeliskmod.gold_coin": "Gold Coin",
-	
-	//Blocks
-	"block.obeliskmod.earth_obelisk_block": "Earth Obelisk Block"
-}
