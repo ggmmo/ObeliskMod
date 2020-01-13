@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/stripped_spruce_wood_slab" },
+        "type=top": { "model": "obeliskmod:block/stripped_spruce_wood_slab_top" },
+        "type=double": { "model": "minecraft:block/stripped_spruce_wood" }
+    }
+}
