@@ -2,6 +2,6 @@
 {
     "parent": "block/template_wall_side",
     "textures": {
-        "wall": "minecraft:block/spruce_log"
+        "wall": "minecraft:block/stripped_oak_log"
     }
 }
