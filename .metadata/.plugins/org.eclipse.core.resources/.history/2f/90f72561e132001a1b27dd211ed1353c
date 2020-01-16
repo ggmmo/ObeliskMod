@@ -1,8 +1,0 @@
-package fox.obeliskmod.client.render;
-
-import net.minecraft.client.renderer.entity.LivingRenderer;
-
-public class ObeliskEntityRender extends LivingRenderer<LivingEntity, EntityModel<T>>
-{
-
-}

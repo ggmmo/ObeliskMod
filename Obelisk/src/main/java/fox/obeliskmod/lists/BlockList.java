@@ -124,6 +124,8 @@ public class BlockList
 	public static SnowBlock mossy_stone_brick_snow;
 	public static Block fire_obelisk_block;
 	public static StairsBlock fire_obelisk_stairs;
+	public static SlabBlock dirt_vert_slab;
+	
 }
 
 

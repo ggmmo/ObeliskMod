@@ -172,7 +172,8 @@ public class ObeliskModRegistries
 		ItemList.stone_brick_snow = new BlockItem(BlockList.stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_brick_snow.getRegistryName()),
 		ItemList.mossy_stone_brick_snow = new BlockItem(BlockList.mossy_stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_stone_brick_snow.getRegistryName()),
 		ItemList.fire_obelisk_block = new BlockItem(BlockList.fire_obelisk_block, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_block.getRegistryName()),
-		ItemList.fire_obelisk_stairs = new BlockItem(BlockList.fire_obelisk_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_stairs.getRegistryName())
+		ItemList.fire_obelisk_stairs = new BlockItem(BlockList.fire_obelisk_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_stairs.getRegistryName()),
+		ItemList.dirt_vert_slab = new BlockItem(BlockList.dirt_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_vert_slab.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -302,7 +303,8 @@ public class ObeliskModRegistries
 			BlockList.stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.stone_brick_fence)).setRegistryName(location("stone_brick_snow")),
 			BlockList.mossy_stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.mossy_stone_brick_fence)).setRegistryName(location("mossy_stone_brick_snow")),
 			BlockList.fire_obelisk_block = new Block(Block.Properties.from(BlockList.earth_obelisk_block)).setRegistryName(location("fire_obelisk_block")),
-			BlockList.fire_obelisk_stairs = (StairsBlock) new CustomStairsBlock(BlockList.fire_obelisk_block.getDefaultState(), Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_stairs"))
+			BlockList.fire_obelisk_stairs = (StairsBlock) new CustomStairsBlock(BlockList.fire_obelisk_block.getDefaultState(), Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_stairs")),
+			BlockList.dirt_vert_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dirt_slab)).setRegistryName(location("dirt_vert_slab"))
 			);
 			
 			

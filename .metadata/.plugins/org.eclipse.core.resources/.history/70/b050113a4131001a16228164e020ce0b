@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "obeliskmod:block/plains_beach_grass"
-    }
-}

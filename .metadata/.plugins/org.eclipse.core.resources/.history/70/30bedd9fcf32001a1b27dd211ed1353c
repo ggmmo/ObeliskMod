@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "obeliskmod:earth_obelisk_wall",
-	"obeliskmod:dirt_wall",
-	"obeliskmod:coarse_dirt_wall"
-  ]
-}

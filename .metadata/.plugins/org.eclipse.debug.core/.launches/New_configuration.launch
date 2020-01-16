@@ -10,6 +10,8 @@
 <booleanAttribute key="override_workspace_settings" value="false"/>
 <booleanAttribute key="show_console_view" value="true"/>
 <booleanAttribute key="show_execution_view" value="true"/>
-<listAttribute key="tasks"/>
-<stringAttribute key="working_dir" value=""/>
+<listAttribute key="tasks">
+<listEntry value="runClient"/>
+</listAttribute>
+<stringAttribute key="working_dir" value="C:\ObeliskMod\Obelisk"/>
 </launchConfiguration>

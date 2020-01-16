@@ -1,8 +1,0 @@
-package fox.obeliskmod.lists;
-
-import net.minecraft.item.BowItem;
-
-public class Sling extends BowItem 
-{
-
-}
