@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "obeliskmod:oak_wood_fence",
+	"obeliskmod:spruce_wood_fence",
+	"obeliskmod:dark_oak_wood_fence",
+	"obeliskmod:birch_wood_fence",
+	"obeliskmod:acacia_wood_fence",
+	"obeliskmod:jungle_wood_fence",
+	"obeliskmod:dirt_fence",
+	"obeliskmod:coarse_dirt_fence",
+	"obeliskmod:stone_fence",
+	"obeliskmod:cobblestone_fence",
+	"obeliskmod:stone_brick_fence",
+	"obeliskmod:mossy_stone_brick_fence"
+  ]
+}

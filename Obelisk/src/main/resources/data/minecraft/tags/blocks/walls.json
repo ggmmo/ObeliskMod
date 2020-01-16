@@ -12,6 +12,24 @@
 	"obeliskmod:dark_oak_log_wall",
 	"obeliskmod:dark_oak_wood_wall",
 	"obeliskmod:birch_log_wall",
-	"obeliskmod:birch_wood_wall"
+	"obeliskmod:birch_wood_wall",
+	"obeliskmod:acacia_log_wall",
+	"obeliskmod:acacia_wood_wall",
+	"obeliskmod:jungle_log_wall",
+	"obeliskmod:jungle_wood_wall",
+	"obeliskmod:oak_planks_wall",
+	"obeliskmod:spruce_planks_wall",
+	"obeliskmod:dark_oak_planks_wall",
+	"obeliskmod:birch_planks_wall",
+	"obeliskmod:acacia_planks_wall",
+	"obeliskmod:jungle_planks_wall",
+	"obeliskmod:stripped_oak_wood_wall",
+	"obeliskmod:stripped_spruce_wood_wall",
+	"obeliskmod:stripped_dark_oak_wood_wall",
+	"obeliskmod:stripped_birch_wood_wall",
+	"obeliskmod:stripped_acacia_wood_wall",
+	"obeliskmod:stripped_jungle_wood_wall",
+	"obeliskmod:red_sand_wall",
+	"obeliskmod:gravel_wall"
   ]
 }
