@@ -10,6 +10,8 @@ public class ObeliskRenderRegistry
 {
 	public static void registryEntityRender() 
 	{
-		RenderingRegistry.registerEntityRenderingHandler(TestEntity.class, new ObeliskEntityRender.RenderFactory());
+		RenderingRegistry.registerEntityRenderingHandler(TestEntity.class, new TestEntityRender.RenderFactory());
 	}
+	
+	
 }
