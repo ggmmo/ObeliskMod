@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "obeliskmod:block/fire_obelisk_block",
+        "top": "obeliskmod:block/fire_obelisk_block",
+        "side": "obeliskmod:block/fire_obelisk_block"
+    }
+}

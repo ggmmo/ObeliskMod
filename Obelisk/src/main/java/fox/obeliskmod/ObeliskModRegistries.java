@@ -143,6 +143,7 @@ public class ObeliskModRegistries
 		ItemList.cobblestone_fence = new BlockItem(BlockList.cobblestone_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cobblestone_fence.getRegistryName()),
 		ItemList.stone_brick_fence = new BlockItem(BlockList.stone_brick_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_brick_fence.getRegistryName()),
 		ItemList.mossy_stone_brick_fence = new BlockItem(BlockList.mossy_stone_brick_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_stone_brick_fence.getRegistryName()),
+		ItemList.earth_obelisk_fence = new BlockItem(BlockList.earth_obelisk_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.earth_obelisk_fence.getRegistryName()),
 		ItemList.red_sand_stairs = new BlockItem(BlockList.red_sand_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_sand_stairs.getRegistryName()),
 		ItemList.red_sand_slab = new BlockItem(BlockList.red_sand_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_sand_slab.getRegistryName()),
 		ItemList.red_sand_wall = new BlockItem(BlockList.red_sand_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_sand_wall.getRegistryName()),
@@ -169,8 +170,9 @@ public class ObeliskModRegistries
 		ItemList.gravel_wall = new BlockItem(BlockList.gravel_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.gravel_wall.getRegistryName()),
 		ItemList.gravel_snow = new BlockItem(BlockList.gravel_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.gravel_snow.getRegistryName()),
 		ItemList.stone_brick_snow = new BlockItem(BlockList.stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_brick_snow.getRegistryName()),
-		ItemList.mossy_stone_brick_snow = new BlockItem(BlockList.mossy_stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_stone_brick_snow.getRegistryName())
-		
+		ItemList.mossy_stone_brick_snow = new BlockItem(BlockList.mossy_stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_stone_brick_snow.getRegistryName()),
+		ItemList.fire_obelisk_block = new BlockItem(BlockList.fire_obelisk_block, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_block.getRegistryName()),
+		ItemList.fire_obelisk_stairs = new BlockItem(BlockList.fire_obelisk_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_stairs.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -271,6 +273,7 @@ public class ObeliskModRegistries
 			BlockList.cobblestone_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.stone_fence)).setRegistryName(location("cobblestone_fence")),
 			BlockList.stone_brick_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.stone_fence)).setRegistryName(location("stone_brick_fence")),
 			BlockList.mossy_stone_brick_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.stone_fence)).setRegistryName(location("mossy_stone_brick_fence")),
+			BlockList.earth_obelisk_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.stone_fence)).setRegistryName(location("earth_obelisk_fence")),
 			BlockList.red_sand_stairs = (StairsBlock) new CustomStairsBlock(BlockList.sand_stairs.getDefaultState(), Block.Properties.from(BlockList.sand_slab)).setRegistryName(location("red_sand_stairs")),
 			BlockList.red_sand_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.sand_slab)).setRegistryName(location("red_sand_slab")),
 			BlockList.red_sand_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.sand_wall)).setRegistryName(location("red_sand_wall")),
@@ -297,8 +300,9 @@ public class ObeliskModRegistries
 			BlockList.gravel_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.gravel_slab)).setRegistryName(location("gravel_wall")),
 			BlockList.gravel_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.gravel_slab)).setRegistryName(location("gravel_snow")),
 			BlockList.stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.stone_brick_fence)).setRegistryName(location("stone_brick_snow")),
-			BlockList.mossy_stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.mossy_stone_brick_fence)).setRegistryName(location("mossy_stone_brick_snow"))
-			
+			BlockList.mossy_stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.mossy_stone_brick_fence)).setRegistryName(location("mossy_stone_brick_snow")),
+			BlockList.fire_obelisk_block = new Block(Block.Properties.from(BlockList.earth_obelisk_block)).setRegistryName(location("fire_obelisk_block")),
+			BlockList.fire_obelisk_stairs = (StairsBlock) new CustomStairsBlock(BlockList.fire_obelisk_block.getDefaultState(), Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_stairs"))
 			);
 			
 			

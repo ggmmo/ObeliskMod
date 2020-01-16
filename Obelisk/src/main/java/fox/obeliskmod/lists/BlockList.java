@@ -13,6 +13,7 @@ public class BlockList
 	public static WallBlock earth_obelisk_wall;
 	public static SlabBlock earth_obelisk_slab;
 	public static StairsBlock earth_obelisk_stairs;
+	public static FenceBlock earth_obelisk_fence;
 	public static SlabBlock dirt_slab;
 	public static WallBlock dirt_wall;
 	public static StairsBlock dirt_stairs;
@@ -121,6 +122,8 @@ public class BlockList
 	public static SnowBlock gravel_snow;
 	public static SnowBlock stone_brick_snow;
 	public static SnowBlock mossy_stone_brick_snow;
+	public static Block fire_obelisk_block;
+	public static StairsBlock fire_obelisk_stairs;
 }
 
 

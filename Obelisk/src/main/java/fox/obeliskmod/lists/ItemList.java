@@ -26,6 +26,7 @@ public class ItemList
 	public static Item earth_obelisk_wall;
 	public static Item earth_obelisk_slab;
 	public static Item earth_obelisk_stairs;
+	public static Item earth_obelisk_fence;
 	public static Item dirt_slab;
 	public static Item dirt_wall;
 	public static Item dirt_stairs;
@@ -134,4 +135,6 @@ public class ItemList
 	public static Item gravel_snow;
 	public static Item stone_brick_snow;
 	public static Item mossy_stone_brick_snow;
+	public static Item fire_obelisk_block;
+	public static Item fire_obelisk_stairs;
 }

@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "obeliskmod:block/fire_obelisk_block" }
+    }
+}

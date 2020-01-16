@@ -104,6 +104,7 @@
 	"block.obeliskmod.cobblestone_fence": "Cobblestone Fence",
 	"block.obeliskmod.stone_brick_fence": "Stone Brick Fence",
 	"block.obeliskmod.mossy_stone_brick_fence": "Mossy Stone Brick Fence",
+	"block.obeliskmod.earth_obelisk_fence": "Earth Obelisk Fence",
 	"block.obeliskmod.red_sand_stairs": "Red Sand Stairs",
 	"block.obeliskmod.red_sand_slab": "Red Sand Slab",
 	"block.obeliskmod.red_sand_wall": "Red Sand Wall",
@@ -131,6 +132,8 @@
 	"block.obeliskmod.gravel_snow": "Gravel Snow",
 	"block.obeliskmod.stone_brick_snow": "Stone Brick Snow",
 	"block.obeliskmod.mossy_stone_brick_snow": "Mossy Stone Brick Snow",
+	"block.obeliskmod.fire_obelisk_block": "Fire Obelisk Block",
+	"block.obeliskmod.fire_obelisk_stairs": "Fire Obelisk Stairs",
 	
 	"itemGroup.obelisk": "Obelisk Item Group"
 }
