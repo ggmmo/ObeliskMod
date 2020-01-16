@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/jungle_wood_slab" },
+        "type=top": { "model": "obeliskmod:block/jungle_wood_slab_top" },
+        "type=double": { "model": "minecraft:block/jungle_wood" }
+    }
+}
