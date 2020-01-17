@@ -15,10 +15,10 @@ import net.minecraft.world.IWorldReader;
 
 public class VertSlabBlock extends HorizontalBlock
 {
-	protected static final VoxelShape[] North_Vert_Slab = new VoxelShape[]{Block.makeCuboidShape(0, 0, 0, 16, 16, 8)};
-	protected static final VoxelShape[] East_Vert_Slab = new VoxelShape[]{Block.makeCuboidShape(16, 0, 0, 8, 16, 16)};
-	protected static final VoxelShape[] South_Vert_Slab = new VoxelShape[]{Block.makeCuboidShape(16, 16, 0, 0, 16, 8)};
-	protected static final VoxelShape[] West_Vert_Slab = new VoxelShape[]{Block.makeCuboidShape(0, 16, 0, 8, 16, 16)};
+	protected static final VoxelShape North_Vert_Slab = Block.makeCuboidShape(0, 0, 0, 16, 16, 8);
+	protected static final VoxelShape East_Vert_Slab = Block.makeCuboidShape(16, 0, 0, 8, 16, 16);
+	protected static final VoxelShape South_Vert_Slab = Block.makeCuboidShape(16, 0, 16, 0, 16, 8);
+	protected static final VoxelShape West_Vert_Slab = Block.makeCuboidShape(0, 0, 16, 8, 16, 0);
 
 	public VertSlabBlock(Block.Properties properties) {
 	      super(properties);
@@ -28,14 +28,14 @@ public class VertSlabBlock extends HorizontalBlock
 	 public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
 	      switch((Direction)state.get(HORIZONTAL_FACING)) {
 	      case SOUTH:
-	         return South_Vert_Slab[1];
+	         return South_Vert_Slab;
 	      case NORTH:
 	      default:
-	         return North_Vert_Slab[1];
+	        return North_Vert_Slab;
 	      case WEST:
-	         return West_Vert_Slab[1];
+	         return West_Vert_Slab;
 	      case EAST:
-	         return East_Vert_Slab[1];
+	         return East_Vert_Slab;
 	      }
 	   }
 
