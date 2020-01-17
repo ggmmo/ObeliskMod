@@ -10,6 +10,7 @@ import fox.obeliskmod.lists.CustomSnowBlock;
 import fox.obeliskmod.lists.CustomStairsBlock;
 import fox.obeliskmod.lists.EntitiesList;
 import fox.obeliskmod.lists.ItemList;
+import fox.obeliskmod.lists.VertSlabBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.SlabBlock;
@@ -307,7 +308,7 @@ public class ObeliskModRegistries
 			BlockList.mossy_stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.mossy_stone_brick_fence)).setRegistryName(location("mossy_stone_brick_snow")),
 			BlockList.fire_obelisk_block = new Block(Block.Properties.from(BlockList.earth_obelisk_block)).setRegistryName(location("fire_obelisk_block")),
 			BlockList.fire_obelisk_stairs = (StairsBlock) new CustomStairsBlock(BlockList.fire_obelisk_block.getDefaultState(), Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_stairs")),
-			BlockList.dirt_vert_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dirt_slab)).setRegistryName(location("dirt_vert_slab")),
+			BlockList.dirt_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dirt_slab)).setRegistryName(location("dirt_vert_slab")),
 			BlockList.fire_obelisk_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_slab")),
 			BlockList.fire_obelisk_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_wall"))
 			);

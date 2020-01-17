@@ -2,6 +2,7 @@ package fox.obeliskmod.lists;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceBlock;
+import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.block.StairsBlock;
@@ -124,7 +125,7 @@ public class BlockList
 	public static SnowBlock mossy_stone_brick_snow;
 	public static Block fire_obelisk_block;
 	public static StairsBlock fire_obelisk_stairs;
-	public static SlabBlock dirt_vert_slab;
+	public static VertSlabBlock dirt_vert_slab;
 	public static SlabBlock fire_obelisk_slab;
 	public static WallBlock fire_obelisk_wall;
 
