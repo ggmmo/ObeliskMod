@@ -1,6 +1,9 @@
 {
     "variants": {
-        "type=bottom": { "model": "obeliskmod:block/dirt_vert_slab" },
+        "type=bottom,facing=north": { "model": "obeliskmod:block/dirt_vert_slab" },
+	"type=bottom,facing=east": { "model": "obeliskmod:block/dirt_vert_slab", "y": 90 },
+	"type=bottom,facing=south": { "model": "obeliskmod:block/dirt_vert_slab", "y": 180 },
+	"type=bottom,facing=west": { "model": "obeliskmod:block/dirt_vert_slab", "y": 270 },
         "type=top": { "model": "obeliskmod:block/dirt_vert_slab_top" },
         "type=double": { "model": "minecraft:block/dirt" }
     }

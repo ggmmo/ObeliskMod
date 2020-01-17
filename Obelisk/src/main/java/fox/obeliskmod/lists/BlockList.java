@@ -127,6 +127,7 @@ public class BlockList
 	public static SlabBlock dirt_vert_slab;
 	public static SlabBlock fire_obelisk_slab;
 	public static WallBlock fire_obelisk_wall;
+
 	
 }
 
