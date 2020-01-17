@@ -135,6 +135,8 @@
 	"block.obeliskmod.fire_obelisk_block": "Fire Obelisk Block",
 	"block.obeliskmod.fire_obelisk_stairs": "Fire Obelisk Stairs",
 	"block.obeliskmod.dirt_vert_slab": "Dirt Vertical Slab",
+	"block.obeliskmod.fire_obelisk_slab": "Fire Obelisk Slab",
+	"block.obeliskmod.fire_obelisk_wall": "Fire Obelisk Wall",
 	
 	"itemGroup.obelisk": "Obelisk Item Group"
 }

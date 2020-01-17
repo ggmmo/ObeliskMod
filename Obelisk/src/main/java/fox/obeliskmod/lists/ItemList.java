@@ -138,4 +138,6 @@ public class ItemList
 	public static Item fire_obelisk_block;
 	public static Item fire_obelisk_stairs;
 	public static Item dirt_vert_slab;
+	public static Item fire_obelisk_slab;
+	public static Item fire_obelisk_wall;
 }

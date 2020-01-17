@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/wall_inventory",
+    "textures": {
+        "wall": "obeliskmod:block/fire_obelisk_block"
+    }
+}

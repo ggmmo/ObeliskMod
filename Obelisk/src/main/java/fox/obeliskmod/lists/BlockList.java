@@ -125,6 +125,8 @@ public class BlockList
 	public static Block fire_obelisk_block;
 	public static StairsBlock fire_obelisk_stairs;
 	public static SlabBlock dirt_vert_slab;
+	public static SlabBlock fire_obelisk_slab;
+	public static WallBlock fire_obelisk_wall;
 	
 }
 
