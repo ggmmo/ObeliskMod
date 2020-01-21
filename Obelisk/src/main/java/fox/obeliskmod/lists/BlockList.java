@@ -1,8 +1,8 @@
 package fox.obeliskmod.lists;
 
+
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceBlock;
-import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.block.StairsBlock;

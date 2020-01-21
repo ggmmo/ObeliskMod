@@ -1,8 +1,10 @@
 {
-    "variants": {
-        "shape=North_Vert_Slab": { "model": "obeliskmod:block/dirt_vert_slab" },
-	"shape=East_Vert_Slab": { "model": "obeliskmod:block/dirt_vert_slab" },
-	"shape=South_Vert_Slab": { "model": "obeliskmod:block/dirt_vert_slab" },
-	"shape=West_Vert_Slab": { "model": "obeliskmod:block/dirt_vert_slab" }
+    
+	"variants": {
+        "type=North_Vert_Slab": { "model": "obeliskmod:block/dirt_vert_slab_north" },
+		"type=East_Vert_Slab": { "model": "obeliskmod:block/dirt_vert_slab_east" },
+		"type=South_Vert_Slab": { "model": "obeliskmod:block/dirt_vert_slab_south" },
+		"type=West_Vert_Slab": {"model": "obeliskmod:block/dirt_vert_slab_west"}
+		
     }
 }

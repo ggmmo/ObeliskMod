@@ -15,10 +15,10 @@ import net.minecraft.world.IWorldReader;
 
 public class VertSlabBlock extends HorizontalBlock
 {
-	protected static final VoxelShape North_Vert_Slab = Block.makeCuboidShape(0, 0, 0, 16, 16, 8);
-	protected static final VoxelShape East_Vert_Slab = Block.makeCuboidShape(16, 0, 0, 8, 16, 16);
-	protected static final VoxelShape South_Vert_Slab = Block.makeCuboidShape(16, 0, 16, 0, 16, 8);
-	protected static final VoxelShape West_Vert_Slab = Block.makeCuboidShape(0, 0, 16, 8, 16, 0);
+	public static final VoxelShape North_Vert_Slab = Block.makeCuboidShape(0, 0, 0, 16, 16, 8);
+	public static final VoxelShape East_Vert_Slab = Block.makeCuboidShape(16, 0, 0, 8, 16, 16);
+	public static final VoxelShape South_Vert_Slab = Block.makeCuboidShape(16, 0, 16, 0, 16, 8);
+	public static final VoxelShape West_Vert_Slab = Block.makeCuboidShape(0, 0, 16, 8, 16, 0);
 
 	public VertSlabBlock(Block.Properties properties) {
 	      super(properties);

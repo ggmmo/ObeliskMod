@@ -5,6 +5,7 @@ package fox.obeliskmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
 import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.lists.CustomSnowBlock;
 import fox.obeliskmod.lists.CustomStairsBlock;
@@ -25,7 +26,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
-import net.minecraft.item.Item.Properties;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
