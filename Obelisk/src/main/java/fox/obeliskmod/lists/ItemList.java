@@ -140,4 +140,8 @@ public class ItemList
 	public static Item dirt_vert_slab;
 	public static Item fire_obelisk_slab;
 	public static Item fire_obelisk_wall;
+	public static Item coarse_dirt_vert_slab;
+	public static Item acacia_log_vert_slab;
+	public static Item acacia_planks_vert_slab;
+	public static Item acacia_wood_vert_slab;
 }

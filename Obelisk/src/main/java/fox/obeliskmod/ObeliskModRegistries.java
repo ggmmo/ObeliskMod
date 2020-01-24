@@ -177,7 +177,11 @@ public class ObeliskModRegistries
 		ItemList.fire_obelisk_stairs = new BlockItem(BlockList.fire_obelisk_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_stairs.getRegistryName()),
 		ItemList.dirt_vert_slab = new BlockItem(BlockList.dirt_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_vert_slab.getRegistryName()),
 		ItemList.fire_obelisk_slab = new BlockItem(BlockList.fire_obelisk_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_slab.getRegistryName()),
-		ItemList.fire_obelisk_wall = new BlockItem(BlockList.fire_obelisk_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_wall.getRegistryName())
+		ItemList.fire_obelisk_wall = new BlockItem(BlockList.fire_obelisk_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_wall.getRegistryName()),
+		ItemList.coarse_dirt_vert_slab = new BlockItem(BlockList.coarse_dirt_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.coarse_dirt_vert_slab.getRegistryName()),
+		ItemList.acacia_log_vert_slab = new BlockItem(BlockList.acacia_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_log_vert_slab.getRegistryName()),
+		ItemList.acacia_planks_vert_slab = new BlockItem(BlockList.acacia_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_planks_vert_slab.getRegistryName()),
+		ItemList.acacia_wood_vert_slab = new BlockItem(BlockList.acacia_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_wood_vert_slab.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -310,7 +314,11 @@ public class ObeliskModRegistries
 			BlockList.fire_obelisk_stairs = (StairsBlock) new CustomStairsBlock(BlockList.fire_obelisk_block.getDefaultState(), Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_stairs")),
 			BlockList.dirt_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dirt_slab)).setRegistryName(location("dirt_vert_slab")),
 			BlockList.fire_obelisk_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_slab")),
-			BlockList.fire_obelisk_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_wall"))
+			BlockList.fire_obelisk_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_wall")),
+			BlockList.coarse_dirt_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.coarse_dirt_slab)).setRegistryName(location("coarse_dirt_vert_slab")),
+			BlockList.acacia_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_log_vert_slab")),
+			BlockList.acacia_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_planks_vert_slab")),
+			BlockList.acacia_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_wood_vert_slab"))
 			);
 			
 			

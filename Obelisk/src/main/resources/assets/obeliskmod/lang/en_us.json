@@ -137,6 +137,10 @@
 	"block.obeliskmod.dirt_vert_slab": "Dirt Vertical Slab",
 	"block.obeliskmod.fire_obelisk_slab": "Fire Obelisk Slab",
 	"block.obeliskmod.fire_obelisk_wall": "Fire Obelisk Wall",
+	"block.obeliskmod.coarse_dirt_vert_slab": "Coarse Dirt Vertical Slab",
+	"block.obeliskmod.acacia_log_vert_slab": "Acacia Log Vertical Slab",
+	"block.obeliskmod.acacia_planks_vert_slab": "Acacia Planks Vertical Slab",
+	"block.obeliskmod.acacia_wood_vert_slab": "Acacia Wood Vertical Slab",
 	
 	"itemGroup.obelisk": "Obelisk Item Group"
 }

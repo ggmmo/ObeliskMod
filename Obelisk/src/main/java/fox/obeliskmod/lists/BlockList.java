@@ -128,6 +128,10 @@ public class BlockList
 	public static VertSlabBlock dirt_vert_slab;
 	public static SlabBlock fire_obelisk_slab;
 	public static WallBlock fire_obelisk_wall;
+	public static VertSlabBlock coarse_dirt_vert_slab;
+	public static VertSlabBlock acacia_log_vert_slab;
+	public static VertSlabBlock acacia_planks_vert_slab;
+	public static VertSlabBlock acacia_wood_vert_slab;
 
 	
 }
