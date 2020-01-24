@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.world.biome.Biome.Builder"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.EntityClassification"/>
-<fullyQualifiedTypeName name="net.minecraft.world.biome.Biome.SpawnListEntry"/>
 <fullyQualifiedTypeName name="net.minecraft.world.biome.Biomes"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.CreatureEntity"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.EntitiesList"/>
@@ -52,12 +49,15 @@
 <fullyQualifiedTypeName name="net.minecraftforge.client.MinecraftForgeClient"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.CustomStairsBlock"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.BlockList"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
 <fullyQualifiedTypeName name="net.minecraft.dispenser.IBlockSource"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.AxisAlignedBB"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.VerticalSlab"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.VertSlabBlock"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="fox.obeliskmod.lists.ItemList"/>
+<fullyQualifiedTypeName name="net.minecraft.item.BlockItem"/>
+<fullyQualifiedTypeName name="fox.obeliskmod.blocks.VertSlabBlock"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
 </qualifiedTypeNameHistroy>

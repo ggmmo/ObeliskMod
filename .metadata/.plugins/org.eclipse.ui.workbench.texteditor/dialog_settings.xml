@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="acacia"/>
+		<item key="selection" value="birch_log"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="acacia_log"/>
+			<item value="acacia_planks"/>
+			<item value="acaica_log"/>
+			<item value="acacia"/>
 			<item value="acaica"/>
 			<item value="spruce"/>
 			<item value="wood"/>
@@ -19,32 +23,28 @@
 			<item value="fml"/>
 			<item value="load"/>
 			<item value="load_registries"/>
-			<item value="load registries"/>
-			<item value="obeliskmod:block/earth_obelisk_block"/>
-			<item value="earth_obelisk"/>
-			<item value="tutorial"/>
 		</list>
 		<list key="replacehistory">
+			<item value="birch_log"/>
+			<item value="birch_planks"/>
+			<item value="spruce_planks"/>
+			<item value="spruce_log"/>
+			<item value="oak_log"/>
+			<item value="oak_planks"/>
+			<item value="spruce_wood"/>
+			<item value="oak_wood"/>
+			<item value="spruce"/>
+			<item value="oak"/>
 			<item value="acacia"/>
 			<item value="jungle"/>
 			<item value="dark_oak"/>
 			<item value="birch"/>
 			<item value="acaica"/>
-			<item value="log"/>
-			<item value="stripped_oak_wood"/>
-			<item value="stripped_spruce_wood"/>
-			<item value="jungle_planks"/>
-			<item value="acacia_planks"/>
-			<item value="birch_planks"/>
-			<item value="dark_oak_planks"/>
-			<item value="spruce_planks"/>
-			<item value="oak_planks"/>
-			<item value="brich"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="561"/>
-		<item key="DIALOG_Y_ORIGIN" value="269"/>
+		<item key="DIALOG_X_ORIGIN" value="1502"/>
+		<item key="DIALOG_Y_ORIGIN" value="133"/>
 		<item key="DIALOG_WIDTH" value="385"/>
 		<item key="DIALOG_HEIGHT" value="523"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

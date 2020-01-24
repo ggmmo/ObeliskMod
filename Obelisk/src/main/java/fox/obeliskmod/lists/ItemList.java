@@ -144,4 +144,13 @@ public class ItemList
 	public static Item acacia_log_vert_slab;
 	public static Item acacia_planks_vert_slab;
 	public static Item acacia_wood_vert_slab;
+	public static Item oak_wood_vert_slab;
+	public static Item oak_log_vert_slab;
+	public static Item oak_planks_vert_slab;
+	public static Item spruce_wood_vert_slab;
+	public static Item spruce_log_vert_slab;
+	public static Item spruce_planks_vert_slab;
+	public static Item birch_wood_vert_slab;
+	public static Item birch_log_vert_slab;
+	public static Item birch_planks_vert_slab;
 }

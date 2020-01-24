@@ -141,6 +141,15 @@
 	"block.obeliskmod.acacia_log_vert_slab": "Acacia Log Vertical Slab",
 	"block.obeliskmod.acacia_planks_vert_slab": "Acacia Planks Vertical Slab",
 	"block.obeliskmod.acacia_wood_vert_slab": "Acacia Wood Vertical Slab",
+	"block.obeliskmod.oak_wood_vert_slab": "Oak Wood Vertical Slab",
+	"block.obeliskmod.oak_log_vert_slab": "Oak Log Vertical Slab",
+	"block.obeliskmod.oak_planks_vert_slab": "Oak Planks Vertical Slab",
+	"block.obeliskmod.spruce_wood_vert_slab": "Spruce Wood Vertical Slab",
+	"block.obeliskmod.spruce_log_vert_slab": "Spruce Log Vertical Slab",
+	"block.obeliskmod.spruce_planks_vert_slab": "Spruce Planks Vertical Slab",
+	"block.obeliskmod.birch_wood_vert_slab": "Birch Wood Vertical Slab",
+	"block.obeliskmod.birch_log_vert_slab": "Birch Log Vertical Slab",
+	"block.obeliskmod.birch_planks_vert_slab": "Birch Planks Vertical Slab",
 	
 	"itemGroup.obelisk": "Obelisk Item Group"
 }

@@ -1,4 +1,4 @@
-package fox.obeliskmod.lists;
+package fox.obeliskmod.weapons;
 
 import net.minecraft.item.BowItem;
 

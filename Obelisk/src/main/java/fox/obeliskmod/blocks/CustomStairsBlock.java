@@ -1,4 +1,4 @@
-package fox.obeliskmod.lists;
+package fox.obeliskmod.blocks;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;

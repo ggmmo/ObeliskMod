@@ -5,13 +5,12 @@ package fox.obeliskmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
+import fox.obeliskmod.blocks.CustomSnowBlock;
+import fox.obeliskmod.blocks.CustomStairsBlock;
+import fox.obeliskmod.blocks.VertSlabBlock;
 import fox.obeliskmod.lists.BlockList;
-import fox.obeliskmod.lists.CustomSnowBlock;
-import fox.obeliskmod.lists.CustomStairsBlock;
 import fox.obeliskmod.lists.EntitiesList;
 import fox.obeliskmod.lists.ItemList;
-import fox.obeliskmod.lists.VertSlabBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.SlabBlock;
@@ -181,7 +180,16 @@ public class ObeliskModRegistries
 		ItemList.coarse_dirt_vert_slab = new BlockItem(BlockList.coarse_dirt_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.coarse_dirt_vert_slab.getRegistryName()),
 		ItemList.acacia_log_vert_slab = new BlockItem(BlockList.acacia_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_log_vert_slab.getRegistryName()),
 		ItemList.acacia_planks_vert_slab = new BlockItem(BlockList.acacia_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_planks_vert_slab.getRegistryName()),
-		ItemList.acacia_wood_vert_slab = new BlockItem(BlockList.acacia_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_wood_vert_slab.getRegistryName())
+		ItemList.acacia_wood_vert_slab = new BlockItem(BlockList.acacia_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_wood_vert_slab.getRegistryName()),
+		ItemList.oak_wood_vert_slab = new BlockItem(BlockList.oak_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.oak_wood_vert_slab.getRegistryName()),
+		ItemList.oak_log_vert_slab = new BlockItem(BlockList.oak_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.oak_log_vert_slab.getRegistryName()),
+		ItemList.oak_planks_vert_slab = new BlockItem(BlockList.oak_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.oak_planks_vert_slab.getRegistryName()),
+		ItemList.spruce_wood_vert_slab = new BlockItem(BlockList.spruce_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.spruce_wood_vert_slab.getRegistryName()),
+		ItemList.spruce_log_vert_slab = new BlockItem(BlockList.spruce_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.spruce_log_vert_slab.getRegistryName()),
+		ItemList.spruce_planks_vert_slab = new BlockItem(BlockList.spruce_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.spruce_planks_vert_slab.getRegistryName()),
+		ItemList.birch_wood_vert_slab = new BlockItem(BlockList.birch_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.birch_wood_vert_slab.getRegistryName()),
+		ItemList.birch_log_vert_slab = new BlockItem(BlockList.birch_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.birch_log_vert_slab.getRegistryName()),
+		ItemList.birch_planks_vert_slab = new BlockItem(BlockList.birch_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.birch_planks_vert_slab.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -318,7 +326,16 @@ public class ObeliskModRegistries
 			BlockList.coarse_dirt_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.coarse_dirt_slab)).setRegistryName(location("coarse_dirt_vert_slab")),
 			BlockList.acacia_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_log_vert_slab")),
 			BlockList.acacia_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_planks_vert_slab")),
-			BlockList.acacia_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_wood_vert_slab"))
+			BlockList.acacia_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_wood_vert_slab")),
+			BlockList.oak_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.oak_wood_slab)).setRegistryName(location("oak_wood_vert_slab")),
+			BlockList.oak_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("oak_log_vert_slab")),
+			BlockList.oak_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.oak_planks_snow)).setRegistryName(location("oak_planks_vert_slab")),
+			BlockList.spruce_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_wood_slab)).setRegistryName(location("spruce_wood_vert_slab")),
+			BlockList.spruce_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_slab)).setRegistryName(location("spruce_log_vert_slab")),
+			BlockList.spruce_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_slab)).setRegistryName(location("spruce_planks_vert_slab")),
+			BlockList.birch_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_wood_slab)).setRegistryName(location("birch_wood_vert_slab")),
+			BlockList.birch_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_log_slab)).setRegistryName(location("birch_log_vert_slab")),
+			BlockList.birch_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_planks_snow)).setRegistryName(location("birch_planks_vert_slab"))
 			);
 			
 			

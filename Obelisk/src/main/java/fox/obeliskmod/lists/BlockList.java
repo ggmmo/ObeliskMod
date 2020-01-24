@@ -1,6 +1,7 @@
 package fox.obeliskmod.lists;
 
 
+import fox.obeliskmod.blocks.VertSlabBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.SlabBlock;
@@ -132,6 +133,15 @@ public class BlockList
 	public static VertSlabBlock acacia_log_vert_slab;
 	public static VertSlabBlock acacia_planks_vert_slab;
 	public static VertSlabBlock acacia_wood_vert_slab;
+	public static VertSlabBlock oak_wood_vert_slab;
+	public static VertSlabBlock oak_log_vert_slab;
+	public static VertSlabBlock oak_planks_vert_slab;
+	public static VertSlabBlock spruce_wood_vert_slab;
+	public static VertSlabBlock spruce_log_vert_slab;
+	public static VertSlabBlock spruce_planks_vert_slab;
+	public static VertSlabBlock birch_wood_vert_slab;
+	public static VertSlabBlock birch_log_vert_slab;
+	public static VertSlabBlock birch_planks_vert_slab;
 
 	
 }

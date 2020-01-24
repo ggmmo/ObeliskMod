@@ -1,9 +1,9 @@
 {
 		"parent": "block/block",
   	"textures": {
-    	"all": "minecraft:block/acacia_log",
-    	"particle": "minecraft:block/acacia_log",
-    	"top": "minecraft:block/acacia_log_top"
+    	"all": "minecraft:block/oak_log",
+    	"particle": "minecraft:block/oak_log",
+    	"top": "minecraft:block/oak_log_top"
 		},
 	
 	"credit": "Made with Blockbench",
