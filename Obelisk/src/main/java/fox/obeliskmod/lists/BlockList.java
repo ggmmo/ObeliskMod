@@ -142,6 +142,18 @@ public class BlockList
 	public static VertSlabBlock birch_wood_vert_slab;
 	public static VertSlabBlock birch_log_vert_slab;
 	public static VertSlabBlock birch_planks_vert_slab;
+	public static VertSlabBlock dark_oak_wood_vert_slab;
+	public static VertSlabBlock dark_oak_log_vert_slab;
+	public static VertSlabBlock dark_oak_planks_vert_slab;
+	public static VertSlabBlock jungle_wood_vert_slab;
+	public static VertSlabBlock jungle_log_vert_slab;
+	public static VertSlabBlock jungle_planks_vert_slab;
+	public static VertSlabBlock stripped_oak_vert_slab;
+	public static VertSlabBlock stripped_spruce_vert_slab;
+	public static VertSlabBlock stripped_birch_vert_slab;
+	public static VertSlabBlock stripped_dark_oak_vert_slab;
+	public static VertSlabBlock stripped_acacia_vert_slab;
+	public static VertSlabBlock stripped_jungle_vertslab;
 
 	
 }

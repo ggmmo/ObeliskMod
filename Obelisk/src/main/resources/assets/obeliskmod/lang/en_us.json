@@ -150,6 +150,18 @@
 	"block.obeliskmod.birch_wood_vert_slab": "Birch Wood Vertical Slab",
 	"block.obeliskmod.birch_log_vert_slab": "Birch Log Vertical Slab",
 	"block.obeliskmod.birch_planks_vert_slab": "Birch Planks Vertical Slab",
+	"block.obeliskmod.dark_oak_wood_vert_slab": "Dark Oak Wood Vertical Slab",
+	"block.obeliskmod.dark_oak_log_vert_slab": "Dark Oak Log Vertical Slab",
+	"block.obeliskmod.dark_oak_planks_vert_slab": "Dark Oak Planks Vertical Slab",
+	"block.obeliskmod.jungle_wood_vert_slab": "Jungle Wood Vertical Slab",
+	"block.obeliskmod.jungle_log_vert_slab": "Jungle Log Vertical Slab",
+	"block.obeliskmod.jungle_planks_vert_slab": "Jungle Planks Vertical Slab",
+	"block.obeliskmod.stripped_oak_vert_slab": "Stripped Oak Vertical Slab",
+	"block.obeliskmod.stripped_spruce_vert_slab": "Stripped Spruce Vertical Slab",
+	"block.obeliskmod.stripped_birch_vert_slab": "Stripped Birch Vertical SLab",
+	"block.obeliskmod.stripped_dark_oak_vert_slab": "Stripped Dark Oak Vertical Slab",
+	"block.obeliskmod.stripped_acacia_vert_slab": "Stripped Acacia Vertical Slab",
+	"block.obeliskmod.stripped_jungle_vert_slab": "Stripped Jungle Vertical Slab",
 	
-	"itemGroup.obelisk": "Obelisk Item Group"
+	"itemGroup.obelisk": "Obelisk Building Blocks"
 }

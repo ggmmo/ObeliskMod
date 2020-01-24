@@ -189,7 +189,13 @@ public class ObeliskModRegistries
 		ItemList.spruce_planks_vert_slab = new BlockItem(BlockList.spruce_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.spruce_planks_vert_slab.getRegistryName()),
 		ItemList.birch_wood_vert_slab = new BlockItem(BlockList.birch_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.birch_wood_vert_slab.getRegistryName()),
 		ItemList.birch_log_vert_slab = new BlockItem(BlockList.birch_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.birch_log_vert_slab.getRegistryName()),
-		ItemList.birch_planks_vert_slab = new BlockItem(BlockList.birch_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.birch_planks_vert_slab.getRegistryName())
+		ItemList.birch_planks_vert_slab = new BlockItem(BlockList.birch_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.birch_planks_vert_slab.getRegistryName()),
+		ItemList.dark_oak_wood_vert_slab = new BlockItem(BlockList.dark_oak_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dark_oak_wood_vert_slab.getRegistryName()),
+		ItemList.dark_oak_log_vert_slab = new BlockItem(BlockList.dark_oak_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dark_oak_log_vert_slab.getRegistryName()),
+		ItemList.dark_oak_planks_vert_slab = new BlockItem(BlockList.dark_oak_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dark_oak_planks_vert_slab.getRegistryName()),
+		ItemList.jungle_wood_vert_slab = new BlockItem(BlockList.jungle_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.jungle_wood_vert_slab.getRegistryName()),
+		ItemList.jungle_log_vert_slab = new BlockItem(BlockList.jungle_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.jungle_log_vert_slab.getRegistryName()),
+		ItemList.jungle_planks_vert_slab = new BlockItem(BlockList.jungle_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.jungle_planks_vert_slab.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -335,7 +341,14 @@ public class ObeliskModRegistries
 			BlockList.spruce_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_slab)).setRegistryName(location("spruce_planks_vert_slab")),
 			BlockList.birch_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_wood_slab)).setRegistryName(location("birch_wood_vert_slab")),
 			BlockList.birch_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_log_slab)).setRegistryName(location("birch_log_vert_slab")),
-			BlockList.birch_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_planks_snow)).setRegistryName(location("birch_planks_vert_slab"))
+			BlockList.birch_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_planks_snow)).setRegistryName(location("birch_planks_vert_slab")),
+			BlockList.dark_oak_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_wood_vert_slab")),
+			BlockList.dark_oak_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_log_vert_slab")),
+			BlockList.dark_oak_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_planks_vert_slab")),
+			BlockList.jungle_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_wood_slab)).setRegistryName(location("jungle_wood_vert_slab")),
+			BlockList.jungle_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_log_vert_slab")),
+			BlockList.jungle_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_planks_vert_slab"))
+			
 			);
 			
 			
