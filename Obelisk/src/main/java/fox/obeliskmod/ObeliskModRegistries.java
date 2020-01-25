@@ -201,7 +201,23 @@ public class ObeliskModRegistries
 		ItemList.stripped_birch_vert_slab = new BlockItem(BlockList.stripped_birch_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_birch_vert_slab.getRegistryName()),
 		ItemList.stripped_dark_oak_vert_slab = new BlockItem(BlockList.stripped_dark_oak_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_dark_oak_vert_slab.getRegistryName()),
 		ItemList.stripped_acacia_vert_slab = new BlockItem(BlockList.stripped_acacia_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_acacia_vert_slab.getRegistryName()),
-		ItemList.stripped_jungle_vert_slab = new BlockItem(BlockList.stripped_jungle_vertslab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_jungle_vertslab.getRegistryName())
+		ItemList.stripped_jungle_vert_slab = new BlockItem(BlockList.stripped_jungle_vertslab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_jungle_vertslab.getRegistryName()),
+		ItemList.stone_vert_slab = new BlockItem(BlockList.stone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_vert_slab.getRegistryName()),
+		ItemList.granite_vert_slab = new BlockItem(BlockList.granite_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.granite_vert_slab.getRegistryName()),
+		ItemList.polished_granite_vert_slab = new BlockItem(BlockList.polished_granite_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.polished_granite_vert_slab.getRegistryName()),
+		ItemList.andesite_vert_slab = new BlockItem(BlockList.andesite_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.andesite_vert_slab.getRegistryName()),
+		ItemList.polished_andesite_vert_slab = new BlockItem(BlockList.polished_andesite_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.polished_andesite_vert_slab.getRegistryName()),
+		ItemList.cobblestone_vert_slab = new BlockItem(BlockList.cobblestone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cobblestone_vert_slab.getRegistryName()),
+		ItemList.sand_vert_slab = new BlockItem(BlockList.sand_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.sand_vert_slab.getRegistryName()),
+		ItemList.red_sand_vert_slab = new BlockItem(BlockList.red_sand_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_sand_vert_slab.getRegistryName()),
+		ItemList.sandstone_vert_slab = new BlockItem(BlockList.sandstone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.sandstone_vert_slab.getRegistryName()),
+		ItemList.gravel_vert_slab = new BlockItem(BlockList.gravel_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.gravel_vert_slab.getRegistryName()),
+		ItemList.chiseled_sandstone_vert_slab = new BlockItem(BlockList.chiseled_sandstone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.chiseled_sandstone_vert_slab.getRegistryName()),
+		ItemList.cut_sandstone_vert_slab = new BlockItem(BlockList.cut_sandstone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cut_sandstone_vert_slab.getRegistryName()),
+		ItemList.smooth_stone_vert_slab = new BlockItem(BlockList.smooth_stone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.smooth_stone_vert_slab.getRegistryName()),
+		ItemList.quartz_vert_slab = new BlockItem(BlockList.quartz_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.quartz_vert_slab.getRegistryName()),
+		ItemList.smooth_quartz_vert_slab = new BlockItem(BlockList.smooth_quartz_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.smooth_quartz_vert_slab.getRegistryName()),
+		ItemList.chiseled_quartz_vert_slab = new BlockItem(BlockList.chiseled_quartz_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.chiseled_quartz_vert_slab.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -359,7 +375,23 @@ public class ObeliskModRegistries
 			BlockList.stripped_birch_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_birch_wood_slab)).setRegistryName(location("stripped_birch_vert_slab")),
 			BlockList.stripped_dark_oak_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_dark_oak_wood_slab)).setRegistryName(location("stripped_dark_oak_vert_slab")),
 			BlockList.stripped_acacia_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_acacia_wood_slab)).setRegistryName(location("stripped_acacia_vert_slab")),
-			BlockList.stripped_jungle_vertslab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_jungle_wood_slab)).setRegistryName(location("stripped_jungle_vert_slab"))
+			BlockList.stripped_jungle_vertslab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_jungle_wood_slab)).setRegistryName(location("stripped_jungle_vert_slab")),
+			BlockList.stone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cobblestone_fence)).setRegistryName(location("stone_vert_slab")),
+			BlockList.granite_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cobblestone_fence)).setRegistryName(location("granite_vert_slab")),
+			BlockList.polished_granite_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.granite_vert_slab)).setRegistryName(location("polished_granite_vert_slab")),
+			BlockList.andesite_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.granite_vert_slab)).setRegistryName(location("andesite_vert_slab")),
+			BlockList.polished_andesite_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.andesite_vert_slab)).setRegistryName(location("polished_andesite_vert_slab")),
+			BlockList.cobblestone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cobblestone_fence)).setRegistryName(location("cobblestone_vert_slab")),
+			BlockList.sand_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.sand_slab)).setRegistryName(location("sand_vert_slab")),
+			BlockList.red_sand_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.red_sand_slab)).setRegistryName(location("red_sand_vert_slab")),
+			BlockList.sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cobblestone_vert_slab)).setRegistryName(location("sandstone_vert_slab")),
+			BlockList.gravel_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.gravel_slab)).setRegistryName(location("gravel_vert_slab")),
+			BlockList.chiseled_sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.sandstone_vert_slab)).setRegistryName(location("chiseled_sandstone_vert_slab")),
+			BlockList.cut_sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.chiseled_sandstone_vert_slab)).setRegistryName(location("cut_sandstone_vert_slab")),
+			BlockList.smooth_stone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_vert_slab)).setRegistryName(location("smooth_stone_vert_slab")),
+			BlockList.quartz_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_vert_slab)).setRegistryName(location("quartz_vert_slab")),
+			BlockList.smooth_quartz_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.quartz_vert_slab)).setRegistryName(location("smooth_quartz_vert_slab")),
+			BlockList.chiseled_quartz_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.smooth_quartz_vert_slab)).setRegistryName(location("chiseled_quartz_vert_slab"))
 			
 			);
 			

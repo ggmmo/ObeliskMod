@@ -154,6 +154,23 @@ public class BlockList
 	public static VertSlabBlock stripped_dark_oak_vert_slab;
 	public static VertSlabBlock stripped_acacia_vert_slab;
 	public static VertSlabBlock stripped_jungle_vertslab;
+	public static VertSlabBlock stone_vert_slab;
+	public static VertSlabBlock granite_vert_slab;
+	public static VertSlabBlock polished_granite_vert_slab;
+	public static VertSlabBlock andesite_vert_slab;
+	public static VertSlabBlock polished_andesite_vert_slab;
+	public static VertSlabBlock cobblestone_vert_slab;
+	public static VertSlabBlock sand_vert_slab;
+	public static VertSlabBlock red_sand_vert_slab;
+	public static VertSlabBlock sandstone_vert_slab;
+	public static VertSlabBlock gravel_vert_slab;
+	public static VertSlabBlock chiseled_sandstone_vert_slab;
+	public static VertSlabBlock cut_sandstone_vert_slab;
+	public static VertSlabBlock quartz_vert_slab;
+	public static VertSlabBlock smooth_stone_vert_slab;
+	public static VertSlabBlock smooth_quartz_vert_slab;
+	public static VertSlabBlock chiseled_quartz_vert_slab;
+	
 
 	
 }

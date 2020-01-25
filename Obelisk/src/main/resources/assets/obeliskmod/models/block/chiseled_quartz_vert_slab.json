@@ -1,0 +1,25 @@
+{
+		"parent": "block/block",
+  	"textures": {
+    	"all": "minecraft:block/chiseled_quartz_block",
+		"side": "minecraft:block/chiseled_quartz_block_top",
+    	"particle": "minecraft:block/chiseled_quartz_block"
+		},
+	
+	"credit": "Made with Blockbench",
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 8],
+			"color": 6,
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#all"},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#all"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#all"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#all"},
+				"up": {"uv": [0, 0, 16, 8], "texture": "#side"},
+				"down": {"uv": [0, 0, 16, 8], "texture": "#side"}
+			}
+		}
+	]
+}

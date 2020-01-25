@@ -165,4 +165,20 @@ public class ItemList
 	public static Item stripped_dark_oak_vert_slab;
 	public static Item stripped_acacia_vert_slab;
 	public static Item stripped_jungle_vert_slab;
+	public static Item stone_vert_slab;
+	public static Item granite_vert_slab;
+	public static Item polished_granite_vert_slab;
+	public static Item andesite_vert_slab;
+	public static Item polished_andesite_vert_slab;
+	public static Item cobblestone_vert_slab;
+	public static Item sand_vert_slab;
+	public static Item red_sand_vert_slab;
+	public static Item sandstone_vert_slab;
+	public static Item gravel_vert_slab;
+	public static Item chiseled_sandstone_vert_slab;
+	public static Item cut_sandstone_vert_slab;
+	public static Item smooth_stone_vert_slab;
+	public static Item quartz_vert_slab;
+	public static Item smooth_quartz_vert_slab;
+	public static Item chiseled_quartz_vert_slab;
 }

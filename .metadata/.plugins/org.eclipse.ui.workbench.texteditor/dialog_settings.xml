@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="jungle_wood"/>
+		<item key="selection" value="acacia"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="oak"/>
 			<item value="acacia_log"/>
 			<item value="acacia_planks"/>
 			<item value="acaica_log"/>
@@ -17,7 +18,6 @@
 			<item value="wood"/>
 			<item value="dirt"/>
 			<item value="birch"/>
-			<item value="oak"/>
 			<item value="coarse_dirt"/>
 			<item value="container"/>
 			<item value="fml"/>
@@ -25,6 +25,12 @@
 			<item value="load_registries"/>
 		</list>
 		<list key="replacehistory">
+			<item value="acacia"/>
+			<item value="birch"/>
+			<item value="dark_oak"/>
+			<item value="jungle"/>
+			<item value="spruce"/>
+			<item value="stripped_oak"/>
 			<item value="jungle_wood"/>
 			<item value="jungle_planks"/>
 			<item value="jungle_log"/>
@@ -34,17 +40,11 @@
 			<item value="birch_log"/>
 			<item value="birch_planks"/>
 			<item value="spruce_planks"/>
-			<item value="spruce_log"/>
-			<item value="oak_log"/>
-			<item value="oak_planks"/>
-			<item value="spruce_wood"/>
-			<item value="oak_wood"/>
-			<item value="spruce"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="301"/>
-		<item key="DIALOG_Y_ORIGIN" value="341"/>
+		<item key="DIALOG_X_ORIGIN" value="709"/>
+		<item key="DIALOG_Y_ORIGIN" value="356"/>
 		<item key="DIALOG_WIDTH" value="385"/>
 		<item key="DIALOG_HEIGHT" value="523"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

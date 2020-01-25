@@ -162,6 +162,22 @@
 	"block.obeliskmod.stripped_dark_oak_vert_slab": "Stripped Dark Oak Vertical Slab",
 	"block.obeliskmod.stripped_acacia_vert_slab": "Stripped Acacia Vertical Slab",
 	"block.obeliskmod.stripped_jungle_vert_slab": "Stripped Jungle Vertical Slab",
+	"block.obeliskmod.stone_vert_slab": "Stone Vertical Slab",
+	"block.obeliskmod.granite_vert_slab": "Granite Vertical Slab",
+	"block.obeliskmod.polished_granite_vert_slab": "Polished Granite Vertical Slab",
+	"block.obeliskmod.andesite_vert_slab": "Andesite Vertical Slab",
+	"block.obeliskmod.polished_andesite_vert_slab": "Polished Andesite Vertical Slab",
+	"block.obeliskmod.cobblestone_vert_slab": "Cobblestone Vertical Slab",
+	"block.obeliskmod.sand_vert_slab": "Sand Vertical Slab",
+	"block.obeliskmod.red_sand_vert_slab": "Red Sand Vertical Slab",
+	"block.obeliskmod.sandstone_vert_slab": "Sandstone Vertical Slab",
+	"block.obeliskmod.gravel_vert_slab": "Gravel Vertical Slab",
+	"block.obeliskmod.chiseled_sandstone_vert_slab": "Chiseled Sandstone Vertical Slab",
+	"block.obeliskmod.cut_sandstone_vert_slab": "Cut Sandstone Vertical Slab",
+	"block.obeliskmod.smooth_stone_vert_slab": "Smooth Stone Vertical Slab",
+	"block.obeliskmod.quartz_vert_slab": "Quartz Vertical Slab",
+	"block.obeliskmod.smooth_quartz_vert_slab": "Smooth Quartz Vertical Slab",
+	"block.obeliskmod.chiseled_quartz_vert_slab": "Chiseled Quartz Vertical Slab",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks"
 }
