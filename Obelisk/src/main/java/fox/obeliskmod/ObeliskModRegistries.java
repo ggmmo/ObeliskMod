@@ -195,7 +195,13 @@ public class ObeliskModRegistries
 		ItemList.dark_oak_planks_vert_slab = new BlockItem(BlockList.dark_oak_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dark_oak_planks_vert_slab.getRegistryName()),
 		ItemList.jungle_wood_vert_slab = new BlockItem(BlockList.jungle_wood_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.jungle_wood_vert_slab.getRegistryName()),
 		ItemList.jungle_log_vert_slab = new BlockItem(BlockList.jungle_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.jungle_log_vert_slab.getRegistryName()),
-		ItemList.jungle_planks_vert_slab = new BlockItem(BlockList.jungle_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.jungle_planks_vert_slab.getRegistryName())
+		ItemList.jungle_planks_vert_slab = new BlockItem(BlockList.jungle_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.jungle_planks_vert_slab.getRegistryName()),
+		ItemList.stripped_oak_vert_slab = new BlockItem(BlockList.stripped_oak_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_oak_vert_slab.getRegistryName()),
+		ItemList.stripped_spruce_vert_slab = new BlockItem(BlockList.stripped_spruce_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_spruce_vert_slab.getRegistryName()),
+		ItemList.stripped_birch_vert_slab = new BlockItem(BlockList.stripped_birch_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_birch_vert_slab.getRegistryName()),
+		ItemList.stripped_dark_oak_vert_slab = new BlockItem(BlockList.stripped_dark_oak_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_dark_oak_vert_slab.getRegistryName()),
+		ItemList.stripped_acacia_vert_slab = new BlockItem(BlockList.stripped_acacia_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_acacia_vert_slab.getRegistryName()),
+		ItemList.stripped_jungle_vert_slab = new BlockItem(BlockList.stripped_jungle_vertslab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stripped_jungle_vertslab.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -347,7 +353,13 @@ public class ObeliskModRegistries
 			BlockList.dark_oak_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_planks_vert_slab")),
 			BlockList.jungle_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_wood_slab)).setRegistryName(location("jungle_wood_vert_slab")),
 			BlockList.jungle_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_log_vert_slab")),
-			BlockList.jungle_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_planks_vert_slab"))
+			BlockList.jungle_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_planks_vert_slab")),
+			BlockList.stripped_oak_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_oak_wood_slab)).setRegistryName(location("stripped_oak_vert_slab")),
+			BlockList.stripped_spruce_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_spruce_wood_slab)).setRegistryName(location("stripped_spruce_vert_slab")),
+			BlockList.stripped_birch_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_birch_wood_slab)).setRegistryName(location("stripped_birch_vert_slab")),
+			BlockList.stripped_dark_oak_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_dark_oak_wood_slab)).setRegistryName(location("stripped_dark_oak_vert_slab")),
+			BlockList.stripped_acacia_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_acacia_wood_slab)).setRegistryName(location("stripped_acacia_vert_slab")),
+			BlockList.stripped_jungle_vertslab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_jungle_wood_slab)).setRegistryName(location("stripped_jungle_vert_slab"))
 			
 			);
 			

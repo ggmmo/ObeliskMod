@@ -73,7 +73,6 @@ INDEX VERSION 1.131+C:\ObeliskMod\.metadata\.plugins\org.eclipse.jdt.core
 4197328298.index
 2201711208.index
 531533494.index
-696402157.index
 3439630744.index
 297524413.index
 498883236.index

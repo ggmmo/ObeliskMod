@@ -1,4 +1,4 @@
-package fox.obeliskmod;
+package fox.obeliskmod.itemgroups;
 
 import fox.obeliskmod.lists.BlockList;
 import net.minecraft.item.Item;

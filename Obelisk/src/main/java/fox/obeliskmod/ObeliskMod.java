@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import fox.obeliskmod.client.render.ObeliskRenderRegistry;
 import fox.obeliskmod.config.Config;
+import fox.obeliskmod.itemgroups.ObeliskItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.ModLoadingContext;
