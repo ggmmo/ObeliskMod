@@ -37,6 +37,7 @@ public class ObeliskModRegistries
 	public static final String modid = "obeliskmod";
 	private static final Logger logger = LogManager.getLogger(modid);
 	public static final ItemGroup obelisk = ObeliskMod.obelisk;
+	public static final ItemGroup misc = ObeliskMod.misc;
 	
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) 
@@ -45,17 +46,16 @@ public class ObeliskModRegistries
 		(
 					
 		//Items
-		ItemList.copper_coin = new Item(new Item.Properties().group(obelisk)).setRegistryName(location("copper_coin")),
-		ItemList.silver_coin = new Item(new Item.Properties().group(obelisk)).setRegistryName(location("silver_coin")),
-		ItemList.gold_coin = new Item(new Item.Properties().group(obelisk)).setRegistryName(location("gold_coin")),
+		ItemList.copper_coin = new Item(new Item.Properties().group(misc)).setRegistryName(location("copper_coin")),
+		ItemList.silver_coin = new Item(new Item.Properties().group(misc)).setRegistryName(location("silver_coin")),
+		ItemList.gold_coin = new Item(new Item.Properties().group(misc)).setRegistryName(location("gold_coin")),
 			
 		//Weapons
-		ItemList.stone_dagger = new SwordItem(ItemTier.STONE, 1, -1, new Item.Properties().group(obelisk)).setRegistryName(location("stone_dagger")),
-		ItemList.iron_dagger = new SwordItem(ItemTier.IRON, 1, -1, new Item.Properties().group(obelisk)).setRegistryName(location("iron_dagger")),
-		ItemList.long_sword = new SwordItem(ItemTier.IRON, 2, -1, new Item.Properties().group(obelisk)).setRegistryName(location("long_sword")),
+		ItemList.stone_dagger = new SwordItem(ItemTier.STONE, 1, -1, new Item.Properties().group(misc)).setRegistryName(location("stone_dagger")),
+		ItemList.iron_dagger = new SwordItem(ItemTier.IRON, 1, -1, new Item.Properties().group(misc)).setRegistryName(location("iron_dagger")),
+		ItemList.long_sword = new SwordItem(ItemTier.IRON, 2, -1, new Item.Properties().group(misc)).setRegistryName(location("long_sword")),
 		//ItemList.sling = (BowItem) = new CustomBow(null),
 		
-		//Fluids
 		
 			
 		//Blocks
@@ -217,7 +217,11 @@ public class ObeliskModRegistries
 		ItemList.smooth_stone_vert_slab = new BlockItem(BlockList.smooth_stone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.smooth_stone_vert_slab.getRegistryName()),
 		ItemList.quartz_vert_slab = new BlockItem(BlockList.quartz_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.quartz_vert_slab.getRegistryName()),
 		ItemList.smooth_quartz_vert_slab = new BlockItem(BlockList.smooth_quartz_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.smooth_quartz_vert_slab.getRegistryName()),
-		ItemList.chiseled_quartz_vert_slab = new BlockItem(BlockList.chiseled_quartz_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.chiseled_quartz_vert_slab.getRegistryName())
+		ItemList.chiseled_quartz_vert_slab = new BlockItem(BlockList.chiseled_quartz_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.chiseled_quartz_vert_slab.getRegistryName()),
+		ItemList.mossy_cobblestone_vert_slab = new BlockItem(BlockList.mossy_cobblestone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_cobblestone_vert_slab.getRegistryName()),
+		ItemList.mossy_stone_bricks_vert_slab = new BlockItem(BlockList.mossy_stone_bricks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_stone_bricks_vert_slab.getRegistryName()),
+		ItemList.stone_bricks_vert_slab = new BlockItem(BlockList.stone_bricks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_bricks_vert_slab.getRegistryName()),
+		ItemList.bookshelf_vert_slab = new BlockItem(BlockList.bookshelf_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.bookshelf_vert_slab.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -391,7 +395,11 @@ public class ObeliskModRegistries
 			BlockList.smooth_stone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_vert_slab)).setRegistryName(location("smooth_stone_vert_slab")),
 			BlockList.quartz_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_vert_slab)).setRegistryName(location("quartz_vert_slab")),
 			BlockList.smooth_quartz_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.quartz_vert_slab)).setRegistryName(location("smooth_quartz_vert_slab")),
-			BlockList.chiseled_quartz_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.smooth_quartz_vert_slab)).setRegistryName(location("chiseled_quartz_vert_slab"))
+			BlockList.chiseled_quartz_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.smooth_quartz_vert_slab)).setRegistryName(location("chiseled_quartz_vert_slab")),
+			BlockList.mossy_cobblestone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cobblestone_fence)).setRegistryName(location("mossy_cobblestone_vert_slab")),
+			BlockList.mossy_stone_bricks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.mossy_stone_brick_fence)).setRegistryName(location("mossy_stone_bricks_vert_slab")),
+			BlockList.stone_bricks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_brick_fence)).setRegistryName(location("stone_bricks_vert_slab")),
+			BlockList.bookshelf_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.oak_wood_slab)).setRegistryName(location("bookshelf_vert_slab"))
 			
 			);
 			

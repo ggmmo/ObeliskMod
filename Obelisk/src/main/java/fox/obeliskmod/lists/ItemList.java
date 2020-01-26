@@ -181,4 +181,8 @@ public class ItemList
 	public static Item quartz_vert_slab;
 	public static Item smooth_quartz_vert_slab;
 	public static Item chiseled_quartz_vert_slab;
+	public static Item mossy_cobblestone_vert_slab;
+	public static Item stone_bricks_vert_slab;
+	public static Item mossy_stone_bricks_vert_slab;
+	public static Item bookshelf_vert_slab;
 }

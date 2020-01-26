@@ -178,6 +178,11 @@
 	"block.obeliskmod.quartz_vert_slab": "Quartz Vertical Slab",
 	"block.obeliskmod.smooth_quartz_vert_slab": "Smooth Quartz Vertical Slab",
 	"block.obeliskmod.chiseled_quartz_vert_slab": "Chiseled Quartz Vertical Slab",
+	"block.obeliskmod.mossy_cobblestone_vert_slab": "Mossy Cobblestone Vertical Slab",
+	"block.obeliskmod.mossy_stone_bricks_vert_slab": "Mossy Stone Bricks Vertical Slab",
+	"block.obeliskmod.stone_bricks_vert_slab": "Stone Bricks Vertical Slab",
+	"block.obeliskmod.bookshelf_vert_slab": "Bookshelf Vertical Slab",
 	
-	"itemGroup.obelisk": "Obelisk Building Blocks"
+	"itemGroup.obelisk": "Obelisk Building Blocks",
+	"itemGroup.misc": "Obelisk Miscellaneous"
 }
