@@ -182,6 +182,14 @@
 	"block.obeliskmod.mossy_stone_bricks_vert_slab": "Mossy Stone Bricks Vertical Slab",
 	"block.obeliskmod.stone_bricks_vert_slab": "Stone Bricks Vertical Slab",
 	"block.obeliskmod.bookshelf_vert_slab": "Bookshelf Vertical Slab",
+	"block.obeliskmod.smooth_red_sandstone_vert_slab": "Smooth Red Sandstone Vertical Slab",
+	"block.obeliskmod.chiseled_stone_bricks_vert_slab": "Chiseled Stone Bricks Vertical Slab",
+	"block.obeliskmod.bookshelf_stairs": "Bookshelf Stairs",
+	"block.obeliskmod.bookshelf_slab": "Bookshelf Slab",
+	"block.obeliskmod.cracked_stone_brick_stairs": "Cracked Stone Brick Stairs",
+	"block.obeliskmod.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
+	"block.obeliskmod.cracked_stone_brick_vert_slab": "Cracked Stone Brick Vertical Slab",
+	"block.obeliskmod.cracked_stone_brick_snow": "Cracked Stone Brick Snow",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous"

@@ -1,0 +1,10 @@
+{
+    
+	"variants": {
+        "facing=north": { "model": "obeliskmod:block/cracked_stone_brick_vert_slab" },
+	"facing=east": { "model": "obeliskmod:block/cracked_stone_brick_vert_slab", "y": 90 },
+	"facing=south": { "model": "obeliskmod:block/cracked_stone_brick_vert_slab", "y": 180 },
+	"facing=west": {"model": "obeliskmod:block/cracked_stone_brick_vert_slab", "y": 270}
+		
+    }
+}

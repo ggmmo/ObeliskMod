@@ -30,7 +30,7 @@ public class EntitiesList
 	
 	public static Item registerEntitySpawnEgg(EntityType<?> type, int color1, int color2, String name) 
 	{
-		SpawnEggItem item = new SpawnEggItem(type, color1, color2, new Item.Properties().group(ObeliskModRegistries.obelisk));
+		SpawnEggItem item = new SpawnEggItem(type, color1, color2, new Item.Properties().group(ObeliskModRegistries.misc));
 		item.setRegistryName(ObeliskModRegistries.location(name));
 		return item;
 	}

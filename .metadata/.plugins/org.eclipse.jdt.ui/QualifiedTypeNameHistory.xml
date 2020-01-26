@@ -45,7 +45,6 @@
 <fullyQualifiedTypeName name="net.minecraft.client.MinecraftGame"/>
 <fullyQualifiedTypeName name="net.minecraftforge.client.MinecraftForgeClient"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.CustomStairsBlock"/>
-<fullyQualifiedTypeName name="fox.obeliskmod.lists.BlockList"/>
 <fullyQualifiedTypeName name="net.minecraft.dispenser.IBlockSource"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.AxisAlignedBB"/>
@@ -57,7 +56,8 @@
 <fullyQualifiedTypeName name="fox.obeliskmod.itemgroups.ObeliskMiscItemGroup"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.VertSlabBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.EntitiesList"/>
+<fullyQualifiedTypeName name="fox.obeliskmod.lists.BlockList"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 </qualifiedTypeNameHistroy>

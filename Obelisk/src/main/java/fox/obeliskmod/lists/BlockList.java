@@ -174,6 +174,14 @@ public class BlockList
 	public static VertSlabBlock stone_bricks_vert_slab;
 	public static VertSlabBlock mossy_stone_bricks_vert_slab;
 	public static VertSlabBlock bookshelf_vert_slab;
+	public static VertSlabBlock smooth_red_sandstone_vert_slab;
+	public static VertSlabBlock chiseled_stone_bricks_vert_slab;
+	public static StairsBlock bookshelf_stairs;
+	public static SlabBlock bookshelf_slab;
+	public static StairsBlock cracked_stone_brick_stairs;
+	public static SlabBlock cracked_stone_brick_slab;
+	public static VertSlabBlock cracked_stone_brick_vert_slab;
+	public static SnowBlock cracked_stone_brick_snow;
 	
 
 	

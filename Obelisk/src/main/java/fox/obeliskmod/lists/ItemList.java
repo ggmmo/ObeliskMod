@@ -185,4 +185,12 @@ public class ItemList
 	public static Item stone_bricks_vert_slab;
 	public static Item mossy_stone_bricks_vert_slab;
 	public static Item bookshelf_vert_slab;
+	public static Item smooth_red_sandstone_vert_slab;
+	public static Item chiseled_stone_bricks_vert_slab;
+	public static Item bookshelf_stairs;
+	public static Item bookshelf_slab;
+	public static Item cracked_stone_brick_stairs;
+	public static Item cracked_stone_brick_slab;
+	public static Item cracked_stone_brick_vert_slab;
+	public static Item cracked_stone_brick_snow;
 }
