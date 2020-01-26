@@ -170,6 +170,10 @@ public class BlockList
 	public static VertSlabBlock smooth_stone_vert_slab;
 	public static VertSlabBlock smooth_quartz_vert_slab;
 	public static VertSlabBlock chiseled_quartz_vert_slab;
+	public static VertSlabBlock mossy_cobblestone_vert_slab;
+	public static VertSlabBlock stone_bricks_vert_slab;
+	public static VertSlabBlock mossy_stone_bricks_vert_slab;
+	public static VertSlabBlock bookshelf_vert_slab;
 	
 
 	
