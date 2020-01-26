@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="stone_bricks"/>
+		<item key="selection" value="cracked_stone_brick"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="cracked_stone_bricks"/>
+			<item value="acacia_wood"/>
+			<item value="acacia_log"/>
 			<item value="andesite"/>
 			<item value="quartz"/>
 			<item value="stone"/>
-			<item value="acacia_log"/>
-			<item value="acacia_wood"/>
 			<item value="oak"/>
 			<item value="acacia_planks"/>
 			<item value="acaica_log"/>
@@ -22,13 +23,16 @@
 			<item value="wood"/>
 			<item value="dirt"/>
 			<item value="birch"/>
-			<item value="coarse_dirt"/>
 		</list>
 		<list key="replacehistory">
+			<item value="cracked_stone_brick"/>
+			<item value="cracked_stone_bricks"/>
+			<item value="smooth_red_sandstone"/>
+			<item value="chiseled_stone_bricks"/>
+			<item value="bookshelf"/>
 			<item value="stone_bricks"/>
 			<item value="mossy_stone_bricks"/>
 			<item value="mossy_cobblestone"/>
-			<item value="bookshelf"/>
 			<item value="chiseled_quartz"/>
 			<item value="smooth_quartz"/>
 			<item value="smooth_qu"/>
@@ -36,15 +40,11 @@
 			<item value="cut_sandstone"/>
 			<item value="quartz"/>
 			<item value="smooth_stone"/>
-			<item value="sandstone"/>
-			<item value="sand"/>
-			<item value="red_sand"/>
-			<item value="gravel"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1386"/>
-		<item key="DIALOG_Y_ORIGIN" value="476"/>
+		<item key="DIALOG_X_ORIGIN" value="705"/>
+		<item key="DIALOG_Y_ORIGIN" value="359"/>
 		<item key="DIALOG_WIDTH" value="385"/>
 		<item key="DIALOG_HEIGHT" value="523"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

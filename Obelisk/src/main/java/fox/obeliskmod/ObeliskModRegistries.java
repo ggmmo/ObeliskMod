@@ -221,7 +221,15 @@ public class ObeliskModRegistries
 		ItemList.mossy_cobblestone_vert_slab = new BlockItem(BlockList.mossy_cobblestone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_cobblestone_vert_slab.getRegistryName()),
 		ItemList.mossy_stone_bricks_vert_slab = new BlockItem(BlockList.mossy_stone_bricks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_stone_bricks_vert_slab.getRegistryName()),
 		ItemList.stone_bricks_vert_slab = new BlockItem(BlockList.stone_bricks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_bricks_vert_slab.getRegistryName()),
-		ItemList.bookshelf_vert_slab = new BlockItem(BlockList.bookshelf_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.bookshelf_vert_slab.getRegistryName())
+		ItemList.bookshelf_vert_slab = new BlockItem(BlockList.bookshelf_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.bookshelf_vert_slab.getRegistryName()),
+		ItemList.smooth_red_sandstone_vert_slab = new BlockItem(BlockList.smooth_red_sandstone_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.smooth_red_sandstone_vert_slab.getRegistryName()),
+		ItemList.chiseled_stone_bricks_vert_slab = new BlockItem(BlockList.chiseled_stone_bricks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.chiseled_stone_bricks_vert_slab.getRegistryName()),
+		ItemList.bookshelf_stairs = new BlockItem(BlockList.bookshelf_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.bookshelf_stairs.getRegistryName()),
+		ItemList.bookshelf_slab = new BlockItem(BlockList.bookshelf_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.bookshelf_slab.getRegistryName()),
+		ItemList.cracked_stone_brick_stairs = new BlockItem(BlockList.cracked_stone_brick_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_stairs.getRegistryName()),
+		ItemList.cracked_stone_brick_slab = new BlockItem(BlockList.cracked_stone_brick_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_slab.getRegistryName()),
+		ItemList.cracked_stone_brick_vert_slab = new BlockItem(BlockList.cracked_stone_brick_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_vert_slab.getRegistryName()),
+		ItemList.cracked_stone_brick_snow = new BlockItem(BlockList.cracked_stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_snow.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -399,7 +407,16 @@ public class ObeliskModRegistries
 			BlockList.mossy_cobblestone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cobblestone_fence)).setRegistryName(location("mossy_cobblestone_vert_slab")),
 			BlockList.mossy_stone_bricks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.mossy_stone_brick_fence)).setRegistryName(location("mossy_stone_bricks_vert_slab")),
 			BlockList.stone_bricks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_brick_fence)).setRegistryName(location("stone_bricks_vert_slab")),
-			BlockList.bookshelf_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.oak_wood_slab)).setRegistryName(location("bookshelf_vert_slab"))
+			BlockList.bookshelf_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.oak_wood_slab)).setRegistryName(location("bookshelf_vert_slab")),
+			BlockList.smooth_red_sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cut_sandstone_vert_slab)).setRegistryName(location("smooth_red_sandstone_vert_slab")),
+			BlockList.chiseled_stone_bricks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.chiseled_sandstone_vert_slab)).setRegistryName(location("chiseled_stone_bricks_vert_slab")),
+			BlockList.bookshelf_stairs = (StairsBlock) new CustomStairsBlock(BlockList.bookshelf_vert_slab.getDefaultState(), Block.Properties.from(BlockList.bookshelf_vert_slab)).setRegistryName(location("bookshelf_stairs")),
+			BlockList.bookshelf_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.bookshelf_vert_slab)).setRegistryName(location("bookshelf_slab")),
+			BlockList.cracked_stone_brick_stairs = (StairsBlock) new CustomStairsBlock(BlockList.cobblestone_snow.getDefaultState(), Block.Properties.from(BlockList.stone_brick_snow)).setRegistryName(location("cracked_stone_brick_stairs")),
+			BlockList.cracked_stone_brick_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.cracked_stone_brick_stairs)).setRegistryName(location("cracked_stone_brick_slab")),
+			BlockList.cracked_stone_brick_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_vert_slab")),
+			BlockList.cracked_stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_snow"))
+			
 			
 			);
 			
