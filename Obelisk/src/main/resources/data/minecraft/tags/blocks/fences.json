@@ -13,6 +13,7 @@
 	"obeliskmod:cobblestone_fence",
 	"obeliskmod:stone_brick_fence",
 	"obeliskmod:mossy_stone_brick_fence",
-	"obeliskmod:earth_obelisk_fence"
+	"obeliskmod:earth_obelisk_fence",
+	"obeliskmod:cracked_stone_brick_fence"
   ]
 }

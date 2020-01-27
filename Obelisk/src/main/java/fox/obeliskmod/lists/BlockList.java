@@ -182,6 +182,12 @@ public class BlockList
 	public static SlabBlock cracked_stone_brick_slab;
 	public static VertSlabBlock cracked_stone_brick_vert_slab;
 	public static SnowBlock cracked_stone_brick_snow;
+	public static StairsBlock haybale_stairs;
+	public static SlabBlock haybale_slab;
+	public static VertSlabBlock haybale_vert_slab;
+	public static SnowBlock haybale_snow;
+	public static WallBlock cracked_stone_brick_wall;
+	public static FenceBlock cracked_stone_brick_fence;
 	
 
 	

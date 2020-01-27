@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/haybale_slab" },
+        "type=top": { "model": "obeliskmod:block/haybale_slab_top" },
+        "type=double": { "model": "minecraft:block/hay_block" }
+    }
+}

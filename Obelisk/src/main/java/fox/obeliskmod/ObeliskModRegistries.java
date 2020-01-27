@@ -229,7 +229,13 @@ public class ObeliskModRegistries
 		ItemList.cracked_stone_brick_stairs = new BlockItem(BlockList.cracked_stone_brick_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_stairs.getRegistryName()),
 		ItemList.cracked_stone_brick_slab = new BlockItem(BlockList.cracked_stone_brick_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_slab.getRegistryName()),
 		ItemList.cracked_stone_brick_vert_slab = new BlockItem(BlockList.cracked_stone_brick_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_vert_slab.getRegistryName()),
-		ItemList.cracked_stone_brick_snow = new BlockItem(BlockList.cracked_stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_snow.getRegistryName())
+		ItemList.cracked_stone_brick_snow = new BlockItem(BlockList.cracked_stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_snow.getRegistryName()),
+		ItemList.haybale_stairs = new BlockItem(BlockList.haybale_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.haybale_stairs.getRegistryName()),
+		ItemList.haybale_slab = new BlockItem(BlockList.haybale_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.haybale_slab.getRegistryName()),
+		ItemList.haybale_vert_slab = new BlockItem(BlockList.haybale_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.haybale_vert_slab.getRegistryName()),
+		ItemList.hayblae_snow = new BlockItem(BlockList.haybale_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.haybale_snow.getRegistryName()),
+		ItemList.cracked_stone_brick_wall = new BlockItem(BlockList.cracked_stone_brick_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_wall.getRegistryName()),
+		ItemList.cracked_stone_brick_fence = new BlockItem(BlockList.cracked_stone_brick_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_fence.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -415,7 +421,13 @@ public class ObeliskModRegistries
 			BlockList.cracked_stone_brick_stairs = (StairsBlock) new CustomStairsBlock(BlockList.cobblestone_snow.getDefaultState(), Block.Properties.from(BlockList.stone_brick_snow)).setRegistryName(location("cracked_stone_brick_stairs")),
 			BlockList.cracked_stone_brick_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.cracked_stone_brick_stairs)).setRegistryName(location("cracked_stone_brick_slab")),
 			BlockList.cracked_stone_brick_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_vert_slab")),
-			BlockList.cracked_stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_snow"))
+			BlockList.cracked_stone_brick_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_snow")),
+			BlockList.haybale_stairs = (StairsBlock) new CustomStairsBlock(BlockList.coarse_dirt_slab.getDefaultState(), Block.Properties.create(Material.EARTH).hardnessAndResistance(0.5f, 2.5f).sound(SoundType.PLANT)).setRegistryName(location("haybale_stairs")),
+			BlockList.haybale_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.haybale_stairs)).setRegistryName(location("haybale_slab")),
+			BlockList.haybale_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.haybale_slab)).setRegistryName(location("haybale_vert_slab")),
+			BlockList.haybale_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.haybale_slab)).setRegistryName(location("haybale_snow")),
+			BlockList.cracked_stone_brick_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_wall")),
+			BlockList.cracked_stone_brick_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_fence"))
 			
 			
 			);

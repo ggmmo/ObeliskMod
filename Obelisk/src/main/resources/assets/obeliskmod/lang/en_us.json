@@ -190,6 +190,12 @@
 	"block.obeliskmod.cracked_stone_brick_slab": "Cracked Stone Brick Slab",
 	"block.obeliskmod.cracked_stone_brick_vert_slab": "Cracked Stone Brick Vertical Slab",
 	"block.obeliskmod.cracked_stone_brick_snow": "Cracked Stone Brick Snow",
+	"block.obeliskmod.haybale_stairs": "Hay Bale Stairs",
+	"block.obeliskmod.haybale_slab": "Hay Bale Slab",
+	"block.obeliskmod.haybale_vert_slab": "Hay Bale Vert Slab",
+	"block.obeliskmod.haybale_snow": "Hay Bale Snow",
+	"block.obeliskmod.cracked_stone_brick_wall": "Cracked Stone Brick Wall",
+	"block.obeliskmod.cracked_stone_brick_fence": "Cracked Stone Brick Fence",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous"
