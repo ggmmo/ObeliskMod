@@ -193,4 +193,10 @@ public class ItemList
 	public static Item cracked_stone_brick_slab;
 	public static Item cracked_stone_brick_vert_slab;
 	public static Item cracked_stone_brick_snow;
+	public static Item haybale_stairs;
+	public static Item haybale_slab;
+	public static Item haybale_vert_slab;
+	public static Item hayblae_snow;
+	public static Item cracked_stone_brick_wall;
+	public static Item cracked_stone_brick_fence;
 }
