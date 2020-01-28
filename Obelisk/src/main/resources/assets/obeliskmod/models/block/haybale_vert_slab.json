@@ -3,7 +3,7 @@
   	"textures": {
     	"end": "minecraft:block/hay_block_top",
 		"side": "minecraft:block/hay_block_side",
-    	"particle": "minecraft:block/hay_block"
+    	"particle": "minecraft:block/hay_block_top"
 		},
 	
 	"credit": "Made with Blockbench",

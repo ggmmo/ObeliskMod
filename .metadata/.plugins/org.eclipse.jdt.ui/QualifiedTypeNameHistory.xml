@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.SwimGoal"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.RandomWalkingGoal"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.LookRandomlyGoal"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.ai.brain.task.InteractWithDoorTask"/>
@@ -57,7 +56,8 @@
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.VertSlabBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.EntitiesList"/>
+<fullyQualifiedTypeName name="fox.obeliskmod.blocks.CustomStairsBlock"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.BlockList"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
 </qualifiedTypeNameHistroy>
