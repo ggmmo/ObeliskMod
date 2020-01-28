@@ -235,7 +235,22 @@ public class ObeliskModRegistries
 		ItemList.haybale_vert_slab = new BlockItem(BlockList.haybale_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.haybale_vert_slab.getRegistryName()),
 		ItemList.hayblae_snow = new BlockItem(BlockList.haybale_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.haybale_snow.getRegistryName()),
 		ItemList.cracked_stone_brick_wall = new BlockItem(BlockList.cracked_stone_brick_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_wall.getRegistryName()),
-		ItemList.cracked_stone_brick_fence = new BlockItem(BlockList.cracked_stone_brick_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_fence.getRegistryName())
+		ItemList.cracked_stone_brick_fence = new BlockItem(BlockList.cracked_stone_brick_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cracked_stone_brick_fence.getRegistryName()),
+		ItemList.white_wool_snow = new BlockItem(BlockList.white_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.white_wool_snow.getRegistryName()),
+		ItemList.orange_wool_snow = new BlockItem(BlockList.orange_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.orange_wool_snow.getRegistryName()),
+		ItemList.magenta_wool_snow = new BlockItem(BlockList.magenta_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.magenta_wool_snow.getRegistryName()),
+		ItemList.light_blue_wool_snow = new BlockItem(BlockList.light_blue_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.light_blue_wool_snow.getRegistryName()),
+		ItemList.yellow_wool_snow = new BlockItem(BlockList.yellow_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.yellow_wool_snow.getRegistryName()),
+		ItemList.lime_wool_snow = new BlockItem(BlockList.lime_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.lime_wool_snow.getRegistryName()),
+		ItemList.pink_wool_snow = new BlockItem(BlockList.pink_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.pink_wool_snow.getRegistryName()),
+		ItemList.gray_wool_snow = new BlockItem(BlockList.gray_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.gray_wool_snow.getRegistryName()),
+		ItemList.light_gray_wool_snow = new BlockItem(BlockList.light_gray_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.light_gray_wool_snow.getRegistryName()),
+		ItemList.cyan_wool_snow = new BlockItem(BlockList.cyan_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cyan_wool_snow.getRegistryName()),
+		ItemList.purple_wool_snow = new BlockItem(BlockList.purple_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.purple_wool_snow.getRegistryName()),
+		ItemList.blue_wool_snow = new BlockItem(BlockList.blue_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.blue_wool_snow.getRegistryName()),
+		ItemList.brown_wool_snow = new BlockItem(BlockList.brown_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.brown_wool_snow.getRegistryName()),
+		ItemList.green_wool_snow = new BlockItem(BlockList.green_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.green_wool_snow.getRegistryName()),
+		ItemList.red_wool_snow = new BlockItem(BlockList.red_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_wool_snow.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -427,7 +442,22 @@ public class ObeliskModRegistries
 			BlockList.haybale_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.haybale_slab)).setRegistryName(location("haybale_vert_slab")),
 			BlockList.haybale_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.haybale_slab)).setRegistryName(location("haybale_snow")),
 			BlockList.cracked_stone_brick_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_wall")),
-			BlockList.cracked_stone_brick_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_fence"))
+			BlockList.cracked_stone_brick_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab)).setRegistryName(location("cracked_stone_brick_fence")),
+			BlockList.white_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.create(Material.WOOL).hardnessAndResistance(0.6f, 3.0f).sound(SoundType.CLOTH)).setRegistryName(location("white_wool_snow")),
+			BlockList.orange_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("orange_wool_snow")),
+			BlockList.magenta_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("magenta_wool_snow")),
+			BlockList.light_blue_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("light_blue_wool_snow")),
+			BlockList.yellow_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("yellow_wool_snow")),
+			BlockList.lime_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("lime_wool_snow")),
+			BlockList.pink_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("pink_wool_snow")),
+			BlockList.gray_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("gray_wool_snow")),
+			BlockList.light_gray_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("light_gray_wool_snow")),
+			BlockList.cyan_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("cyan_wool_snow")),
+			BlockList.purple_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("purple_wool_snow")),
+			BlockList.blue_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("blue_wool_snow")),
+			BlockList.brown_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("brown_wool_snow")),
+			BlockList.green_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("green_wool_snow")),
+			BlockList.red_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("red_wool_snow"))
 			
 			
 			);

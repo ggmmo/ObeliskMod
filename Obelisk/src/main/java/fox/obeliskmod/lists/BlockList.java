@@ -188,6 +188,21 @@ public class BlockList
 	public static SnowBlock haybale_snow;
 	public static WallBlock cracked_stone_brick_wall;
 	public static FenceBlock cracked_stone_brick_fence;
+	public static SnowBlock white_wool_snow;
+	public static SnowBlock orange_wool_snow;
+	public static SnowBlock magenta_wool_snow;
+	public static SnowBlock light_blue_wool_snow;
+	public static SnowBlock yellow_wool_snow;
+	public static SnowBlock lime_wool_snow;
+	public static SnowBlock pink_wool_snow;
+	public static SnowBlock gray_wool_snow;
+	public static SnowBlock light_gray_wool_snow;
+	public static SnowBlock cyan_wool_snow;
+	public static SnowBlock purple_wool_snow;
+	public static SnowBlock blue_wool_snow;
+	public static SnowBlock brown_wool_snow;
+	public static SnowBlock green_wool_snow;
+	public static SnowBlock red_wool_snow;
 	
 
 	

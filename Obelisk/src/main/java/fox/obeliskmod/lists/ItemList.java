@@ -199,4 +199,19 @@ public class ItemList
 	public static Item hayblae_snow;
 	public static Item cracked_stone_brick_wall;
 	public static Item cracked_stone_brick_fence;
+	public static Item white_wool_snow;
+	public static Item magenta_wool_snow;
+	public static Item orange_wool_snow;
+	public static Item light_blue_wool_snow;
+	public static Item yellow_wool_snow;
+	public static Item lime_wool_snow;
+	public static Item pink_wool_snow;
+	public static Item gray_wool_snow;
+	public static Item light_gray_wool_snow;
+	public static Item cyan_wool_snow;
+	public static Item purple_wool_snow;
+	public static Item blue_wool_snow;
+	public static Item brown_wool_snow;
+	public static Item green_wool_snow;
+	public static Item red_wool_snow;
 }
