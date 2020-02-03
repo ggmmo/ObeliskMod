@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="cracked_stone_brick"/>
+		<item key="selection" value="yellow"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="magenta"/>
+			<item value="white"/>
+			<item value="acacia_planks"/>
 			<item value="acacia_wood"/>
 			<item value="hay_block"/>
 			<item value="hay_block_top"/>
@@ -17,34 +20,31 @@
 			<item value="quartz"/>
 			<item value="stone"/>
 			<item value="oak"/>
-			<item value="acacia_planks"/>
 			<item value="acaica_log"/>
 			<item value="acacia"/>
 			<item value="acaica"/>
-			<item value="spruce"/>
-			<item value="wood"/>
 		</list>
 		<list key="replacehistory">
-			<item value="cracked_stone_brick"/>
-			<item value="hay_block_top"/>
-			<item value="hay_block"/>
-			<item value="haybale"/>
-			<item value="cracked_stone_bricks"/>
-			<item value="smooth_red_sandstone"/>
-			<item value="chiseled_stone_bricks"/>
-			<item value="bookshelf"/>
-			<item value="stone_bricks"/>
-			<item value="mossy_stone_bricks"/>
-			<item value="mossy_cobblestone"/>
-			<item value="chiseled_quartz"/>
-			<item value="smooth_quartz"/>
-			<item value="smooth_qu"/>
-			<item value="chiseled_sandstone"/>
+			<item value="yellow"/>
+			<item value="red"/>
+			<item value="purple"/>
+			<item value="pink"/>
+			<item value="lime"/>
+			<item value="light_gray"/>
+			<item value="green"/>
+			<item value="gray"/>
+			<item value="cyan"/>
+			<item value="brown"/>
+			<item value="blue"/>
+			<item value="orange"/>
+			<item value="light_blue"/>
+			<item value="magenta"/>
+			<item value="light_blue_wool"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1346"/>
-		<item key="DIALOG_Y_ORIGIN" value="326"/>
+		<item key="DIALOG_X_ORIGIN" value="435"/>
+		<item key="DIALOG_Y_ORIGIN" value="418"/>
 		<item key="DIALOG_WIDTH" value="385"/>
 		<item key="DIALOG_HEIGHT" value="523"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

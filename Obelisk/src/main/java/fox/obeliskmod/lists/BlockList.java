@@ -3,6 +3,7 @@ package fox.obeliskmod.lists;
 
 import fox.obeliskmod.blocks.VertSlabBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.CauldronBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SnowBlock;
@@ -203,7 +204,7 @@ public class BlockList
 	public static SnowBlock brown_wool_snow;
 	public static SnowBlock green_wool_snow;
 	public static SnowBlock red_wool_snow;
-	
+	public static CauldronBlock spruce_cauldron;
 
 	
 }

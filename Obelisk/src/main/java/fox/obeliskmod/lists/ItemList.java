@@ -214,4 +214,5 @@ public class ItemList
 	public static Item brown_wool_snow;
 	public static Item green_wool_snow;
 	public static Item red_wool_snow;
+	public static Item spruce_cauldron;
 }
