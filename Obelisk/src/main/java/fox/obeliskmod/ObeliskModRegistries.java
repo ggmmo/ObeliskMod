@@ -12,6 +12,7 @@ import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.lists.EntitiesList;
 import fox.obeliskmod.lists.ItemList;
 import net.minecraft.block.Block;
+import net.minecraft.block.CauldronBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SnowBlock;
@@ -250,7 +251,8 @@ public class ObeliskModRegistries
 		ItemList.blue_wool_snow = new BlockItem(BlockList.blue_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.blue_wool_snow.getRegistryName()),
 		ItemList.brown_wool_snow = new BlockItem(BlockList.brown_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.brown_wool_snow.getRegistryName()),
 		ItemList.green_wool_snow = new BlockItem(BlockList.green_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.green_wool_snow.getRegistryName()),
-		ItemList.red_wool_snow = new BlockItem(BlockList.red_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_wool_snow.getRegistryName())
+		ItemList.red_wool_snow = new BlockItem(BlockList.red_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_wool_snow.getRegistryName()),
+		ItemList.spruce_cauldron = new BlockItem(BlockList.spruce_cauldron, new Item.Properties().group(misc)).setRegistryName(BlockList.spruce_cauldron.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -457,9 +459,8 @@ public class ObeliskModRegistries
 			BlockList.blue_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("blue_wool_snow")),
 			BlockList.brown_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("brown_wool_snow")),
 			BlockList.green_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("green_wool_snow")),
-			BlockList.red_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("red_wool_snow"))
-			
-			
+			BlockList.red_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("red_wool_snow")),
+			BlockList.spruce_cauldron = (CauldronBlock) new CauldronBlock(Block.Properties.from(BlockList.stone_bricks_vert_slab)).setRegistryName(location("spruce_cauldron"))
 			);
 			
 			

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.RandomWalkingGoal"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.LookRandomlyGoal"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.brain.task.InteractWithDoorTask"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.InteractDoorGoal"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.EatGrassGoal"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.LookAtWithoutMovingGoal"/>
@@ -49,15 +46,18 @@
 <fullyQualifiedTypeName name="net.minecraft.util.math.AxisAlignedBB"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.VerticalSlab"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.VertSlabBlock"/>
-<fullyQualifiedTypeName name="net.minecraft.item.BlockItem"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemGroup"/>
-<fullyQualifiedTypeName name="fox.obeliskmod.lists.ItemList"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.itemgroups.ObeliskMiscItemGroup"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.VertSlabBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.EntitiesList"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.CustomStairsBlock"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.BlockList"/>
+<fullyQualifiedTypeName name="fox.obeliskmod.lists.ItemList"/>
+<fullyQualifiedTypeName name="net.minecraft.block.SnowBlock"/>
+<fullyQualifiedTypeName name="fox.obeliskmod.blocks.CustomSnowBlock"/>
+<fullyQualifiedTypeName name="net.minecraft.item.BlockItem"/>
+<fullyQualifiedTypeName name="net.minecraft.block.CauldronBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
 </qualifiedTypeNameHistroy>
