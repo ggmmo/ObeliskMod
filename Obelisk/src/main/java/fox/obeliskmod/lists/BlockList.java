@@ -207,6 +207,11 @@ public class BlockList
 	public static SnowBlock red_wool_snow;
 	public static CauldronBlock spruce_cauldron;
 	public static Table oak_planks_table;
+	public static Table spruce_planks_table;
+	public static Table dark_oak_planks_table;
+	public static Table birch_planks_table;
+	public static Table jungle_planks_table;
+	public static Table acacia_planks_table;
 
 	
 }

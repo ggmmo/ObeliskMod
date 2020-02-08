@@ -212,7 +212,13 @@
 	"block.obeliskmod.green_wool_snow": "Green Wool Snow",
 	"block.obeliskmod.red_wool_snow": "Red Wool Snow",
 	"block.obeliskmod.oak_planks_table": "Oak Planks Table",
+	"block.obeliskmod.spruce_planks_table": "Spruce Planks Table",
+	"block.obeliskmod.dark_oak_planks_table": "Dark Oak Planks Table",
+	"block.obeliskmod.birch_planks_table": "Birch Planks Table",
+	"block.obeliskmod.jungle_planks_table": "Jungle Planks Table",
+	"block.obeliskmod.acacia_planks_table": "Acacia Planks Table",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks",
-	"itemGroup.misc": "Obelisk Miscellaneous"
+	"itemGroup.misc": "Obelisk Miscellaneous",
+	"itemGroup.furniture": "Obelisk Furniture"
 }

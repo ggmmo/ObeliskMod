@@ -216,4 +216,9 @@ public class ItemList
 	public static Item red_wool_snow;
 	public static Item spruce_cauldron;
 	public static Item oak_planks_table;
+	public static Item spruce_planks_table;
+	public static Item dark_oak_planks_table;
+	public static Item birch_planks_table;
+	public static Item jungle_planks_table;
+	public static Item acacia_planks_table;
 }

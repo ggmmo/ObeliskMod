@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 
 import fox.obeliskmod.client.render.ObeliskRenderRegistry;
 import fox.obeliskmod.config.Config;
+import fox.obeliskmod.itemgroups.ObeliskCustomBlocksItemGroup;
+import fox.obeliskmod.itemgroups.ObeliskFurnitureItemGroup;
 import fox.obeliskmod.itemgroups.ObeliskItemGroup;
 import fox.obeliskmod.itemgroups.ObeliskMiscItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -26,6 +28,8 @@ public class ObeliskMod
 	
 	public static final ItemGroup obelisk = new ObeliskItemGroup();
 	public static final ItemGroup misc = new ObeliskMiscItemGroup();
+	public static final ItemGroup furniture = new ObeliskFurnitureItemGroup();
+	public static final ItemGroup customBlocks = new ObeliskCustomBlocksItemGroup();
 	
 	public ObeliskMod() 
 	{

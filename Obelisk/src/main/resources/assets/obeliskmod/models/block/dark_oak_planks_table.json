@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "block/oak_planks",
-		"particle": "minecraft:block/oak_planks"
+		"1": "block/dark_oak_planks",
+		"particle": "minecraft:block/dark_oak_planks"
 	},
 	"elements": [
 		{

@@ -40,6 +40,8 @@ public class ObeliskModRegistries
 	private static final Logger logger = LogManager.getLogger(modid);
 	public static final ItemGroup obelisk = ObeliskMod.obelisk;
 	public static final ItemGroup misc = ObeliskMod.misc;
+	public static final ItemGroup furniture = ObeliskMod.furniture;
+	public static final ItemGroup customBlocks = ObeliskMod.customBlocks;
 	
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) 
@@ -61,10 +63,10 @@ public class ObeliskModRegistries
 		
 			
 		//Blocks
-		ItemList.earth_obelisk_block = new BlockItem(BlockList.earth_obelisk_block, new Item.Properties().group(obelisk)).setRegistryName(BlockList.earth_obelisk_block.getRegistryName()),
-		ItemList.earth_obelisk_wall = new BlockItem(BlockList.earth_obelisk_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.earth_obelisk_wall.getRegistryName()),
-		ItemList.earth_obelisk_slab = new BlockItem(BlockList.earth_obelisk_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.earth_obelisk_slab.getRegistryName()),
-		ItemList.earth_obelisk_stairs = new BlockItem(BlockList.earth_obelisk_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.earth_obelisk_stairs.getRegistryName()),
+		ItemList.earth_obelisk_block = new BlockItem(BlockList.earth_obelisk_block, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.earth_obelisk_block.getRegistryName()),
+		ItemList.earth_obelisk_wall = new BlockItem(BlockList.earth_obelisk_wall, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.earth_obelisk_wall.getRegistryName()),
+		ItemList.earth_obelisk_slab = new BlockItem(BlockList.earth_obelisk_slab, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.earth_obelisk_slab.getRegistryName()),
+		ItemList.earth_obelisk_stairs = new BlockItem(BlockList.earth_obelisk_stairs, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.earth_obelisk_stairs.getRegistryName()),
 		ItemList.dirt_slab = new BlockItem(BlockList.dirt_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_slab.getRegistryName()),
 		ItemList.dirt_wall = new BlockItem(BlockList.dirt_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_wall.getRegistryName()),
 		ItemList.dirt_stairs = new BlockItem(BlockList.dirt_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_stairs.getRegistryName()),
@@ -146,7 +148,7 @@ public class ObeliskModRegistries
 		ItemList.cobblestone_fence = new BlockItem(BlockList.cobblestone_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cobblestone_fence.getRegistryName()),
 		ItemList.stone_brick_fence = new BlockItem(BlockList.stone_brick_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_brick_fence.getRegistryName()),
 		ItemList.mossy_stone_brick_fence = new BlockItem(BlockList.mossy_stone_brick_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_stone_brick_fence.getRegistryName()),
-		ItemList.earth_obelisk_fence = new BlockItem(BlockList.earth_obelisk_fence, new Item.Properties().group(obelisk)).setRegistryName(BlockList.earth_obelisk_fence.getRegistryName()),
+		ItemList.earth_obelisk_fence = new BlockItem(BlockList.earth_obelisk_fence, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.earth_obelisk_fence.getRegistryName()),
 		ItemList.red_sand_stairs = new BlockItem(BlockList.red_sand_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_sand_stairs.getRegistryName()),
 		ItemList.red_sand_slab = new BlockItem(BlockList.red_sand_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_sand_slab.getRegistryName()),
 		ItemList.red_sand_wall = new BlockItem(BlockList.red_sand_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_sand_wall.getRegistryName()),
@@ -174,11 +176,11 @@ public class ObeliskModRegistries
 		ItemList.gravel_snow = new BlockItem(BlockList.gravel_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.gravel_snow.getRegistryName()),
 		ItemList.stone_brick_snow = new BlockItem(BlockList.stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_brick_snow.getRegistryName()),
 		ItemList.mossy_stone_brick_snow = new BlockItem(BlockList.mossy_stone_brick_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.mossy_stone_brick_snow.getRegistryName()),
-		ItemList.fire_obelisk_block = new BlockItem(BlockList.fire_obelisk_block, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_block.getRegistryName()),
-		ItemList.fire_obelisk_stairs = new BlockItem(BlockList.fire_obelisk_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_stairs.getRegistryName()),
+		ItemList.fire_obelisk_block = new BlockItem(BlockList.fire_obelisk_block, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.fire_obelisk_block.getRegistryName()),
+		ItemList.fire_obelisk_stairs = new BlockItem(BlockList.fire_obelisk_stairs, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.fire_obelisk_stairs.getRegistryName()),
 		ItemList.dirt_vert_slab = new BlockItem(BlockList.dirt_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_vert_slab.getRegistryName()),
-		ItemList.fire_obelisk_slab = new BlockItem(BlockList.fire_obelisk_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_slab.getRegistryName()),
-		ItemList.fire_obelisk_wall = new BlockItem(BlockList.fire_obelisk_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.fire_obelisk_wall.getRegistryName()),
+		ItemList.fire_obelisk_slab = new BlockItem(BlockList.fire_obelisk_slab, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.fire_obelisk_slab.getRegistryName()),
+		ItemList.fire_obelisk_wall = new BlockItem(BlockList.fire_obelisk_wall, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.fire_obelisk_wall.getRegistryName()),
 		ItemList.coarse_dirt_vert_slab = new BlockItem(BlockList.coarse_dirt_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.coarse_dirt_vert_slab.getRegistryName()),
 		ItemList.acacia_log_vert_slab = new BlockItem(BlockList.acacia_log_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_log_vert_slab.getRegistryName()),
 		ItemList.acacia_planks_vert_slab = new BlockItem(BlockList.acacia_planks_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_planks_vert_slab.getRegistryName()),
@@ -254,7 +256,12 @@ public class ObeliskModRegistries
 		ItemList.green_wool_snow = new BlockItem(BlockList.green_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.green_wool_snow.getRegistryName()),
 		ItemList.red_wool_snow = new BlockItem(BlockList.red_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_wool_snow.getRegistryName()),
 		ItemList.spruce_cauldron = new BlockItem(BlockList.spruce_cauldron, new Item.Properties().group(misc)).setRegistryName(BlockList.spruce_cauldron.getRegistryName()),
-		ItemList.oak_planks_table = new BlockItem(BlockList.oak_planks_table, new Item.Properties().group(obelisk)).setRegistryName(BlockList.oak_planks_table.getRegistryName())
+		ItemList.oak_planks_table = new BlockItem(BlockList.oak_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_planks_table.getRegistryName()),
+		ItemList.spruce_planks_table = new BlockItem(BlockList.spruce_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_planks_table.getRegistryName()),
+		ItemList.dark_oak_planks_table = new BlockItem(BlockList.dark_oak_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_planks_table.getRegistryName()),
+		ItemList.birch_planks_table = new BlockItem(BlockList.birch_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.birch_planks_table.getRegistryName()),
+		ItemList.jungle_planks_table = new BlockItem(BlockList.jungle_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_planks_table.getRegistryName()),
+		ItemList.acacia_planks_table = new BlockItem(BlockList.acacia_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_planks_table.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -463,7 +470,12 @@ public class ObeliskModRegistries
 			BlockList.green_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("green_wool_snow")),
 			BlockList.red_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("red_wool_snow")),
 			BlockList.spruce_cauldron = (CauldronBlock) new CauldronBlock(Block.Properties.from(BlockList.stone_bricks_vert_slab)).setRegistryName(location("spruce_cauldron")),
-			BlockList.oak_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_snow)).setRegistryName(location("oak_planks_table"))
+			BlockList.oak_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_snow)).setRegistryName(location("oak_planks_table")),
+			BlockList.spruce_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_snow)).setRegistryName(location("spruce_planks_table")),
+			BlockList.dark_oak_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_snow)).setRegistryName(location("dark_oak_planks_table")),
+			BlockList.jungle_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_snow)).setRegistryName(location("birch_planks_table")),
+			BlockList.birch_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_snow)).setRegistryName(location("jungle_planks_table")),
+			BlockList.acacia_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_snow)).setRegistryName(location("acacia_planks_table"))
 			);
 			
 			
