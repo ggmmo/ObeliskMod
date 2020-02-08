@@ -1,6 +1,7 @@
 package fox.obeliskmod.lists;
 
 
+import fox.obeliskmod.blocks.Table;
 import fox.obeliskmod.blocks.VertSlabBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.CauldronBlock;
@@ -205,6 +206,7 @@ public class BlockList
 	public static SnowBlock green_wool_snow;
 	public static SnowBlock red_wool_snow;
 	public static CauldronBlock spruce_cauldron;
+	public static Table oak_planks_table;
 
 	
 }

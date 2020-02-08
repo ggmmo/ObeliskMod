@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.InteractDoorGoal"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.EatGrassGoal"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.LookAtWithoutMovingGoal"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.goal.OpenDoorGoal"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.SharedMonsterAttributes"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.EntityType.Builder"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.EntityType"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.entity.LivingRenderer"/>
-<fullyQualifiedTypeName name="fox.obeliskmod.client.models.TestEntityModel"/>
-<fullyQualifiedTypeName name="fox.obeliskmod.client.models.ObeliskEntityModel"/>
 <fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.client.registry.IRenderFactory"/>
 <fullyQualifiedTypeName name="net.minecraftforge.fml.client.registry.RenderingRegistry"/>
@@ -42,14 +32,12 @@
 <fullyQualifiedTypeName name="net.minecraftforge.client.MinecraftForgeClient"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.CustomStairsBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.dispenser.IBlockSource"/>
-<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.AxisAlignedBB"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.VerticalSlab"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.VertSlabBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.item.ItemGroup"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.itemgroups.ObeliskMiscItemGroup"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.VertSlabBlock"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.EntitiesList"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.CustomStairsBlock"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.lists.BlockList"/>
@@ -58,6 +46,18 @@
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.CustomSnowBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.item.BlockItem"/>
 <fullyQualifiedTypeName name="net.minecraft.block.CauldronBlock"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.shapes.VoxelShape"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockState"/>
+<fullyQualifiedTypeName name="net.minecraft.world.IBlockReader"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.shapes.ISelectionContext"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.state.properties.BlockStateProperties"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.PlayerEntity"/>
+<fullyQualifiedTypeName name="net.minecraft.util.Hand"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.BlockRayTraceResult"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
+<fullyQualifiedTypeName name="fox.obeliskmod.blocks.Table"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
 </qualifiedTypeNameHistroy>
