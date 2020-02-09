@@ -17,7 +17,7 @@ public class ObeliskItemGroup extends ItemGroup
 	@Override
 	public ItemStack createIcon() 
 	{
-		return new ItemStack(Item.BLOCK_TO_ITEM.get(BlockList.earth_obelisk_block));
+		return new ItemStack(Item.BLOCK_TO_ITEM.get(BlockList.oak_planks_vert_slab));
 		
 	}
 

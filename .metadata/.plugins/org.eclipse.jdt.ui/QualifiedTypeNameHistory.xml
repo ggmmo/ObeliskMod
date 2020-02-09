@@ -46,7 +46,6 @@
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.CustomSnowBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.item.BlockItem"/>
 <fullyQualifiedTypeName name="net.minecraft.block.CauldronBlock"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.shapes.VoxelShape"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockState"/>
 <fullyQualifiedTypeName name="net.minecraft.world.IBlockReader"/>
@@ -57,7 +56,8 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.player.PlayerEntity"/>
 <fullyQualifiedTypeName name="net.minecraft.util.Hand"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockRayTraceResult"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.Table"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 </qualifiedTypeNameHistroy>

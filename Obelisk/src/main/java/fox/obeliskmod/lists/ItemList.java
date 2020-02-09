@@ -221,4 +221,12 @@ public class ItemList
 	public static Item birch_planks_table;
 	public static Item jungle_planks_table;
 	public static Item acacia_planks_table;
+	public static Item oak_wood_table;
+	public static Item spruce_wood_table;
+	public static Item dark_oak_wood_table;
+	public static Item birch_wood_table;
+	public static Item jungle_wood_table;
+	public static Item acacia_wood_table;
+	public static Item cobblestone_table;
+	public static Item stone_table;
 }

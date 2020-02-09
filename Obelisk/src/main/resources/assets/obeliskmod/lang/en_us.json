@@ -217,8 +217,17 @@
 	"block.obeliskmod.birch_planks_table": "Birch Planks Table",
 	"block.obeliskmod.jungle_planks_table": "Jungle Planks Table",
 	"block.obeliskmod.acacia_planks_table": "Acacia Planks Table",
+	"block.obeliskmod.oak_wood_table": "Oak Wood Table",
+	"block.obeliskmod.spruce_wood_table": "Spruce Wood Table",
+	"block.obeliskmod.dark_oak_wood_table": "Dark Oak Wood Table",
+	"block.obeliskmod.birch_wood_table": "Birch Wood Table",
+	"block.obeliskmod.jungle_wood_table": "Jungle Wood Table",
+	"block.obeliskmod.acacia_wood_table": "Acacia Wood Table",
+	"block.obeliskmod.cobblestone_table": "Cobblestone Table",
+	"block.obeliskmod.stone_table": "Stone Table",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous",
-	"itemGroup.furniture": "Obelisk Furniture"
+	"itemGroup.furniture": "Obelisk Furniture",
+	"itemGroup.customBlocks": "Obelisk Custom Blocks"
 }

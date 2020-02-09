@@ -212,6 +212,14 @@ public class BlockList
 	public static Table birch_planks_table;
 	public static Table jungle_planks_table;
 	public static Table acacia_planks_table;
+	public static Table oak_wood_table;
+	public static Table spruce_wood_table;
+	public static Table dark_oak_wood_table;
+	public static Table birch_wood_table;
+	public static Table jungle_wood_table;
+	public static Table acacia_wood_table;
+	public static Table cobblestone_table;
+	public static Table stone_table;
 
 	
 }
