@@ -57,7 +57,7 @@
 <fullyQualifiedTypeName name="net.minecraft.util.Hand"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockRayTraceResult"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.Table"/>
-<fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
 </qualifiedTypeNameHistroy>

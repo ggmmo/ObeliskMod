@@ -225,6 +225,13 @@
 	"block.obeliskmod.acacia_wood_table": "Acacia Wood Table",
 	"block.obeliskmod.cobblestone_table": "Cobblestone Table",
 	"block.obeliskmod.stone_table": "Stone Table",
+	"block.obeliskmod.earth_obelisk_table": "Earth Obelisk Table",
+	"block.obeliskmod.cobblestone_oak_planks_table": "Cobblestone Oak Planks Table",
+	"block.obeliskmod.cobblestone_spruce_planks_table": "Cobblestone Spruce Planks Table",
+	"block.obeliskmod.cobblestone_birch_planks_table": "Cobblestone Birch Planks Table",
+	"block.obeliskmod.cobblestone_jungle_planks_table": "Cobblestone Jungle Planks Table",
+	"block.obeliskmod.cobblestone_acacia_planks_table": "Cobblestone Acacia Planks Table",
+	"block.obeliskmod.cobblestone_dark_oak_planks_table": "Cobblestone Dark Oak Planks Table",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous",

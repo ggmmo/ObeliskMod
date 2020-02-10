@@ -269,7 +269,14 @@ public class ObeliskModRegistries
 		ItemList.jungle_wood_table = new BlockItem(BlockList.jungle_wood_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_wood_table.getRegistryName()),
 		ItemList.acacia_wood_table = new BlockItem(BlockList.acacia_wood_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_wood_table.getRegistryName()),
 		ItemList.cobblestone_table = new BlockItem(BlockList.cobblestone_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_table.getRegistryName()),
-		ItemList.stone_table = new BlockItem(BlockList.stone_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.stone_table.getRegistryName())
+		ItemList.stone_table = new BlockItem(BlockList.stone_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.stone_table.getRegistryName()),
+		ItemList.earth_obelisk_table = new BlockItem(BlockList.earth_obelisk_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.earth_obelisk_table.getRegistryName()),
+		ItemList.cobblestone_oak_planks_table = new BlockItem(BlockList.cobblestone_oak_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_oak_planks_table.getRegistryName()),
+		ItemList.cobblestone_spruce_planks_table = new BlockItem(BlockList.cobblestone_spruce_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_spruce_planks_table.getRegistryName()),
+		ItemList.cobblestone_birch_planks_table = new BlockItem(BlockList.cobblestone_brich_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_brich_planks_table.getRegistryName()),
+		ItemList.cobblestone_jungle_planks_table = new BlockItem(BlockList.cobblestone_jungle_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_jungle_planks_table.getRegistryName()),
+		ItemList.cobblestone_acacia_planks_table = new BlockItem(BlockList.cobblestone_acacia_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_acacia_planks_table.getRegistryName()),
+		ItemList.cobblestone_dark_oak_planks_table = new BlockItem(BlockList.cobblestone_dark_oak_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_dark_oak_planks_table.getRegistryName())		
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -491,8 +498,15 @@ public class ObeliskModRegistries
 			BlockList.jungle_wood_table = (Table) new Table(Block.Properties.from(BlockList.jungle_wood_slab)).setRegistryName(location("jungle_wood_table")),
 			BlockList.acacia_wood_table = (Table) new Table(Block.Properties.from(BlockList.acacia_wood_slab)).setRegistryName(location("acacia_wood_table")),
 			BlockList.cobblestone_table = (Table) new Table(Block.Properties.from(BlockList.cobblestone_vert_slab)).setRegistryName(location("cobblestone_table")),
-			BlockList.stone_table = (Table) new Table(Block.Properties.from(BlockList.stone_vert_slab)).setRegistryName(location("stone_table"))
-			);
+			BlockList.stone_table = (Table) new Table(Block.Properties.from(BlockList.stone_vert_slab)).setRegistryName(location("stone_table")),
+			BlockList.earth_obelisk_table = (Table) new Table(Block.Properties.from(BlockList.earth_obelisk_block)).setRegistryName(location("earth_obelisk_table")),
+			BlockList.cobblestone_oak_planks_table = (Table) new Table(Block.Properties.from(BlockList.oak_planks_table)).setRegistryName(location("cobblestone_oak_planks_table")),
+			BlockList.cobblestone_spruce_planks_table = (Table) new Table(Block.Properties.from(BlockList.spruce_planks_table)).setRegistryName(location("cobblestone_spruce_planks_table")),
+			BlockList.cobblestone_brich_planks_table = (Table) new Table(Block.Properties.from(BlockList.birch_planks_table)).setRegistryName(location("cobblestone_birch_planks_table")),
+			BlockList.cobblestone_jungle_planks_table = (Table) new Table(Block.Properties.from(BlockList.jungle_planks_table)).setRegistryName(location("cobblestone_jungle_planks_table")),
+			BlockList.cobblestone_acacia_planks_table = (Table) new Table(Block.Properties.from(BlockList.acacia_planks_table)).setRegistryName(location("cobblestone_acacia_planks_table")),
+			BlockList.cobblestone_dark_oak_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_table)).setRegistryName(location("cobblestone_dark_oak_planks_table"))
+			); 
 			
 			
 			

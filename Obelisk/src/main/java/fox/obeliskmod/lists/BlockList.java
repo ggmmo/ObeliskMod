@@ -220,6 +220,13 @@ public class BlockList
 	public static Table acacia_wood_table;
 	public static Table cobblestone_table;
 	public static Table stone_table;
+	public static Table earth_obelisk_table;
+	public static Table cobblestone_oak_planks_table;
+	public static Table cobblestone_spruce_planks_table;
+	public static Table cobblestone_brich_planks_table;
+	public static Table cobblestone_jungle_planks_table;
+	public static Table cobblestone_acacia_planks_table;
+	public static Table cobblestone_dark_oak_planks_table;
 
 	
 }

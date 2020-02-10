@@ -229,4 +229,11 @@ public class ItemList
 	public static Item acacia_wood_table;
 	public static Item cobblestone_table;
 	public static Item stone_table;
+	public static Item earth_obelisk_table;
+	public static Item cobblestone_oak_planks_table;
+	public static Item cobblestone_spruce_planks_table;
+	public static Item cobblestone_birch_planks_table;
+	public static Item cobblestone_jungle_planks_table;
+	public static Item cobblestone_acacia_planks_table;
+	public static Item cobblestone_dark_oak_planks_table;
 }
