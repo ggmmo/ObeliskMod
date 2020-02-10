@@ -247,6 +247,10 @@ public class BlockList
 	public static Stool jungle_log_stool;
 	public static Stool acacia_log_stool;
 	public static Stool dark_oak_log_stool;
+	public static Stool cobblestone_stool;
+	public static Stool stone_stool;
+	public static Stool stone_bricks_stool;
+	public static Stool cracked_stone_bricks_stool;
 	public static Bench bench;
 
 	

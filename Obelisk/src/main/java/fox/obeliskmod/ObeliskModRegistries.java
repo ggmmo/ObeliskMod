@@ -297,7 +297,11 @@ public class ObeliskModRegistries
 		ItemList.birch_log_stool = new BlockItem(BlockList.birch_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.birch_log_stool.getRegistryName()),
 		ItemList.jungle_log_stool = new BlockItem(BlockList.jungle_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_log_stool.getRegistryName()),
 		ItemList.acacia_log_stool = new BlockItem(BlockList.acacia_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_log_stool.getRegistryName()),
-		ItemList.dark_oak_log_stool = new BlockItem(BlockList.dark_oak_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_log_stool.getRegistryName())
+		ItemList.dark_oak_log_stool = new BlockItem(BlockList.dark_oak_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_log_stool.getRegistryName()),
+		ItemList.cobblestone_stool = new BlockItem(BlockList.cobblestone_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_stool.getRegistryName()),
+		ItemList.stone_stool = new BlockItem(BlockList.stone_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.stone_stool.getRegistryName()),
+		ItemList.stone_bricks_stool = new BlockItem(BlockList.stone_bricks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.stone_bricks_stool.getRegistryName()),
+		ItemList.cracked_stone_bricks_stool = new BlockItem(BlockList.cracked_stone_bricks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.cracked_stone_bricks_stool.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -545,7 +549,11 @@ public class ObeliskModRegistries
 			BlockList.birch_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.birch_log_slab)).setRegistryName(location("birch_log_stool")),
 			BlockList.jungle_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_log_stool")),
 			BlockList.acacia_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_log_stool")),
-			BlockList.dark_oak_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_log_stool"))
+			BlockList.dark_oak_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_log_stool")),
+			BlockList.cobblestone_stool = (Stool) new Stool(Block.Properties.from(BlockList.cobblestone_table)).setRegistryName(location("cobblestone_stool")),
+			BlockList.stone_stool = (Stool) new Stool(Block.Properties.from(BlockList.stone_brick_fence)).setRegistryName(location("stone_stool")),
+			BlockList.stone_bricks_stool = (Stool) new Stool(Block.Properties.from(BlockList.stone_bricks_vert_slab)).setRegistryName(location("stone_bricks_stool")),
+			BlockList.cracked_stone_bricks_stool = (Stool) new Stool(Block.Properties.from(BlockList.cracked_stone_brick_fence)).setRegistryName(location("cracked_stone_bricks_stool"))
 			); 
 			
 			

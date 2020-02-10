@@ -254,5 +254,9 @@ public class ItemList
 	public static Item jungle_log_stool;
 	public static Item acacia_log_stool;
 	public static Item dark_oak_log_stool;
+	public static Item cobblestone_stool;
+	public static Item stone_stool;
+	public static Item stone_bricks_stool;
+	public static Item cracked_stone_bricks_stool;
 	public static Item bench;
 }
