@@ -1,6 +1,8 @@
 package fox.obeliskmod.lists;
 
 
+import fox.obeliskmod.blocks.Bench;
+import fox.obeliskmod.blocks.Stool;
 import fox.obeliskmod.blocks.Table;
 import fox.obeliskmod.blocks.VertSlabBlock;
 import net.minecraft.block.Block;
@@ -227,6 +229,8 @@ public class BlockList
 	public static Table cobblestone_jungle_planks_table;
 	public static Table cobblestone_acacia_planks_table;
 	public static Table cobblestone_dark_oak_planks_table;
+	public static Stool oak_planks_stool;
+	public static Bench bench;
 
 	
 }

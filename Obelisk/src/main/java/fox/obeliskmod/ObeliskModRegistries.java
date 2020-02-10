@@ -5,8 +5,10 @@ package fox.obeliskmod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import fox.obeliskmod.blocks.Bench;
 import fox.obeliskmod.blocks.CustomSnowBlock;
 import fox.obeliskmod.blocks.CustomStairsBlock;
+import fox.obeliskmod.blocks.Stool;
 import fox.obeliskmod.blocks.Table;
 import fox.obeliskmod.blocks.VertSlabBlock;
 import fox.obeliskmod.lists.BlockList;
@@ -24,6 +26,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.Properties;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
@@ -276,7 +279,9 @@ public class ObeliskModRegistries
 		ItemList.cobblestone_birch_planks_table = new BlockItem(BlockList.cobblestone_brich_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_brich_planks_table.getRegistryName()),
 		ItemList.cobblestone_jungle_planks_table = new BlockItem(BlockList.cobblestone_jungle_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_jungle_planks_table.getRegistryName()),
 		ItemList.cobblestone_acacia_planks_table = new BlockItem(BlockList.cobblestone_acacia_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_acacia_planks_table.getRegistryName()),
-		ItemList.cobblestone_dark_oak_planks_table = new BlockItem(BlockList.cobblestone_dark_oak_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_dark_oak_planks_table.getRegistryName())		
+		ItemList.cobblestone_dark_oak_planks_table = new BlockItem(BlockList.cobblestone_dark_oak_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_dark_oak_planks_table.getRegistryName()),
+		ItemList.oak_planks_stool = new BlockItem(BlockList.oak_planks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_planks_stool.getRegistryName()),
+		ItemList.bench = new BlockItem(BlockList.bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.bench.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -505,7 +510,9 @@ public class ObeliskModRegistries
 			BlockList.cobblestone_brich_planks_table = (Table) new Table(Block.Properties.from(BlockList.birch_planks_table)).setRegistryName(location("cobblestone_birch_planks_table")),
 			BlockList.cobblestone_jungle_planks_table = (Table) new Table(Block.Properties.from(BlockList.jungle_planks_table)).setRegistryName(location("cobblestone_jungle_planks_table")),
 			BlockList.cobblestone_acacia_planks_table = (Table) new Table(Block.Properties.from(BlockList.acacia_planks_table)).setRegistryName(location("cobblestone_acacia_planks_table")),
-			BlockList.cobblestone_dark_oak_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_table)).setRegistryName(location("cobblestone_dark_oak_planks_table"))
+			BlockList.cobblestone_dark_oak_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_table)).setRegistryName(location("cobblestone_dark_oak_planks_table")),
+			BlockList.oak_planks_stool = (Stool) new Stool(Block.Properties.from(BlockList.oak_planks_table)).setRegistryName(location("oak_planks_stool")),
+			BlockList.bench = (Bench) new Bench(Block.Properties.from(BlockList.oak_planks_table)).setRegistryName(location("bench"))
 			); 
 			
 			
@@ -519,7 +526,8 @@ public class ObeliskModRegistries
 		event.getRegistry().registerAll
 		(
 					
-			EntitiesList.TEST_ENTITY
+			EntitiesList.TEST_ENTITY,
+			EntitiesList.CHAIR
 		);
 			
 		EntitiesList.registerEntityWorldSpawn();

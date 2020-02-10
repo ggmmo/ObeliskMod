@@ -1,7 +1,9 @@
 package fox.obeliskmod.lists;
 
+import fox.obeliskmod.ObeliskMod;
 import fox.obeliskmod.ObeliskModRegistries;
 import fox.obeliskmod.entities.TestEntity;
+import fox.obeliskmod.entities.blocks.ChairEntity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
@@ -45,4 +47,11 @@ public class EntitiesList
 			}
 		}
 	}
+	
+	public static EntityType<?> CHAIR = EntityType.Builder.<ChairEntity>create((type, world) -> new ChairEntity(world), EntityClassification.MISC)
+            .size(.0f, .0f)
+            .setCustomClientFactory((spawnEntity, world) -> new ChairEntity(world))
+            .build(ObeliskMod.modid)
+            .setRegistryName(ObeliskMod.modid, "chair_entity");
+	
 }

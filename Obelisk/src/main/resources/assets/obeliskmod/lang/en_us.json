@@ -232,6 +232,8 @@
 	"block.obeliskmod.cobblestone_jungle_planks_table": "Cobblestone Jungle Planks Table",
 	"block.obeliskmod.cobblestone_acacia_planks_table": "Cobblestone Acacia Planks Table",
 	"block.obeliskmod.cobblestone_dark_oak_planks_table": "Cobblestone Dark Oak Planks Table",
+	"block.obeliskmod.oak_planks_stool": "Oak Planks Stool",
+	"block.obeliskmod.bench": "Bench",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous",

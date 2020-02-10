@@ -236,4 +236,6 @@ public class ItemList
 	public static Item cobblestone_jungle_planks_table;
 	public static Item cobblestone_acacia_planks_table;
 	public static Item cobblestone_dark_oak_planks_table;
+	public static Item oak_planks_stool;
+	public static Item bench;
 }
