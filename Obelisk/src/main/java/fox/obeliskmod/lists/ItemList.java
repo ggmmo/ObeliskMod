@@ -237,5 +237,22 @@ public class ItemList
 	public static Item cobblestone_acacia_planks_table;
 	public static Item cobblestone_dark_oak_planks_table;
 	public static Item oak_planks_stool;
+	public static Item spruce_planks_stool;
+	public static Item birch_planks_stool;
+	public static Item jungle_planks_stool;
+	public static Item acacia_planks_stool;
+	public static Item dark_oak_planks_stool;
+	public static Item oak_wood_stool;
+	public static Item spruce_wood_stool;
+	public static Item birch_wood_stool;
+	public static Item jungle_wood_stool;
+	public static Item acacia_wood_stool;
+	public static Item dark_oak_wood_stool;
+	public static Item oak_log_stool;
+	public static Item spruce_log_stool;
+	public static Item birch_log_stool;
+	public static Item jungle_log_stool;
+	public static Item acacia_log_stool;
+	public static Item dark_oak_log_stool;
 	public static Item bench;
 }

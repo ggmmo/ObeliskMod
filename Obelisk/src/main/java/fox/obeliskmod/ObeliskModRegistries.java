@@ -26,7 +26,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.Item.Properties;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
@@ -281,7 +280,24 @@ public class ObeliskModRegistries
 		ItemList.cobblestone_acacia_planks_table = new BlockItem(BlockList.cobblestone_acacia_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_acacia_planks_table.getRegistryName()),
 		ItemList.cobblestone_dark_oak_planks_table = new BlockItem(BlockList.cobblestone_dark_oak_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_dark_oak_planks_table.getRegistryName()),
 		ItemList.oak_planks_stool = new BlockItem(BlockList.oak_planks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_planks_stool.getRegistryName()),
-		ItemList.bench = new BlockItem(BlockList.bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.bench.getRegistryName())
+		ItemList.bench = new BlockItem(BlockList.bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.bench.getRegistryName()),
+		ItemList.spruce_planks_stool = new BlockItem(BlockList.spruce_planks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_planks_stool.getRegistryName()),
+		ItemList.birch_planks_stool = new BlockItem(BlockList.birch_planks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.birch_planks_stool.getRegistryName()),
+		ItemList.jungle_planks_stool = new BlockItem(BlockList.jungle_planks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_planks_stool.getRegistryName()),
+		ItemList.acacia_planks_stool = new BlockItem(BlockList.acacia_planks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_planks_stool.getRegistryName()),
+		ItemList.dark_oak_planks_stool = new BlockItem(BlockList.dark_oak_planks_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_planks_stool.getRegistryName()),
+		ItemList.oak_wood_stool = new BlockItem(BlockList.oak_wood_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_wood_stool.getRegistryName()),
+		ItemList.spruce_wood_stool = new BlockItem(BlockList.spruce_wood_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_wood_stool.getRegistryName()),
+		ItemList.birch_wood_stool = new BlockItem(BlockList.birch_wood_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.birch_wood_stool.getRegistryName()),
+		ItemList.jungle_wood_stool = new BlockItem(BlockList.jungle_wood_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_wood_stool.getRegistryName()),
+		ItemList.acacia_wood_stool = new BlockItem(BlockList.acacia_wood_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_wood_stool.getRegistryName()),
+		ItemList.dark_oak_wood_stool = new BlockItem(BlockList.dark_oak_wood_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_wood_stool.getRegistryName()),
+		ItemList.oak_log_stool = new BlockItem(BlockList.oak_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_log_stool.getRegistryName()),
+		ItemList.spruce_log_stool = new BlockItem(BlockList.spruce_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_log_stool.getRegistryName()),
+		ItemList.birch_log_stool = new BlockItem(BlockList.birch_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.birch_log_stool.getRegistryName()),
+		ItemList.jungle_log_stool = new BlockItem(BlockList.jungle_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_log_stool.getRegistryName()),
+		ItemList.acacia_log_stool = new BlockItem(BlockList.acacia_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_log_stool.getRegistryName()),
+		ItemList.dark_oak_log_stool = new BlockItem(BlockList.dark_oak_log_stool, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_log_stool.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -512,7 +528,24 @@ public class ObeliskModRegistries
 			BlockList.cobblestone_acacia_planks_table = (Table) new Table(Block.Properties.from(BlockList.acacia_planks_table)).setRegistryName(location("cobblestone_acacia_planks_table")),
 			BlockList.cobblestone_dark_oak_planks_table = (Table) new Table(Block.Properties.from(BlockList.dark_oak_planks_table)).setRegistryName(location("cobblestone_dark_oak_planks_table")),
 			BlockList.oak_planks_stool = (Stool) new Stool(Block.Properties.from(BlockList.oak_planks_table)).setRegistryName(location("oak_planks_stool")),
-			BlockList.bench = (Bench) new Bench(Block.Properties.from(BlockList.oak_planks_table)).setRegistryName(location("bench"))
+			BlockList.bench = (Bench) new Bench(Block.Properties.from(BlockList.oak_planks_table)).setRegistryName(location("bench")),
+			BlockList.spruce_planks_stool = (Stool) new Stool(Block.Properties.from(BlockList.spruce_planks_table)).setRegistryName(location("spruce_planks_stool")),
+			BlockList.birch_planks_stool = (Stool) new Stool(Block.Properties.from(BlockList.birch_planks_table)).setRegistryName(location("birch_planks_stool")),
+			BlockList.jungle_planks_stool = (Stool) new Stool(Block.Properties.from(BlockList.jungle_planks_table)).setRegistryName(location("jungle_planks_stool")),
+			BlockList.acacia_planks_stool = (Stool) new Stool(Block.Properties.from(BlockList.acacia_planks_table)).setRegistryName(location("acacia_planks_stool")),
+			BlockList.dark_oak_planks_stool = (Stool) new Stool(Block.Properties.from(BlockList.dark_oak_planks_table)).setRegistryName(location("dark_oak_planks_stool")),
+			BlockList.oak_wood_stool = (Stool) new Stool(Block.Properties.from(BlockList.oak_planks_stool)).setRegistryName(location("oak_wood_stool")),
+			BlockList.spruce_wood_stool = (Stool) new Stool(Block.Properties.from(BlockList.spruce_planks_stool)).setRegistryName(location("spruce_wood_stool")),
+			BlockList.birch_wood_stool = (Stool) new Stool(Block.Properties.from(BlockList.birch_planks_stool)).setRegistryName(location("birch_wood_stool")),
+			BlockList.jungle_wood_stool = (Stool) new Stool(Block.Properties.from(BlockList.jungle_planks_stool)).setRegistryName(location("jungle_wood_stool")),
+			BlockList.acacia_wood_stool = (Stool) new Stool(Block.Properties.from(BlockList.acacia_planks_stool)).setRegistryName(location("acacia_wood_stool")),
+			BlockList.dark_oak_wood_stool = (Stool) new Stool(Block.Properties.from(BlockList.dark_oak_planks_stool)).setRegistryName(location("dark_oak_wood_stool")),
+			BlockList.oak_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("oak_log_stool")),
+			BlockList.spruce_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.spruce_log_slab)).setRegistryName(location("spruce_log_stool")),
+			BlockList.birch_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.birch_log_slab)).setRegistryName(location("birch_log_stool")),
+			BlockList.jungle_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_log_stool")),
+			BlockList.acacia_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_log_stool")),
+			BlockList.dark_oak_log_stool = (Stool) new Stool(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_log_stool"))
 			); 
 			
 			

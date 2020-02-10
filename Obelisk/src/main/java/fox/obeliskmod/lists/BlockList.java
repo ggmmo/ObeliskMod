@@ -230,6 +230,23 @@ public class BlockList
 	public static Table cobblestone_acacia_planks_table;
 	public static Table cobblestone_dark_oak_planks_table;
 	public static Stool oak_planks_stool;
+	public static Stool spruce_planks_stool;
+	public static Stool birch_planks_stool;
+	public static Stool jungle_planks_stool;
+	public static Stool acacia_planks_stool;
+	public static Stool dark_oak_planks_stool;
+	public static Stool oak_wood_stool;
+	public static Stool spruce_wood_stool;
+	public static Stool birch_wood_stool;
+	public static Stool jungle_wood_stool;
+	public static Stool acacia_wood_stool;
+	public static Stool dark_oak_wood_stool;
+	public static Stool oak_log_stool;
+	public static Stool spruce_log_stool;
+	public static Stool birch_log_stool;
+	public static Stool jungle_log_stool;
+	public static Stool acacia_log_stool;
+	public static Stool dark_oak_log_stool;
 	public static Bench bench;
 
 	
