@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import fox.obeliskmod.blocks.Bench;
 import fox.obeliskmod.blocks.CustomSnowBlock;
 import fox.obeliskmod.blocks.CustomStairsBlock;
+import fox.obeliskmod.blocks.LongTable;
 import fox.obeliskmod.blocks.Stool;
 import fox.obeliskmod.blocks.Table;
 import fox.obeliskmod.blocks.VertSlabBlock;
@@ -306,7 +307,8 @@ public class ObeliskModRegistries
 		ItemList.birch_wood_bench = new BlockItem(BlockList.birch_wood_bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.birch_wood_bench.getRegistryName()),
 		ItemList.jungle_wood_bench = new BlockItem(BlockList.jungle_wood_bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_wood_bench.getRegistryName()),
 		ItemList.acacia_wood_bench = new BlockItem(BlockList.acacia_wood_bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_wood_bench.getRegistryName()),
-		ItemList.dark_oak_wood_bench = new BlockItem(BlockList.dark_oak_wood_bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_wood_bench.getRegistryName())
+		ItemList.dark_oak_wood_bench = new BlockItem(BlockList.dark_oak_wood_bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_wood_bench.getRegistryName()),
+		ItemList.oak_wood_longtable = new BlockItem(BlockList.oak_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_wood_longtable.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -563,7 +565,8 @@ public class ObeliskModRegistries
 			BlockList.birch_wood_bench = (Bench) new Bench(Block.Properties.from(BlockList.birch_wood_stool)).setRegistryName(location("birch_wood_bench")),
 			BlockList.jungle_wood_bench = (Bench) new Bench(Block.Properties.from(BlockList.jungle_wood_stool)).setRegistryName(location("jungle_wood_bench")),
 			BlockList.acacia_wood_bench = (Bench) new Bench(Block.Properties.from(BlockList.acacia_log_stool)).setRegistryName(location("acacia_wood_bench")),
-			BlockList.dark_oak_wood_bench = (Bench) new Bench(Block.Properties.from(BlockList.dark_oak_wood_stool)).setRegistryName(location("dark_oak_wood_bench"))
+			BlockList.dark_oak_wood_bench = (Bench) new Bench(Block.Properties.from(BlockList.dark_oak_wood_stool)).setRegistryName(location("dark_oak_wood_bench")),
+			BlockList.oak_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.dark_oak_wood_bench)).setRegistryName(location("oak_wood_longtable"))
 			); 
 			
 			
