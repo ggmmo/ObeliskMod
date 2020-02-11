@@ -252,6 +252,11 @@ public class BlockList
 	public static Stool stone_bricks_stool;
 	public static Stool cracked_stone_bricks_stool;
 	public static Bench bench;
+	public static Bench spruce_wood_bench;
+	public static Bench birch_wood_bench;
+	public static Bench jungle_wood_bench;
+	public static Bench acacia_wood_bench;
+	public static Bench dark_oak_wood_bench;
 
 	
 }
