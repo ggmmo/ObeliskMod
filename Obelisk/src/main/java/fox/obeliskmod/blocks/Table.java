@@ -28,6 +28,7 @@ public class Table extends Block
 	 	}
 
 	 
+	 
 	 public BlockRenderLayer getRenderLayer() {
 	      return BlockRenderLayer.CUTOUT;
 	   }
