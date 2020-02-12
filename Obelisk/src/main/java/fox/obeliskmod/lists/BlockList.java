@@ -259,6 +259,11 @@ public class BlockList
 	public static Bench acacia_wood_bench;
 	public static Bench dark_oak_wood_bench;
 	public static LongTable oak_wood_longtable;
+	public static LongTable spruce_wood_longtable;
+	public static LongTable birch_wood_longtable;
+	public static LongTable jungle_wood_longtable;
+	public static LongTable acacia_wood_longtable;
+	public static LongTable dark_oak_wood_longtable;
 
 	
 }

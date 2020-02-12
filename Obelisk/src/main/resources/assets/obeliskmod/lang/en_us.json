@@ -261,6 +261,11 @@
 	"block.obeliskmod.acacia_wood_bench": "Acacia Wood Bench",
 	"block.obeliskmod.dark_oak_wood_bench": "Dark Oak Wood Bench",
 	"block.obeliskmod.oak_wood_longtable": "Oak Wood Long Table",
+	"block.obeliskmod.spruce_wood_longtable": "Spruce Wood Long Table",
+	"block.obeliskmod.birch_wood_longtable": "Birch Wood Long Table",
+	"block.obeliskmod.jungle_wood_longtable": "Jungle Wood Long Table",
+	"block.obeliskmod.acacia_wood_longtable": "Acacia Wood Long Table",
+	"block.obeliskmod.dark_oak_wood_longtable": "Dark Oak Wood Long Table",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous",

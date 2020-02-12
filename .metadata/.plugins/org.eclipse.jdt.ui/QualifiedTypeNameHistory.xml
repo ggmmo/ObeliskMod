@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="fox.obeliskmod.entities.TestEntity"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.client.render.ObeliskEntityRender"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.client.render.ObeliskEntityRender.RenderFactory"/>
 <fullyQualifiedTypeName name="net.minecraftforge.api.distmarker.Dist"/>
@@ -57,7 +56,8 @@
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.Bench"/>
-<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 <fullyQualifiedTypeName name="fox.obeliskmod.blocks.LongTable"/>
+<fullyQualifiedTypeName name="net.minecraft.block.HorizontalBlock"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item.Properties"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block.Properties"/>
 </qualifiedTypeNameHistroy>

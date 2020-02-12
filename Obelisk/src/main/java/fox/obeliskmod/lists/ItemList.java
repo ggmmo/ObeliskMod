@@ -265,4 +265,9 @@ public class ItemList
 	public static Item acacia_wood_bench;
 	public static Item dark_oak_wood_bench;
 	public static Item oak_wood_longtable;
+	public static Item spruce_wood_longtable;
+	public static Item birch_wood_longtable;
+	public static Item jungle_wood_longtable;
+	public static Item acacia_wood_longtable;
+	public static Item dark_oak_wood_longtable;
 }

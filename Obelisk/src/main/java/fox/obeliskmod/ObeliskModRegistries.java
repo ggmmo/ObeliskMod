@@ -308,7 +308,12 @@ public class ObeliskModRegistries
 		ItemList.jungle_wood_bench = new BlockItem(BlockList.jungle_wood_bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_wood_bench.getRegistryName()),
 		ItemList.acacia_wood_bench = new BlockItem(BlockList.acacia_wood_bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_wood_bench.getRegistryName()),
 		ItemList.dark_oak_wood_bench = new BlockItem(BlockList.dark_oak_wood_bench, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_wood_bench.getRegistryName()),
-		ItemList.oak_wood_longtable = new BlockItem(BlockList.oak_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_wood_longtable.getRegistryName())
+		ItemList.oak_wood_longtable = new BlockItem(BlockList.oak_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_wood_longtable.getRegistryName()),
+		ItemList.spruce_wood_longtable = new BlockItem(BlockList.spruce_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_wood_longtable.getRegistryName()),
+		ItemList.birch_wood_longtable = new BlockItem(BlockList.birch_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.birch_wood_longtable.getRegistryName()),
+		ItemList.jungle_wood_longtable = new BlockItem(BlockList.jungle_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_wood_longtable.getRegistryName()),
+		ItemList.acacia_wood_longtable = new BlockItem(BlockList.acacia_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_wood_longtable.getRegistryName()),
+		ItemList.dark_oak_wood_longtable = new BlockItem(BlockList.dark_oak_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_wood_longtable.getRegistryName())
 		);
 			
 		EntitiesList.registerEntitySpawnEggs(event);
@@ -566,7 +571,12 @@ public class ObeliskModRegistries
 			BlockList.jungle_wood_bench = (Bench) new Bench(Block.Properties.from(BlockList.jungle_wood_stool)).setRegistryName(location("jungle_wood_bench")),
 			BlockList.acacia_wood_bench = (Bench) new Bench(Block.Properties.from(BlockList.acacia_log_stool)).setRegistryName(location("acacia_wood_bench")),
 			BlockList.dark_oak_wood_bench = (Bench) new Bench(Block.Properties.from(BlockList.dark_oak_wood_stool)).setRegistryName(location("dark_oak_wood_bench")),
-			BlockList.oak_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.dark_oak_wood_bench)).setRegistryName(location("oak_wood_longtable"))
+			BlockList.oak_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.dark_oak_wood_bench)).setRegistryName(location("oak_wood_longtable")),
+			BlockList.spruce_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.cobblestone_spruce_planks_table)).setRegistryName(location("spruce_wood_longtable")),
+			BlockList.birch_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.birch_wood_bench)).setRegistryName(location("birch_wood_longtable")),
+			BlockList.jungle_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_wood_longtable")),
+			BlockList.acacia_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.acacia_wood_bench)).setRegistryName(location("acacia_wood_longtable")),
+			BlockList.dark_oak_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.dark_oak_wood_bench)).setRegistryName(location("dark_oak_wood_longtable"))
 			); 
 			
 			
