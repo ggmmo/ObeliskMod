@@ -1,5 +1,8 @@
 {
     "variants": {
-        "": { "model": "obeliskmod:block/jungle_wood_longtable" }
+        "facing=north": { "model": "obeliskmod:block/jungle_wood_longtable" },
+		"facing=east": { "model": "obeliskmod:block/jungle_wood_longtable", "y": 90 },
+		"facing=south": { "model": "obeliskmod:block/jungle_wood_longtable", "y": 180 },
+		"facing=west": {"model": "obeliskmod:block/jungle_wood_longtable", "y": 270}
     }
 }

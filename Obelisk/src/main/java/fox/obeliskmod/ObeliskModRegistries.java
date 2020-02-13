@@ -12,8 +12,10 @@ import fox.obeliskmod.blocks.LongTable;
 import fox.obeliskmod.blocks.Stool;
 import fox.obeliskmod.blocks.Table;
 import fox.obeliskmod.blocks.VertSlabBlock;
+import fox.obeliskmod.blocks.Wagon;
 import fox.obeliskmod.lists.BlockList;
-import fox.obeliskmod.lists.EntitiesList;
+import fox.obeliskmod.lists.EntityList;
+import fox.obeliskmod.lists.FluidList;
 import fox.obeliskmod.lists.ItemList;
 import net.minecraft.block.Block;
 import net.minecraft.block.CauldronBlock;
@@ -25,6 +27,7 @@ import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityType;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -313,10 +316,11 @@ public class ObeliskModRegistries
 		ItemList.birch_wood_longtable = new BlockItem(BlockList.birch_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.birch_wood_longtable.getRegistryName()),
 		ItemList.jungle_wood_longtable = new BlockItem(BlockList.jungle_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.jungle_wood_longtable.getRegistryName()),
 		ItemList.acacia_wood_longtable = new BlockItem(BlockList.acacia_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_wood_longtable.getRegistryName()),
-		ItemList.dark_oak_wood_longtable = new BlockItem(BlockList.dark_oak_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_wood_longtable.getRegistryName())
+		ItemList.dark_oak_wood_longtable = new BlockItem(BlockList.dark_oak_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_wood_longtable.getRegistryName()),
+		ItemList.oak_wagon = new BlockItem(BlockList.oak_wagon, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_wagon.getRegistryName())
 		);
 			
-		EntitiesList.registerEntitySpawnEggs(event);
+		EntityList.registerEntitySpawnEggs(event);
 			
 			
 			
@@ -576,7 +580,8 @@ public class ObeliskModRegistries
 			BlockList.birch_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.birch_wood_bench)).setRegistryName(location("birch_wood_longtable")),
 			BlockList.jungle_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_wood_longtable")),
 			BlockList.acacia_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.acacia_wood_bench)).setRegistryName(location("acacia_wood_longtable")),
-			BlockList.dark_oak_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.dark_oak_wood_bench)).setRegistryName(location("dark_oak_wood_longtable"))
+			BlockList.dark_oak_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.dark_oak_wood_bench)).setRegistryName(location("dark_oak_wood_longtable")),
+			BlockList.oak_wagon = (Wagon) new Wagon(Block.Properties.from(BlockList.oak_wood_fence)).setRegistryName(location("oak_wagon"))
 			); 
 			
 			
@@ -590,14 +595,20 @@ public class ObeliskModRegistries
 		event.getRegistry().registerAll
 		(
 					
-			EntitiesList.TEST_ENTITY,
-			EntitiesList.CHAIR
+			EntityList.TEST_ENTITY,
+			EntityList.CHAIR
 		);
 			
-		EntitiesList.registerEntityWorldSpawn();
+		EntityList.registerEntityWorldSpawn();
 	}
 	
-	
+	public static void registerFluid(final RegistryEvent.Register<Fluid> event) 
+	{
+		event.getRegistry().registerAll
+		(
+			FluidList.molten_earth_obelisk_block
+		);
+	}
 	
 		
 
