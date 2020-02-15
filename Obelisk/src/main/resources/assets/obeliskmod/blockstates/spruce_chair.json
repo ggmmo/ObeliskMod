@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "facing=north": { "model": "obeliskmod:block/spruce_chair" },
+    "facing=south": { "model": "obeliskmod:block/spruce_chair", "y": 180 },
+    "facing=east": { "model": "obeliskmod:block/spruce_chair", "y": 90},
+    "facing=west": { "model": "obeliskmod:block/spruce_chair", "y": 270}
+  }
+}

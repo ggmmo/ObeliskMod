@@ -2,6 +2,7 @@ package fox.obeliskmod.lists;
 
 
 import fox.obeliskmod.blocks.Bench;
+import fox.obeliskmod.blocks.Chair;
 import fox.obeliskmod.blocks.LongTable;
 import fox.obeliskmod.blocks.Stool;
 import fox.obeliskmod.blocks.Table;
@@ -266,7 +267,8 @@ public class BlockList
 	public static LongTable acacia_wood_longtable;
 	public static LongTable dark_oak_wood_longtable;
 	public static Wagon oak_wagon;
-
+	public static Chair spruce_chair;
+	
 	
 }
 

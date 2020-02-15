@@ -271,4 +271,5 @@ public class ItemList
 	public static Item acacia_wood_longtable;
 	public static Item dark_oak_wood_longtable;
 	public static Item oak_wagon;
+	public static Item spruce_chair;
 }
