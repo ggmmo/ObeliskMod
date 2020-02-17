@@ -2,10 +2,12 @@ package fox.obeliskmod.lists;
 
 
 import fox.obeliskmod.blocks.Bench;
+import fox.obeliskmod.blocks.Chair;
 import fox.obeliskmod.blocks.LongTable;
 import fox.obeliskmod.blocks.Stool;
 import fox.obeliskmod.blocks.Table;
 import fox.obeliskmod.blocks.VertSlabBlock;
+import fox.obeliskmod.blocks.Wagon;
 import net.minecraft.block.Block;
 import net.minecraft.block.CauldronBlock;
 import net.minecraft.block.FenceBlock;
@@ -264,7 +266,9 @@ public class BlockList
 	public static LongTable jungle_wood_longtable;
 	public static LongTable acacia_wood_longtable;
 	public static LongTable dark_oak_wood_longtable;
-
+	public static Wagon oak_wagon;
+	public static Chair spruce_chair;
+	
 	
 }
 

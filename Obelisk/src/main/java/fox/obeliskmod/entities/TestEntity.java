@@ -1,6 +1,6 @@
 package fox.obeliskmod.entities;
 
-import fox.obeliskmod.lists.EntitiesList;
+import fox.obeliskmod.lists.EntityList;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -16,7 +16,7 @@ public class TestEntity extends CreatureEntity
 	@SuppressWarnings("unchecked")
 	public TestEntity(EntityType<? extends CreatureEntity> type, World worldIn) 
 	{
-		super((EntityType<? extends CreatureEntity>) EntitiesList.TEST_ENTITY, worldIn);
+		super((EntityType<? extends CreatureEntity>) EntityList.TEST_ENTITY, worldIn);
 		
 	}
 	

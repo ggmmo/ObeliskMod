@@ -13,7 +13,7 @@ import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraft.world.biome.Biomes;
 import net.minecraftforge.event.RegistryEvent;
 
-public class EntitiesList 
+public class EntityList 
 {
 	public static EntityType<?> TEST_ENTITY = EntityType.Builder.create(TestEntity::new, EntityClassification.CREATURE).build(ObeliskModRegistries.modid + ":test_entity").setRegistryName(ObeliskModRegistries.location("test_entity"));
 	

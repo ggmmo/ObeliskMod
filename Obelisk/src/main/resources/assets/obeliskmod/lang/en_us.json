@@ -266,6 +266,8 @@
 	"block.obeliskmod.jungle_wood_longtable": "Jungle Wood Long Table",
 	"block.obeliskmod.acacia_wood_longtable": "Acacia Wood Long Table",
 	"block.obeliskmod.dark_oak_wood_longtable": "Dark Oak Wood Long Table",
+	"block.obeliskmod.oak_wagon": "Oak Wagon",
+	"block.obeliskmod.spruce_chair": "Spruce Chair",
 	
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous",

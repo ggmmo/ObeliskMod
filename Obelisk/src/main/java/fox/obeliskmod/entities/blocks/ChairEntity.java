@@ -2,7 +2,7 @@ package fox.obeliskmod.entities.blocks;
 
 import java.util.List;
 
-import fox.obeliskmod.lists.EntitiesList;
+import fox.obeliskmod.lists.EntityList;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.CompoundNBT;
@@ -16,7 +16,7 @@ public class ChairEntity extends Entity {
     private BlockPos source;
 
     public ChairEntity(World world) {
-        super(EntitiesList.CHAIR, world);
+        super(EntityList.CHAIR, world);
         noClip = true;
     }
 
