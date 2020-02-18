@@ -1,24 +1,24 @@
 {
-	//Items
+	"_comment": "Items",
 	"item.obeliskmod.copper_coin": "Copper Coin",
 	"item.obeliskmod.silver_coin": "Silver Coin",
 	"item.obeliskmod.gold_coin": "Gold Coin",
 	
-	//Weapons
+	"_comment": "Weapons",
 	"item.obeliskmod.stone_dagger": "Stone Dagger",
 	"item.obeliskmod.iron_dagger": "Iron Dagger",
 	"item.obeliskmod.long_sword": "Long Sword",
 	
-	//Entities' Egg
+	"_comment": "Entity Eggs",
 	"item.obeliskmod.test_entity_egg": "Test Entity Egg",
 	
-	//Entities
+	"_comment": "Entities",
 	"entity.obeliskmod.test_entity": "Test Entity",
 	
-	//Fluids
+	"_comment": "Fluids",
 	
 	
-	//Blocks
+	"_Comment": "Blocks",
 	"block.obeliskmod.earth_obelisk_block": "Earth Obelisk Block",
 	"block.obeliskmod.earth_obelisk_slab": "Earth Obelisk Slab",
 	"block.obeliskmod.earth_obelisk_stairs": "Earth Obelisk Stairs",
@@ -268,7 +268,9 @@
 	"block.obeliskmod.dark_oak_wood_longtable": "Dark Oak Wood Long Table",
 	"block.obeliskmod.oak_wagon": "Oak Wagon",
 	"block.obeliskmod.spruce_chair": "Spruce Chair",
-	
+
+
+	"_comment": "Group Names",
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous",
 	"itemGroup.furniture": "Obelisk Furniture",

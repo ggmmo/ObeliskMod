@@ -4,201 +4,248 @@ import net.minecraft.item.Item;
 
 public class ItemList 
 {
-	//items
+	//region Coins
 	public static Item copper_coin;
 	public static Item silver_coin;
 	public static Item gold_coin;
+	//endregion
 	
-	//weapons
+	//region Weapons
 	public static Item stone_dagger;
 	public static Item iron_dagger;
 	public static Item long_sword;
 	//public static Item sling;
+	//endregion
 	
-	//Entities
+	//region Entities
 	public static Item test_entity_egg;
+	//endregion
+
+	//region Fluids
+	//endregion
 	
-	//Fluids
 	
-	
-	//blocks
+	//region Blocks
+	//region Earth Obelisk
 	public static Item earth_obelisk_block;
 	public static Item earth_obelisk_wall;
 	public static Item earth_obelisk_slab;
 	public static Item earth_obelisk_stairs;
 	public static Item earth_obelisk_fence;
+	//endregion
+
+	//region Dirt
 	public static Item dirt_slab;
 	public static Item dirt_wall;
 	public static Item dirt_stairs;
+	public static Item dirt_fence;
+	public static Item dirt_snow;
+	public static Item dirt_vert_slab;
+	public static Item coarse_dirt_vert_slab;
+	public static Item coarse_dirt_snow;
+	public static Item coarse_dirt_fence;
 	public static Item coarse_dirt_wall;
 	public static Item coarse_dirt_slab;
 	public static Item coarse_dirt_stairs;
+	//endregion
+
+	//region Sand
 	public static Item sand_slab;
 	public static Item sand_wall;
 	public static Item sand_stairs;
-	public static Item oak_log_stairs;
-	public static Item oak_log_slab;
-	public static Item oak_log_wall;
-	public static Item oak_wood_stairs;
-	public static Item oak_wood_slab;
-	public static Item oak_wood_wall;
-	public static Item spruce_log_stairs;
-	public static Item spruce_log_slab;
-	public static Item spruce_log_wall;
-	public static Item spruce_wood_stairs;
-	public static Item spruce_wood_slab;
-	public static Item spruce_wood_wall;
-	public static Item dark_oak_log_stairs;
-	public static Item dark_oak_log_slab;
-	public static Item dark_oak_log_wall;
-	public static Item dark_oak_wood_stairs;
-	public static Item dark_oak_wood_slab;
-	public static Item dark_oak_wood_wall;
-	public static Item birch_log_stairs;
-	public static Item birch_log_slab;
-	public static Item birch_log_wall;
-	public static Item birch_wood_stairs;
-	public static Item birch_wood_slab;
-	public static Item birch_wood_wall;
-	public static Item acacia_log_stairs;
-	public static Item acacia_log_slab;
-	public static Item acacia_log_wall;
-	public static Item acacia_wood_stairs;
-	public static Item acacia_wood_slab;
-	public static Item acacia_wood_wall;
-	public static Item jungle_log_stairs;
-	public static Item jungle_log_slab;
-	public static Item jungle_log_wall;
-	public static Item jungle_wood_stairs;
-	public static Item jungle_wood_slab;
-	public static Item jungle_wood_wall;
-	public static Item oak_planks_wall;
-	public static Item spruce_planks_wall;
-	public static Item dark_oak_planks_wall;
-	public static Item birch_planks_wall;
-	public static Item acacia_planks_wall;
-	public static Item jungle_planks_wall;
-	public static Item stripped_oak_wood_stairs;
-	public static Item stripped_oak_wood_slab;
-	public static Item stripped_oak_wood_wall;
-	public static Item stripped_spruce_wood_stairs;
-	public static Item stripped_spruce_wood_slab;
-	public static Item stripped_spruce_wood_wall;
-	public static Item stripped_dark_oak_wood_stairs;
-	public static Item stripped_dark_oak_wood_slab;
-	public static Item stripped_dark_oak_wood_wall;
-	public static Item stripped_birch_wood_stairs;
-	public static Item stripped_birch_wood_slab;
-	public static Item stripped_birch_wood_wall;
-	public static Item stripped_acacia_wood_stairs;
-	public static Item stripped_acacia_wood_slab;
-	public static Item stripped_acacia_wood_wall;
-	public static Item stripped_jungle_wood_stairs;
-	public static Item stripped_jungle_wood_slab;
-	public static Item stripped_jungle_wood_wall;
-	public static Item oak_wood_fence;
-	public static Item spruce_wood_fence;
-	public static Item dark_oak_wood_fence;
-	public static Item birch_wood_fence;
-	public static Item acacia_wood_fence;
-	public static Item jungle_wood_fence;
-	public static Item dirt_fence;
-	public static Item coarse_dirt_fence;
-	public static Item stone_fence;
-	public static Item cobblestone_fence;
-	public static Item stone_brick_fence;
-	public static Item mossy_stone_brick_fence;
+	public static Item sand_snow;
+	public static Item sand_vert_slab;
+	public static Item red_sand_vert_slab;
+	public static Item red_sand_snow;
 	public static Item red_sand_stairs;
 	public static Item red_sand_slab;
 	public static Item red_sand_wall;
-	public static Item dirt_snow;
-	public static Item coarse_dirt_snow;
-	public static Item oak_wood_snow;
-	public static Item spruce_wood_snow;
-	public static Item dark_oak_wood_snow;
-	public static Item birch_wood_snow;
-	public static Item acacia_wood_snow;
-	public static Item jungle_wood_snow;
-	public static Item sand_snow;
-	public static Item red_sand_snow;
-	public static Item stone_snow;
-	public static Item cobblestone_snow;
-	public static Item oak_planks_snow;
-	public static Item spruce_planks_snow;
-	public static Item dark_oak_planks_snow;
-	public static Item birch_planks_snow;
-	public static Item acacia_planks_snow;
-	public static Item jungle_planks_snow;
+	public static Item sandstone_vert_slab;
+	public static Item chiseled_sandstone_vert_slab;
+	public static Item cut_sandstone_vert_slab;
+	public static Item smooth_red_sandstone_vert_slab;
+	//endregion
+
+	//region Gravel
 	public static Item gravel_stairs;
 	public static Item gravel_slab;
 	public static Item gravel_wall;
 	public static Item gravel_snow;
-	public static Item stone_brick_snow;
-	public static Item mossy_stone_brick_snow;
-	public static Item fire_obelisk_block;
-	public static Item fire_obelisk_stairs;
-	public static Item dirt_vert_slab;
-	public static Item fire_obelisk_slab;
-	public static Item fire_obelisk_wall;
-	public static Item coarse_dirt_vert_slab;
-	public static Item acacia_log_vert_slab;
-	public static Item acacia_planks_vert_slab;
-	public static Item acacia_wood_vert_slab;
-	public static Item oak_wood_vert_slab;
-	public static Item oak_log_vert_slab;
-	public static Item oak_planks_vert_slab;
-	public static Item spruce_wood_vert_slab;
-	public static Item spruce_log_vert_slab;
-	public static Item spruce_planks_vert_slab;
-	public static Item birch_wood_vert_slab;
-	public static Item birch_log_vert_slab;
-	public static Item birch_planks_vert_slab;
-	public static Item dark_oak_wood_vert_slab;
-	public static Item dark_oak_log_vert_slab;
-	public static Item dark_oak_planks_vert_slab;
-	public static Item jungle_wood_vert_slab;
-	public static Item jungle_log_vert_slab;
-	public static Item jungle_planks_vert_slab;
-	public static Item stripped_oak_vert_slab;
-	public static Item stripped_spruce_vert_slab;
-	public static Item stripped_birch_vert_slab;
-	public static Item stripped_dark_oak_vert_slab;
-	public static Item stripped_acacia_vert_slab;
-	public static Item stripped_jungle_vert_slab;
-	public static Item stone_vert_slab;
-	public static Item granite_vert_slab;
-	public static Item polished_granite_vert_slab;
-	public static Item andesite_vert_slab;
-	public static Item polished_andesite_vert_slab;
-	public static Item cobblestone_vert_slab;
-	public static Item sand_vert_slab;
-	public static Item red_sand_vert_slab;
-	public static Item sandstone_vert_slab;
 	public static Item gravel_vert_slab;
-	public static Item chiseled_sandstone_vert_slab;
-	public static Item cut_sandstone_vert_slab;
-	public static Item smooth_stone_vert_slab;
-	public static Item quartz_vert_slab;
-	public static Item smooth_quartz_vert_slab;
-	public static Item chiseled_quartz_vert_slab;
+	//endregion
+
+	//region Oak
+	public static Item oak_log_stairs;
+	public static Item oak_log_slab;
+	public static Item oak_log_vert_slab;
+	public static Item oak_log_wall;
+	public static Item oak_wood_stairs;
+	public static Item oak_wood_slab;
+	public static Item oak_wood_fence;
+	public static Item oak_wood_snow;
+	public static Item oak_wood_vert_slab;
+	public static Item oak_wood_wall;
+	public static Item oak_planks_wall;
+	public static Item oak_planks_snow;
+	public static Item oak_planks_vert_slab;
+	public static Item stripped_oak_wood_stairs;
+	public static Item stripped_oak_wood_slab;
+	public static Item stripped_oak_wood_wall;
+	public static Item stripped_oak_vert_slab;
+	//endregion
+
+	//region Spruce
+	public static Item spruce_log_stairs;
+	public static Item spruce_log_slab;
+	public static Item spruce_log_wall;
+	public static Item spruce_log_vert_slab;
+	public static Item spruce_wood_stairs;
+	public static Item spruce_wood_fence;
+	public static Item spruce_wood_snow;
+	public static Item spruce_wood_slab;
+	public static Item spruce_wood_vert_slab;
+	public static Item spruce_wood_wall;
+	public static Item spruce_planks_wall;
+	public static Item spruce_planks_snow;
+	public static Item spruce_planks_vert_slab;
+	public static Item stripped_spruce_wood_stairs;
+	public static Item stripped_spruce_wood_slab;
+	public static Item stripped_spruce_wood_wall;
+	public static Item stripped_spruce_vert_slab;
+	//endregion
+
+	//region Dark Oak
+	public static Item dark_oak_log_stairs;
+	public static Item dark_oak_log_slab;
+	public static Item dark_oak_log_vert_slab;
+	public static Item dark_oak_log_wall;
+	public static Item dark_oak_wood_stairs;
+	public static Item dark_oak_wood_slab;
+	public static Item dark_oak_wood_fence;
+	public static Item dark_oak_wood_vert_slab;
+	public static Item dark_oak_wood_snow;
+	public static Item dark_oak_wood_wall;
+	public static Item dark_oak_planks_wall;
+	public static Item dark_oak_planks_vert_slab;
+	public static Item dark_oak_planks_snow;
+	public static Item stripped_dark_oak_wood_stairs;
+	public static Item stripped_dark_oak_wood_slab;
+	public static Item stripped_dark_oak_wood_wall;
+	public static Item stripped_dark_oak_vert_slab;
+	//endregion
+
+	//region Birch
+	public static Item birch_log_stairs;
+	public static Item birch_log_slab;
+	public static Item birch_log_wall;
+	public static Item birch_log_vert_slab;
+	public static Item birch_wood_stairs;
+	public static Item birch_wood_slab;
+	public static Item birch_wood_fence;
+	public static Item birch_wood_snow;
+	public static Item birch_wood_wall;
+	public static Item birch_wood_vert_slab;
+	public static Item birch_planks_snow;
+	public static Item birch_planks_wall;
+	public static Item birch_planks_vert_slab;
+	public static Item stripped_birch_wood_stairs;
+	public static Item stripped_birch_wood_slab;
+	public static Item stripped_birch_wood_wall;
+	public static Item stripped_birch_vert_slab;
+	//endregion
+
+	//region Acacia
+	public static Item acacia_log_stairs;
+	public static Item acacia_log_slab;
+	public static Item acacia_log_wall;
+	public static Item acacia_log_vert_slab;
+	public static Item acacia_wood_stairs;
+	public static Item acacia_wood_slab;
+	public static Item acacia_wood_fence;
+	public static Item acacia_wood_snow;
+	public static Item acacia_wood_wall;
+	public static Item acacia_wood_vert_slab;
+	public static Item acacia_planks_wall;
+	public static Item acacia_planks_vert_slab;
+	public static Item acacia_planks_snow;
+	public static Item stripped_acacia_wood_stairs;
+	public static Item stripped_acacia_wood_slab;
+	public static Item stripped_acacia_wood_wall;
+	public static Item stripped_acacia_vert_slab;
+	//endregion
+
+	//region Jungle
+	public static Item jungle_log_stairs;
+	public static Item jungle_log_slab;
+	public static Item jungle_log_wall;
+	public static Item jungle_log_vert_slab;
+	public static Item jungle_wood_stairs;
+	public static Item jungle_wood_slab;
+	public static Item jungle_wood_wall;
+	public static Item jungle_wood_fence;
+	public static Item jungle_wood_snow;
+	public static Item jungle_wood_vert_slab;
+	public static Item jungle_planks_wall;
+	public static Item jungle_planks_snow;
+	public static Item jungle_planks_vert_slab;
+	public static Item stripped_jungle_wood_stairs;
+	public static Item stripped_jungle_wood_slab;
+	public static Item stripped_jungle_wood_wall;
+	public static Item stripped_jungle_vert_slab;
+	//endregion
+
+	//region Stone
+	public static Item stone_fence;
+	public static Item stone_snow;
+	public static Item stone_vert_slab;
+	public static Item cobblestone_snow;
+	public static Item cobblestone_fence;
+	public static Item cobblestone_vert_slab;
 	public static Item mossy_cobblestone_vert_slab;
+	public static Item stone_brick_fence;
+	public static Item stone_brick_snow;
 	public static Item stone_bricks_vert_slab;
 	public static Item mossy_stone_bricks_vert_slab;
-	public static Item bookshelf_vert_slab;
-	public static Item smooth_red_sandstone_vert_slab;
+	public static Item mossy_stone_brick_snow;
+	public static Item mossy_stone_brick_fence;
+	public static Item granite_vert_slab;
+	public static Item andesite_vert_slab;
+	public static Item polished_granite_vert_slab;
+	public static Item polished_andesite_vert_slab;
+	public static Item quartz_vert_slab;
+	public static Item smooth_stone_vert_slab;
+	public static Item smooth_quartz_vert_slab;
+	public static Item chiseled_quartz_vert_slab;
 	public static Item chiseled_stone_bricks_vert_slab;
-	public static Item bookshelf_stairs;
-	public static Item bookshelf_slab;
 	public static Item cracked_stone_brick_stairs;
 	public static Item cracked_stone_brick_slab;
 	public static Item cracked_stone_brick_vert_slab;
 	public static Item cracked_stone_brick_snow;
+	public static Item cracked_stone_brick_wall;
+	public static Item cracked_stone_brick_fence;
+	//endregion
+
+	//region Fire Obelisk
+	public static Item fire_obelisk_block;
+	public static Item fire_obelisk_stairs;
+	public static Item fire_obelisk_slab;
+	public static Item fire_obelisk_wall;
+	//endregion
+
+	//region Bookshelf
+	public static Item bookshelf_vert_slab;
+	public static Item bookshelf_stairs;
+	public static Item bookshelf_slab;
+	//endregion
+
+	//region Haybale
 	public static Item haybale_stairs;
 	public static Item haybale_slab;
 	public static Item haybale_vert_slab;
 	public static Item hayblae_snow;
-	public static Item cracked_stone_brick_wall;
-	public static Item cracked_stone_brick_fence;
+	//endregion
+
+	//region Wool
 	public static Item white_wool_snow;
 	public static Item magenta_wool_snow;
 	public static Item orange_wool_snow;
@@ -214,7 +261,13 @@ public class ItemList
 	public static Item brown_wool_snow;
 	public static Item green_wool_snow;
 	public static Item red_wool_snow;
+	//endregion
+
+	//region Cauldrons
 	public static Item spruce_cauldron;
+	//endregion
+
+	//region Tables
 	public static Item oak_planks_table;
 	public static Item spruce_planks_table;
 	public static Item dark_oak_planks_table;
@@ -236,6 +289,9 @@ public class ItemList
 	public static Item cobblestone_jungle_planks_table;
 	public static Item cobblestone_acacia_planks_table;
 	public static Item cobblestone_dark_oak_planks_table;
+	//endregion
+
+	//region Stools
 	public static Item oak_planks_stool;
 	public static Item spruce_planks_stool;
 	public static Item birch_planks_stool;
@@ -258,18 +314,32 @@ public class ItemList
 	public static Item stone_stool;
 	public static Item stone_bricks_stool;
 	public static Item cracked_stone_bricks_stool;
+	//endregion
+
+	//region Benches
 	public static Item bench;
 	public static Item spruce_wood_bench;
 	public static Item birch_wood_bench;
 	public static Item jungle_wood_bench;
 	public static Item acacia_wood_bench;
 	public static Item dark_oak_wood_bench;
+	//endregion
+
+	//region Long Tables
 	public static Item oak_wood_longtable;
 	public static Item spruce_wood_longtable;
 	public static Item birch_wood_longtable;
 	public static Item jungle_wood_longtable;
 	public static Item acacia_wood_longtable;
 	public static Item dark_oak_wood_longtable;
+	//endregion
+
+	//region Wagons
 	public static Item oak_wagon;
+	//endregion
+
+	//region Chairs
 	public static Item spruce_chair;
+	//endregion
+	//endregion
 }

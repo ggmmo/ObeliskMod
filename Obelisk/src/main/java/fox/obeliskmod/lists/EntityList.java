@@ -15,7 +15,9 @@ import net.minecraftforge.event.RegistryEvent;
 
 public class EntityList 
 {
-	public static EntityType<?> TEST_ENTITY = EntityType.Builder.create(TestEntity::new, EntityClassification.CREATURE).build(ObeliskModRegistries.modid + ":test_entity").setRegistryName(ObeliskModRegistries.location("test_entity"));
+	public static EntityType<?> TEST_ENTITY = EntityType.Builder.create(TestEntity::new, EntityClassification.CREATURE)
+			.build(ObeliskModRegistries.modid + ":test_entity")
+			.setRegistryName(ObeliskModRegistries.location("test_entity"));
 	
 	public static void registerEntitySpawnEggs(final RegistryEvent.Register<Item> event) 
 	{
