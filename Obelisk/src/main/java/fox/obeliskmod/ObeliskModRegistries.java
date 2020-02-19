@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 
 import fox.obeliskmod.blocks.Bench;
 import fox.obeliskmod.blocks.Chair;
+import fox.obeliskmod.blocks.CustomPaneBlock;
 import fox.obeliskmod.blocks.CustomSnowBlock;
 import fox.obeliskmod.blocks.CustomStairsBlock;
 import fox.obeliskmod.blocks.LongTable;
@@ -23,6 +24,7 @@ import fox.obeliskmod.lists.ItemList;
 import net.minecraft.block.Block;
 import net.minecraft.block.CauldronBlock;
 import net.minecraft.block.FenceBlock;
+import net.minecraft.block.PaneBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.block.SoundType;

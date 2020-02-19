@@ -11,6 +11,7 @@ import fox.obeliskmod.blocks.Wagon;
 import net.minecraft.block.Block;
 import net.minecraft.block.CauldronBlock;
 import net.minecraft.block.FenceBlock;
+import net.minecraft.block.PaneBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.block.StairsBlock;
@@ -84,6 +85,7 @@ public class BlockList
 	public static SlabBlock stripped_oak_wood_slab;
 	public static VertSlabBlock stripped_oak_vert_slab;
 	public static StairsBlock stripped_oak_wood_stairs;
+	public static PaneBlock oak_wood_bars;
 	//endregion
 
 	//region Spruce Blocks
