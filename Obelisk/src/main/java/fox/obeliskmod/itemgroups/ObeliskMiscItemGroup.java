@@ -17,7 +17,6 @@ public class ObeliskMiscItemGroup extends ItemGroup
 	public ItemStack createIcon() 
 	{
 		return new ItemStack(ItemList.gold_coin);
-	
 	}
 
 }

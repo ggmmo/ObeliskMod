@@ -1,9 +1,16 @@
 package fox.obeliskmod.lists;
 
+import fox.obeliskmod.gui.container.UltrahotbarContainer;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 
 public class ItemList 
 {
+	//region Advanced Tools
+	public static Item ultrahotbar;
+	public static ContainerType<UltrahotbarContainer> ultrahotbar_container;
+	//endregion
+
 	//region Coins
 	public static Item copper_coin;
 	public static Item silver_coin;
