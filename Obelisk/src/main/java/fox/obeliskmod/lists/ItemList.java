@@ -92,6 +92,7 @@ public class ItemList
 	public static Item stripped_oak_wood_slab;
 	public static Item stripped_oak_wood_wall;
 	public static Item stripped_oak_vert_slab;
+	public static Item oak_wood_bars;
 	//endregion
 
 	//region Spruce

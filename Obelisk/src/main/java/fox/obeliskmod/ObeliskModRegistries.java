@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import fox.obeliskmod.blocks.Bench;
 import fox.obeliskmod.blocks.Chair;
+import fox.obeliskmod.blocks.CustomPaneBlock;
 import fox.obeliskmod.blocks.CustomSnowBlock;
 import fox.obeliskmod.blocks.CustomStairsBlock;
 import fox.obeliskmod.blocks.LongTable;
@@ -20,6 +21,7 @@ import fox.obeliskmod.lists.ItemList;
 import net.minecraft.block.Block;
 import net.minecraft.block.CauldronBlock;
 import net.minecraft.block.FenceBlock;
+import net.minecraft.block.PaneBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SnowBlock;
 import net.minecraft.block.SoundType;
@@ -319,7 +321,8 @@ public class ObeliskModRegistries
 				ItemList.acacia_wood_longtable = new BlockItem(BlockList.acacia_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.acacia_wood_longtable.getRegistryName()),
 				ItemList.dark_oak_wood_longtable = new BlockItem(BlockList.dark_oak_wood_longtable, new Item.Properties().group(furniture)).setRegistryName(BlockList.dark_oak_wood_longtable.getRegistryName()),
 				ItemList.oak_wagon = new BlockItem(BlockList.oak_wagon, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_wagon.getRegistryName()),
-				ItemList.spruce_chair = new BlockItem(BlockList.spruce_chair, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_chair.getRegistryName())
+				ItemList.spruce_chair = new BlockItem(BlockList.spruce_chair, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_chair.getRegistryName()),
+				ItemList.oak_wood_bars = new BlockItem(BlockList.oak_wood_bars, new Item.Properties().group(obelisk)).setRegistryName(BlockList.oak_wood_bars.getRegistryName())
 				//endregion
 		);
 			
@@ -585,7 +588,8 @@ public class ObeliskModRegistries
 			BlockList.acacia_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.acacia_wood_bench)).setRegistryName(location("acacia_wood_longtable")),
 			BlockList.dark_oak_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.dark_oak_wood_bench)).setRegistryName(location("dark_oak_wood_longtable")),
 			BlockList.oak_wagon = (Wagon) new Wagon(Block.Properties.from(BlockList.oak_wood_fence)).setRegistryName(location("oak_wagon")),
-			BlockList.spruce_chair = (Chair) new Chair(Block.Properties.from(BlockList.spruce_cauldron)).setRegistryName(location("spruce_chair"))
+			BlockList.spruce_chair = (Chair) new Chair(Block.Properties.from(BlockList.spruce_cauldron)).setRegistryName(location("spruce_chair")),
+			BlockList.oak_wood_bars = (PaneBlock) new CustomPaneBlock(BlockList.dark_oak_wood_fence.getDefaultState(), Block.Properties.from(BlockList.oak_wood_wall)).setRegistryName(location("oak_wood_bars"))
 			); 
 			
 			
