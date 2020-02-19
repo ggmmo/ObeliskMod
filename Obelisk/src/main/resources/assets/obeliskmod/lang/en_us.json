@@ -1,4 +1,7 @@
 {
+	"_comment": "Advanced Tools",
+	"item.obeliskmod.ultrahotbar": "U.H.",
+
 	"_comment": "Items",
 	"item.obeliskmod.copper_coin": "Copper Coin",
 	"item.obeliskmod.silver_coin": "Silver Coin",
@@ -18,7 +21,7 @@
 	"_comment": "Fluids",
 	
 	
-	"_Comment": "Blocks",
+	"_comment": "Blocks",
 	"block.obeliskmod.earth_obelisk_block": "Earth Obelisk Block",
 	"block.obeliskmod.earth_obelisk_slab": "Earth Obelisk Slab",
 	"block.obeliskmod.earth_obelisk_stairs": "Earth Obelisk Stairs",
@@ -274,5 +277,6 @@
 	"itemGroup.obelisk": "Obelisk Building Blocks",
 	"itemGroup.misc": "Obelisk Miscellaneous",
 	"itemGroup.furniture": "Obelisk Furniture",
-	"itemGroup.customBlocks": "Obelisk Custom Blocks"
+	"itemGroup.customBlocks": "Obelisk Custom Blocks",
+	"itemGroup.advancedTools": "Obelisk Dev Tools"
 }
