@@ -1,14 +1,11 @@
 package fox.obeliskmod;
 
+import fox.obeliskmod.itemgroups.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import fox.obeliskmod.client.render.ObeliskRenderRegistry;
 import fox.obeliskmod.config.Config;
-import fox.obeliskmod.itemgroups.ObeliskCustomBlocksItemGroup;
-import fox.obeliskmod.itemgroups.ObeliskFurnitureItemGroup;
-import fox.obeliskmod.itemgroups.ObeliskItemGroup;
-import fox.obeliskmod.itemgroups.ObeliskMiscItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -30,6 +27,7 @@ public class ObeliskMod
 	public static final ItemGroup misc = new ObeliskMiscItemGroup();
 	public static final ItemGroup furniture = new ObeliskFurnitureItemGroup();
 	public static final ItemGroup customBlocks = new ObeliskCustomBlocksItemGroup();
+	public static final ItemGroup advancedTools = new ObeliskAdvancedToolsGroup();
 	
 	public ObeliskMod() 
 	{
