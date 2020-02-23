@@ -1,6 +1,9 @@
 package fox.obeliskmod;
 
+import fox.obeliskmod.commands.WarpCommand;
 import fox.obeliskmod.itemgroups.*;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -47,12 +50,23 @@ public class ObeliskMod
 	
 	private void setup(final FMLCommonSetupEvent event) 
 	{
+
 		logger.info("Setup method registered");
 	}
 	
 	private void clientRegistries(final FMLClientSetupEvent event) 
 	{
 		ObeliskRenderRegistry.registryEntityRender();
+
 		logger.info("clientRegistries method registered");
+	}
+
+	@SubscribeEvent
+	public void onServerStarting(FMLServerStartingEvent event) {
+		// do something when the server starts
+		ObeliskMod.logger.info("Starting up server functions...");
+
+		// Register commands
+		WarpCommand.register(event.getCommandDispatcher());
 	}
 }
