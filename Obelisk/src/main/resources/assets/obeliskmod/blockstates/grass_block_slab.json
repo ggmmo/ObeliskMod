@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/grass_block_slab" },
+        "type=top": { "model": "obeliskmod:block/grass_block_slab_top" },
+        "type=double": { "model": "minecraft:block/grass_block" }
+    },
+}

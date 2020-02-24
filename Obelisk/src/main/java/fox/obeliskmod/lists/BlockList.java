@@ -28,6 +28,7 @@ public class BlockList
 	//endregion
 
 	//region Dirt Blocks
+	public static SlabBlock grass_block_slab;
 	public static WallBlock dirt_wall;
 	public static SlabBlock dirt_slab;
 	public static VertSlabBlock dirt_vert_slab;

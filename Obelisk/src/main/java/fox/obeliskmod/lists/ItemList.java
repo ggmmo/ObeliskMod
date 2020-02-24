@@ -42,6 +42,7 @@ public class ItemList
 	//endregion
 
 	//region Dirt
+	public static Item grass_block_slab;
 	public static Item dirt_slab;
 	public static Item dirt_wall;
 	public static Item dirt_stairs;

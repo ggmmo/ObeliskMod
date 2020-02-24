@@ -37,6 +37,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.Item.Properties;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -85,6 +86,7 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Dirt
+                        ItemList.grass_block_slab = new BlockItem(BlockList.grass_block_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.grass_block_slab.getRegistryName()),
                         ItemList.dirt_slab = new BlockItem(BlockList.dirt_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_slab.getRegistryName()),
                         ItemList.dirt_wall = new BlockItem(BlockList.dirt_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_wall.getRegistryName()),
                         ItemList.dirt_stairs = new BlockItem(BlockList.dirt_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dirt_stairs.getRegistryName()),
@@ -657,7 +659,8 @@ public class ObeliskModRegistries {
                         BlockList.acacia_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.acacia_wood_bench)).setRegistryName(location("acacia_wood_longtable")),
                         BlockList.dark_oak_wood_longtable = (LongTable) new LongTable(Block.Properties.from(BlockList.dark_oak_wood_bench)).setRegistryName(location("dark_oak_wood_longtable")),
                         BlockList.oak_wagon = (Wagon) new Wagon(Block.Properties.from(BlockList.oak_wood_fence)).setRegistryName(location("oak_wagon")),
-                        BlockList.spruce_chair = (Chair) new Chair(Block.Properties.from(BlockList.spruce_cauldron)).setRegistryName(location("spruce_chair"))
+                        BlockList.spruce_chair = (Chair) new Chair(Block.Properties.from(BlockList.spruce_cauldron)).setRegistryName(location("spruce_chair")),
+                        BlockList.grass_block_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dirt_slab)).setRegistryName(location("grass_block_slab"))
                 );
 
 
