@@ -1,47 +1,29 @@
 package fox.obeliskmod;
 
 
+import fox.obeliskmod.blocks.*;
 import fox.obeliskmod.gui.container.UltrahotbarContainer;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.ContainerType;
-import net.minecraftforge.common.extensions.IForgeContainerType;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import fox.obeliskmod.blocks.Bench;
-import fox.obeliskmod.blocks.Chair;
-import fox.obeliskmod.blocks.CustomPaneBlock;
-import fox.obeliskmod.blocks.CustomSnowBlock;
-import fox.obeliskmod.blocks.CustomStairsBlock;
-import fox.obeliskmod.blocks.LongTable;
-import fox.obeliskmod.blocks.Stool;
-import fox.obeliskmod.blocks.Table;
-import fox.obeliskmod.blocks.VertSlabBlock;
-import fox.obeliskmod.blocks.Wagon;
 import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.lists.EntityList;
 import fox.obeliskmod.lists.ItemList;
-import net.minecraft.block.Block;
-import net.minecraft.block.CauldronBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.PaneBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.SnowBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.WallBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityType;
+
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.Item.Properties;
+
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ObeliskModRegistries {
