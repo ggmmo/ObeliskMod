@@ -1,9 +1,15 @@
 package fox.obeliskmod;
 
+import fox.obeliskmod.commands.ListWarpsCommand;
+import fox.obeliskmod.commands.SetWarpCommand;
 import fox.obeliskmod.commands.WarpCommand;
 import fox.obeliskmod.itemgroups.*;
+import fox.obeliskmod.warps.WarpPosition;
+import net.minecraft.util.FileUtil;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
+import net.minecraftforge.fml.event.server.FMLServerStoppingEvent;
+import net.minecraftforge.fml.loading.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,6 +25,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Mod("obeliskmod")
 public class ObeliskMod 
 {
@@ -31,6 +40,9 @@ public class ObeliskMod
 	public static final ItemGroup furniture = new ObeliskFurnitureItemGroup();
 	public static final ItemGroup customBlocks = new ObeliskCustomBlocksItemGroup();
 	public static final ItemGroup advancedTools = new ObeliskAdvancedToolsGroup();
+
+	public static final String warpDataFile = "Config\\WarpCommands\\WarpList.rbf";
+	public static Map<String, WarpPosition> warpDestinations = new HashMap<String, WarpPosition>();
 	
 	public ObeliskMod() 
 	{
@@ -44,13 +56,14 @@ public class ObeliskMod
 		
 		Config.loadConfig(Config.client_config, FMLPaths.CONFIGDIR.get().resolve("obeliskmod-client.toml").toString());
 		Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("obeliskmod-server.toml").toString());
+
+
 		
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 	
 	private void setup(final FMLCommonSetupEvent event) 
 	{
-
 		logger.info("Setup method registered");
 	}
 	
@@ -68,5 +81,13 @@ public class ObeliskMod
 
 		// Register commands
 		WarpCommand.register(event.getCommandDispatcher());
+		SetWarpCommand.register(event.getCommandDispatcher());
+		SetWarpCommand.loadWarpData(); // Check to see if there are any saved warps upon startup
+		ListWarpsCommand.register(event.getCommandDispatcher());
+	}
+
+	@SubscribeEvent
+	public void onServerStopping(FMLServerStoppingEvent event) {
+		SetWarpCommand.saveWarpData();
 	}
 }
