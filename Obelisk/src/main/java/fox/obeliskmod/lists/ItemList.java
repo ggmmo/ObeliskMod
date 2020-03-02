@@ -6,9 +6,17 @@ import net.minecraft.item.Item;
 
 public class ItemList 
 {
+	//region Trepi Blocks
+	//region Interior Deco
+	public static Item earthenware_plate;
+	public static Item earthenware_mug;
+	public static Item earthenware_set;
+	//endregion
+
 	//region Advanced Tools
 	public static Item ultrahotbar;
 	public static ContainerType<UltrahotbarContainer> ultrahotbar_container;
+	//endregion
 	//endregion
 
 	//region Coins

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "obeliskmod:block/earthenware_mug"},
+    "facing=east": { "model": "obeliskmod:block/earthenware_mug", "y": 90 },
+    "facing=south": { "model": "obeliskmod:block/earthenware_mug", "y": 180 },
+    "facing=west": {"model": "obeliskmod:block/earthenware_mug", "y": 270}
+  }
+}
