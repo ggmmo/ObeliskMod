@@ -8,6 +8,10 @@ import fox.obeliskmod.blocks.Stool;
 import fox.obeliskmod.blocks.Table;
 import fox.obeliskmod.blocks.VertSlabBlock;
 import fox.obeliskmod.blocks.Wagon;
+import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
+import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
+import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
+import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
 import net.minecraft.block.Block;
 import net.minecraft.block.CauldronBlock;
 import net.minecraft.block.FenceBlock;
@@ -19,6 +23,18 @@ import net.minecraft.block.WallBlock;
 
 public class BlockList 
 {
+	//region Trepi
+	//region Interior Deco
+	public static EarthenwarePlate earthenware_plate;
+	public static EarthenwareMug earthenware_mug;
+	public static EarthenwareSet earthenware_set;
+	//endregion
+
+	//region Merchant Deco
+	public static MerchantSign merchant_sign;
+	//endregion
+	//endregion
+
 	//region Earth Obelisk Blocks
 	public static Block earth_obelisk_block;
 	public static WallBlock earth_obelisk_wall;

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "obeliskmod:block/earthenware_plate" },
+      { "model": "obeliskmod:block/earthenware_plate", "y": 90 },
+      { "model": "obeliskmod:block/earthenware_plate", "y": 180 },
+      { "model": "obeliskmod:block/earthenware_plate", "y": 270 }
+    ]
+  }
+}

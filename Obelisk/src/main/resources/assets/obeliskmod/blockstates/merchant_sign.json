@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "facing=north": { "model": "obeliskmod:block/merchant_sign"},
+    "facing=east": { "model": "obeliskmod:block/merchant_sign", "y": 90 },
+    "facing=south": { "model": "obeliskmod:block/merchant_sign", "y": 180 },
+    "facing=west": {"model": "obeliskmod:block/merchant_sign", "y": 270}
+  }
+}

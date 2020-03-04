@@ -1,10 +1,8 @@
 {
-
     "variants": {
         "facing=north": { "model": "obeliskmod:block/bench", "y": 270},
-	"facing=east": { "model": "obeliskmod:block/bench" },
-	"facing=south": { "model": "obeliskmod:block/bench", "y": 90 },
-	"facing=west": {"model": "obeliskmod:block/bench", "y": 180}
-		
+	    "facing=east": { "model": "obeliskmod:block/bench" },
+	    "facing=south": { "model": "obeliskmod:block/bench", "y": 90 },
+	    "facing=west": {"model": "obeliskmod:block/bench", "y": 180}
     }
 }
