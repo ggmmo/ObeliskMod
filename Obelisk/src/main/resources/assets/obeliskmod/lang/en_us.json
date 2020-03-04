@@ -12,11 +12,16 @@
 	"item.obeliskmod.copper_coin": "Copper Coin",
 	"item.obeliskmod.silver_coin": "Silver Coin",
 	"item.obeliskmod.gold_coin": "Gold Coin",
+	"item.obeliskmod.earth_ingot": "Earth Ingot",
+	"item.obeliskmod.fire_ingot": "Fire Ingot",
 	
 	"_comment": "Weapons",
 	"item.obeliskmod.stone_dagger": "Stone Dagger",
 	"item.obeliskmod.iron_dagger": "Iron Dagger",
 	"item.obeliskmod.long_sword": "Long Sword",
+	"item.obeliskmod.earth_sword": "Earth Sword",
+	"item.obeliskmod.earth_sword2": "Earth Sword 2",
+	"item.obeliskmod.fire_sword": "Fire Sword",
 	
 	"_comment": "Entity Eggs",
 	"item.obeliskmod.test_entity_egg": "Test Entity Egg",
@@ -287,5 +292,6 @@
 	"itemGroup.misc": "Obelisk Miscellaneous",
 	"itemGroup.furniture": "Obelisk Furniture",
 	"itemGroup.customBlocks": "Obelisk Custom Blocks",
-	"itemGroup.advancedTools": "Obelisk Dev Tools"
+	"itemGroup.advancedTools": "Obelisk Dev Tools",
+	"itemGroup.weapon": "Obelisk Weapons"
 }

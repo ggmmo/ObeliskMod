@@ -1,0 +1,9 @@
+{
+
+  "parent": "item/handheld",
+  "textures":
+  {
+    "layer0": "obeliskmod:item/earth_obelisk_ingot"
+  }
+}
+

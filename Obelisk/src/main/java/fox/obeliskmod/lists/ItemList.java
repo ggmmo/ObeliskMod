@@ -30,12 +30,17 @@ public class ItemList
 	public static Item copper_coin;
 	public static Item silver_coin;
 	public static Item gold_coin;
+	public static Item fire_ingot;
+	public static Item earth_ingot;
 	//endregion
 	
 	//region Weapons
 	public static Item stone_dagger;
 	public static Item iron_dagger;
 	public static Item long_sword;
+	public static Item earth_sword;
+	public static Item earth_sword2;
+	public static Item fire_sword;
 	//public static Item sling;
 	//endregion
 	
@@ -50,6 +55,7 @@ public class ItemList
 	//region Blocks
 	//region Earth Obelisk
 	public static Item earth_obelisk_block;
+	public static Item earth_obelisk_ore;
 	public static Item earth_obelisk_wall;
 	public static Item earth_obelisk_slab;
 	public static Item earth_obelisk_stairs;
@@ -251,6 +257,7 @@ public class ItemList
 
 	//region Fire Obelisk
 	public static Item fire_obelisk_block;
+	public static Item fire_obelisk_ore;
 	public static Item fire_obelisk_stairs;
 	public static Item fire_obelisk_slab;
 	public static Item fire_obelisk_wall;
