@@ -2,6 +2,7 @@ package fox.obeliskmod;
 
 
 import fox.obeliskmod.blocks.*;
+import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
 import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
@@ -9,6 +10,7 @@ import fox.obeliskmod.gui.container.UltrahotbarContainer;
 import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.lists.EntityList;
 import fox.obeliskmod.lists.ItemList;
+import fox.obeliskmod.tools.UltraHotbar;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityType;
@@ -33,6 +35,7 @@ public class ObeliskModRegistries {
 
     public static final String modid = "obeliskmod";
     private static final Logger logger = LogManager.getLogger(modid);
+
     public static final ItemGroup obelisk = ObeliskMod.obelisk;
     public static final ItemGroup misc = ObeliskMod.misc;
     public static final ItemGroup furniture = ObeliskMod.furniture;
@@ -46,7 +49,8 @@ public class ObeliskModRegistries {
                         //region Trepi
                         //region Items
                         //region Advanced Tools
-                        ItemList.ultrahotbar = new Item(new Item.Properties().group(advancedTools)).setRegistryName(location("ultrahotbar")),
+                        ItemList.ultrahotbar = new UltraHotbar(-4, -4, ItemTier.DIAMOND, null,
+                                new Item.Properties().group(advancedTools)).setRegistryName(location("ultrahotbar")),
                         //endregion
 
                         //endregion
@@ -59,6 +63,11 @@ public class ObeliskModRegistries {
                                 .setRegistryName(BlockList.earthenware_mug.getRegistryName()),
                         ItemList.earthenware_set = new BlockItem(BlockList.earthenware_set, new Item.Properties().group(misc))
                                 .setRegistryName(BlockList.earthenware_set.getRegistryName()),
+                        //endregion
+
+                        //region Merchant Deco
+                        ItemList.merchant_sign = new BlockItem(BlockList.merchant_sign, new Item.Properties().group(obelisk))
+                                .setRegistryName(BlockList.merchant_sign.getRegistryName()),
                         //endregion
 
                         //endregion
@@ -501,6 +510,12 @@ public class ObeliskModRegistries {
                                 .hardnessAndResistance(0.2f,1f).sound(SoundType.GLASS))
                                 .setRegistryName(location("earthenware_set")),
                         //endregion
+
+                        //region Merchant Deco
+                        BlockList.merchant_sign = (MerchantSign) new MerchantSign(Block.Properties.create(Material.WOOD)
+                                .hardnessAndResistance(0.75f, 50f).sound(SoundType.WOOD))
+                                .setRegistryName(location("merchant_sign")),
+                        //endregion
                         //endregion
 
                         //region Earth Obelisk
@@ -513,7 +528,7 @@ public class ObeliskModRegistries {
                                 .setRegistryName(location("earth_obelisk_slab")),
                         BlockList.earth_obelisk_stairs = (StairsBlock) new CustomStairsBlock(BlockList.earth_obelisk_block.getDefaultState(),
                                 Block.Properties.from(BlockList.earth_obelisk_block)).setRegistryName(location("earth_obelisk_stairs")),
-                        BlockList.earth_obelisk_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.stone_fence)).setRegistryName(location("earth_obelisk_fence")),
+                        BlockList.earth_obelisk_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.earth_obelisk_block)).setRegistryName(location("earth_obelisk_fence")),
                         //endregion
 
                         //region Fire Obelisk
@@ -561,12 +576,14 @@ public class ObeliskModRegistries {
                         BlockList.red_sand_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.red_sand_slab)).setRegistryName(location("red_sand_snow")),
                         BlockList.sand_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.sand_slab)).setRegistryName(location("sand_vert_slab")),
                         BlockList.red_sand_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.red_sand_slab)).setRegistryName(location("red_sand_vert_slab")),
-                        BlockList.sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cobblestone_vert_slab)).setRegistryName(location("sandstone_vert_slab")),
+                        BlockList.sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.create(Material.EARTH)
+                                .hardnessAndResistance(2f, 15f).sound(SoundType.STONE)).setRegistryName(location("sandstone_vert_slab")),
                         BlockList.chiseled_sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.sandstone_vert_slab))
                                 .setRegistryName(location("chiseled_sandstone_vert_slab")),
-                        BlockList.cut_sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.chiseled_sandstone_vert_slab))
+                        BlockList.cut_sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.sandstone_vert_slab))
                                 .setRegistryName(location("cut_sandstone_vert_slab")),
-                        BlockList.smooth_stone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_vert_slab)).setRegistryName(location("smooth_stone_vert_slab")),
+                        BlockList.smooth_red_sandstone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.sandstone_vert_slab))
+                                .setRegistryName(location("smooth_red_sandstone_vert_slab")),
                         //endregion
 
                         //region Oak
@@ -578,12 +595,12 @@ public class ObeliskModRegistries {
                                 Block.Properties.from(BlockList.oak_wood_stairs)).setRegistryName(location("oak_log_stairs")),
                         BlockList.oak_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.oak_wood_stairs)).setRegistryName(location("oak_log_slab")),
                         BlockList.oak_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.oak_wood_stairs)).setRegistryName(location("oak_log_wall")),
-                        BlockList.oak_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("oak_planks_wall")),
-                        BlockList.stripped_oak_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_oak_wood_stairs")),
-                        BlockList.stripped_oak_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_oak_wood_slab")),
-                        BlockList.stripped_oak_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_oak_wood_wall")),
-                        BlockList.oak_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("oak_wood_fence")),
+                        BlockList.oak_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.oak_wood_stairs)).setRegistryName(location("oak_planks_wall")),
+                        BlockList.stripped_oak_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.oak_wood_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.oak_wood_stairs)).setRegistryName(location("stripped_oak_wood_stairs")),
+                        BlockList.stripped_oak_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.oak_wood_stairs)).setRegistryName(location("stripped_oak_wood_slab")),
+                        BlockList.stripped_oak_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.oak_wood_stairs)).setRegistryName(location("stripped_oak_wood_wall")),
+                        BlockList.oak_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.oak_wood_stairs)).setRegistryName(location("oak_wood_fence")),
                         BlockList.oak_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_wood_slab)).setRegistryName(location("oak_wood_snow")),
                         BlockList.oak_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_planks_wall)).setRegistryName(location("oak_planks_snow")),
                         BlockList.oak_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.oak_wood_slab)).setRegistryName(location("oak_wood_vert_slab")),
@@ -596,128 +613,128 @@ public class ObeliskModRegistries {
                         //region Spruce
                         BlockList.spruce_log_stairs = (StairsBlock) new CustomStairsBlock(BlockList.oak_wood_stairs.getDefaultState(),
                                 Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("spruce_log_stairs")),
-                        BlockList.spruce_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("spruce_log_slab")),
-                        BlockList.spruce_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("spruce_log_wall")),
-                        BlockList.spruce_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.oak_wood_stairs.getDefaultState(),
+                        BlockList.spruce_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_log_slab")),
+                        BlockList.spruce_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_log_wall")),
+                        BlockList.spruce_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.spruce_log_stairs.getDefaultState(),
                                 Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("spruce_wood_stairs")),
-                        BlockList.spruce_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("spruce_wood_slab")),
-                        BlockList.spruce_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("spruce_wood_wall")),
-                        BlockList.spruce_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("spruce_planks_wall")),
-                        BlockList.stripped_spruce_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_spruce_wood_stairs")),
-                        BlockList.stripped_spruce_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_spruce_wood_slab")),
-                        BlockList.stripped_spruce_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_spruce_wood_wall")),
-                        BlockList.spruce_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("spruce_wood_fence")),
-                        BlockList.spruce_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.spruce_wood_slab)).setRegistryName(location("spruce_wood_snow")),
-                        BlockList.spruce_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_planks_wall)).setRegistryName(location("spruce_planks_snow")),
-                        BlockList.spruce_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_wood_slab)).setRegistryName(location("spruce_wood_vert_slab")),
-                        BlockList.spruce_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_slab)).setRegistryName(location("spruce_log_vert_slab")),
-                        BlockList.spruce_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_slab))
+                        BlockList.spruce_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_wood_slab")),
+                        BlockList.spruce_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_wood_wall")),
+                        BlockList.spruce_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_planks_wall")),
+                        BlockList.stripped_spruce_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.spruce_log_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("stripped_spruce_wood_stairs")),
+                        BlockList.stripped_spruce_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("stripped_spruce_wood_slab")),
+                        BlockList.stripped_spruce_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("stripped_spruce_wood_wall")),
+                        BlockList.spruce_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_wood_fence")),
+                        BlockList.spruce_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_wood_snow")),
+                        BlockList.spruce_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_planks_snow")),
+                        BlockList.spruce_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_wood_vert_slab")),
+                        BlockList.spruce_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_stairs)).setRegistryName(location("spruce_log_vert_slab")),
+                        BlockList.spruce_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_stairs))
                                 .setRegistryName(location("spruce_planks_vert_slab")),
-                        BlockList.stripped_spruce_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_spruce_wood_slab))
+                        BlockList.stripped_spruce_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_stairs))
                                 .setRegistryName(location("stripped_spruce_vert_slab")),
                         //endregion
 
                         //region Dark Oak
                         BlockList.dark_oak_log_stairs = (StairsBlock) new CustomStairsBlock(BlockList.oak_wood_stairs.getDefaultState(),
                                 Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("dark_oak_log_stairs")),
-                        BlockList.dark_oak_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("dark_oak_log_slab")),
-                        BlockList.dark_oak_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("dark_oak_log_wall")),
-                        BlockList.dark_oak_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.oak_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("dark_oak_wood_stairs")),
-                        BlockList.dark_oak_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("dark_oak_wood_slab")),
-                        BlockList.dark_oak_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("dark_oak_wood_wall")),
-                        BlockList.dark_oak_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("dark_oak_planks_wall")),
-                        BlockList.stripped_dark_oak_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_dark_oak_wood_stairs")),
-                        BlockList.stripped_dark_oak_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_slab))
+                        BlockList.dark_oak_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_log_slab")),
+                        BlockList.dark_oak_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_log_wall")),
+                        BlockList.dark_oak_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.dark_oak_log_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_wood_stairs")),
+                        BlockList.dark_oak_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_wood_slab")),
+                        BlockList.dark_oak_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_wood_wall")),
+                        BlockList.dark_oak_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_planks_wall")),
+                        BlockList.stripped_dark_oak_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.dark_oak_log_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("stripped_dark_oak_wood_stairs")),
+                        BlockList.stripped_dark_oak_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dark_oak_log_stairs))
                                 .setRegistryName(location("stripped_dark_oak_wood_slab")),
-                        BlockList.stripped_dark_oak_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab))
+                        BlockList.stripped_dark_oak_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.dark_oak_log_stairs))
                                 .setRegistryName(location("stripped_dark_oak_wood_wall")),
-                        BlockList.dark_oak_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("dark_oak_wood_fence")),
-                        BlockList.dark_oak_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.dark_oak_wood_slab)).setRegistryName(location("dark_oak_wood_snow")),
-                        BlockList.dark_oak_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_planks_wall)).setRegistryName(location("dark_oak_planks_snow")),
-                        BlockList.dark_oak_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab))
+                        BlockList.dark_oak_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_wood_fence")),
+                        BlockList.dark_oak_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_wood_snow")),
+                        BlockList.dark_oak_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("dark_oak_planks_snow")),
+                        BlockList.dark_oak_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_stairs))
                                 .setRegistryName(location("dark_oak_wood_vert_slab")),
-                        BlockList.dark_oak_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab))
+                        BlockList.dark_oak_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_stairs))
                                 .setRegistryName(location("dark_oak_log_vert_slab")),
-                        BlockList.dark_oak_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab))
+                        BlockList.dark_oak_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_stairs))
                                 .setRegistryName(location("dark_oak_planks_vert_slab")),
-                        BlockList.stripped_dark_oak_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_dark_oak_wood_slab))
+                        BlockList.stripped_dark_oak_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_stairs))
                                 .setRegistryName(location("stripped_dark_oak_vert_slab")),
                         //endregion
 
                         //region Birch
                         BlockList.birch_log_stairs = (StairsBlock) new CustomStairsBlock(BlockList.dark_oak_log_stairs.getDefaultState(),
                                 Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("birch_log_stairs")),
-                        BlockList.birch_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("birch_log_slab")),
-                        BlockList.birch_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("birch_log_wall")),
-                        BlockList.birch_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.dark_oak_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("birch_wood_stairs")),
-                        BlockList.birch_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("birch_wood_slab")),
-                        BlockList.birch_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("birch_wood_wall")),
-                        BlockList.birch_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("birch_planks_wall")),
-                        BlockList.stripped_birch_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_birch_wood_stairs")),
-                        BlockList.stripped_birch_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_birch_wood_slab")),
-                        BlockList.stripped_birch_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_birch_wood_wall")),
-                        BlockList.birch_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("birch_wood_fence")),
-                        BlockList.birch_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.birch_wood_slab)).setRegistryName(location("birch_wood_snow")),
-                        BlockList.birch_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_planks_wall)).setRegistryName(location("birch_planks_snow")),
-                        BlockList.birch_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_wood_slab)).setRegistryName(location("birch_wood_vert_slab")),
-                        BlockList.birch_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_log_slab)).setRegistryName(location("birch_log_vert_slab")),
-                        BlockList.birch_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_planks_snow))
+                        BlockList.birch_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_log_slab")),
+                        BlockList.birch_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_log_wall")),
+                        BlockList.birch_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.birch_log_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_wood_stairs")),
+                        BlockList.birch_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_wood_slab")),
+                        BlockList.birch_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_wood_wall")),
+                        BlockList.birch_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_planks_wall")),
+                        BlockList.stripped_birch_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.birch_log_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("stripped_birch_wood_stairs")),
+                        BlockList.stripped_birch_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("stripped_birch_wood_slab")),
+                        BlockList.stripped_birch_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("stripped_birch_wood_wall")),
+                        BlockList.birch_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_wood_fence")),
+                        BlockList.birch_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_wood_snow")),
+                        BlockList.birch_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_planks_snow")),
+                        BlockList.birch_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_wood_vert_slab")),
+                        BlockList.birch_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_log_stairs)).setRegistryName(location("birch_log_vert_slab")),
+                        BlockList.birch_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_log_stairs))
                                 .setRegistryName(location("birch_planks_vert_slab")),
-                        BlockList.stripped_birch_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_birch_wood_slab))
+                        BlockList.stripped_birch_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_log_stairs))
                                 .setRegistryName(location("stripped_birch_vert_slab")),
                         //endregion
 
                         //region Acacia
                         BlockList.acacia_log_stairs = (StairsBlock) new CustomStairsBlock(BlockList.dark_oak_log_stairs.getDefaultState(),
                                 Block.Properties.from(BlockList.dark_oak_log_stairs)).setRegistryName(location("acacia_log_stairs")),
-                        BlockList.acacia_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("acacia_log_slab")),
-                        BlockList.acacia_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("acacia_log_wall")),
-                        BlockList.acacia_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.dark_oak_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("acacia_wood_stairs")),
-                        BlockList.acacia_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("acacia_wood_slab")),
-                        BlockList.acacia_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("acacia_wood_wall")),
-                        BlockList.acacia_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_planks_wall")),
+                        BlockList.acacia_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_log_slab")),
+                        BlockList.acacia_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_log_wall")),
+                        BlockList.acacia_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_wood_stairs")),
+                        BlockList.acacia_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_wood_slab")),
+                        BlockList.acacia_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_wood_wall")),
+                        BlockList.acacia_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_planks_wall")),
                         BlockList.stripped_acacia_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_acacia_wood_stairs")),
-                        BlockList.stripped_acacia_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_acacia_wood_slab")),
-                        BlockList.stripped_acacia_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_acacia_wood_wall")),
-                        BlockList.acacia_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_wood_fence")),
-                        BlockList.acacia_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.acacia_wood_slab)).setRegistryName(location("acacia_wood_snow")),
-                        BlockList.acacia_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_planks_wall)).setRegistryName(location("acacia_planks_snow")),
-                        BlockList.acacia_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_log_vert_slab")),
-                        BlockList.acacia_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_planks_vert_slab")),
-                        BlockList.acacia_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_wood_vert_slab")),
-                        BlockList.stripped_acacia_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_acacia_wood_slab))
+                                Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("stripped_acacia_wood_stairs")),
+                        BlockList.stripped_acacia_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("stripped_acacia_wood_slab")),
+                        BlockList.stripped_acacia_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("stripped_acacia_wood_wall")),
+                        BlockList.acacia_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_wood_fence")),
+                        BlockList.acacia_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_wood_snow")),
+                        BlockList.acacia_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_planks_snow")),
+                        BlockList.acacia_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_log_vert_slab")),
+                        BlockList.acacia_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_planks_vert_slab")),
+                        BlockList.acacia_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("acacia_wood_vert_slab")),
+                        BlockList.stripped_acacia_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_stairs))
                                 .setRegistryName(location("stripped_acacia_vert_slab")),
                         //endregion
 
                         //region Jungle
                         BlockList.jungle_log_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
                                 Block.Properties.from(BlockList.acacia_log_stairs)).setRegistryName(location("jungle_log_stairs")),
-                        BlockList.jungle_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("jungle_log_slab")),
-                        BlockList.jungle_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("jungle_log_wall")),
-                        BlockList.jungle_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("jungle_wood_stairs")),
-                        BlockList.jungle_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("jungle_wood_slab")),
-                        BlockList.jungle_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("jungle_wood_wall")),
-                        BlockList.jungle_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("jungle_planks_wall")),
-                        BlockList.stripped_jungle_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.acacia_log_stairs.getDefaultState(),
-                                Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_jungle_wood_stairs")),
-                        BlockList.stripped_jungle_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_jungle_wood_slab")),
-                        BlockList.stripped_jungle_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("stripped_jungle_wood_wall")),
-                        BlockList.jungle_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("jungle_wood_fence")),
-                        BlockList.jungle_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.jungle_wood_slab)).setRegistryName(location("jungle_wood_snow")),
-                        BlockList.jungle_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_planks_wall)).setRegistryName(location("jungle_planks_snow")),
-                        BlockList.jungle_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_wood_slab)).setRegistryName(location("jungle_wood_vert_slab")),
-                        BlockList.jungle_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_log_vert_slab")),
-                        BlockList.jungle_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_slab))
+                        BlockList.jungle_log_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_log_slab")),
+                        BlockList.jungle_log_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_log_wall")),
+                        BlockList.jungle_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.jungle_log_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_wood_stairs")),
+                        BlockList.jungle_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_wood_slab")),
+                        BlockList.jungle_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_wood_wall")),
+                        BlockList.jungle_planks_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_planks_wall")),
+                        BlockList.stripped_jungle_wood_stairs = (StairsBlock) new CustomStairsBlock(BlockList.jungle_log_stairs.getDefaultState(),
+                                Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("stripped_jungle_wood_stairs")),
+                        BlockList.stripped_jungle_wood_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("stripped_jungle_wood_slab")),
+                        BlockList.stripped_jungle_wood_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("stripped_jungle_wood_wall")),
+                        BlockList.jungle_wood_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_wood_fence")),
+                        BlockList.jungle_wood_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_wood_snow")),
+                        BlockList.jungle_planks_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_planks_snow")),
+                        BlockList.jungle_wood_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_wood_vert_slab")),
+                        BlockList.jungle_log_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_stairs)).setRegistryName(location("jungle_log_vert_slab")),
+                        BlockList.jungle_planks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_stairs))
                                 .setRegistryName(location("jungle_planks_vert_slab")),
-                        BlockList.stripped_jungle_vertslab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_jungle_wood_slab))
+                        BlockList.stripped_jungle_vertslab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_stairs))
                                 .setRegistryName(location("stripped_jungle_vert_slab")),
                         //endregion
 
@@ -751,7 +768,7 @@ public class ObeliskModRegistries {
                                 .setRegistryName(location("mossy_stone_bricks_vert_slab")),
                         BlockList.stone_bricks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_brick_fence))
                                 .setRegistryName(location("stone_bricks_vert_slab")),
-                        BlockList.chiseled_stone_bricks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.chiseled_sandstone_vert_slab))
+                        BlockList.chiseled_stone_bricks_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stone_bricks_vert_slab))
                                 .setRegistryName(location("chiseled_stone_bricks_vert_slab")),
                         BlockList.cracked_stone_brick_stairs = (StairsBlock) new CustomStairsBlock(BlockList.cobblestone_snow.getDefaultState(),
                                 Block.Properties.from(BlockList.stone_brick_snow)).setRegistryName(location("cracked_stone_brick_stairs")),
@@ -765,6 +782,8 @@ public class ObeliskModRegistries {
                                 .setRegistryName(location("cracked_stone_brick_wall")),
                         BlockList.cracked_stone_brick_fence = (FenceBlock) new FenceBlock(Block.Properties.from(BlockList.cracked_stone_brick_slab))
                                 .setRegistryName(location("cracked_stone_brick_fence")),
+                        BlockList.smooth_stone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cracked_stone_brick_fence))
+                                .setRegistryName(location("smooth_stone_vert_slab")),
                         //endregion
 
                         //region Gravel
