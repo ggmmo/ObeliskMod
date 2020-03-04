@@ -40,6 +40,7 @@ public class ObeliskMod
 	public static final ItemGroup furniture = new ObeliskFurnitureItemGroup();
 	public static final ItemGroup customBlocks = new ObeliskCustomBlocksItemGroup();
 	public static final ItemGroup advancedTools = new ObeliskAdvancedToolsGroup();
+	public static final ItemGroup weapon = new ObeliskWeaponItemGroup();
 
 	public static final String warpDataFile = "Config\\WarpCommands\\WarpList.rbf";
 	public static Map<String, WarpPosition> warpDestinations = new HashMap<String, WarpPosition>();

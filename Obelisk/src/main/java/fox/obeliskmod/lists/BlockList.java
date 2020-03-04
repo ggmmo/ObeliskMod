@@ -37,6 +37,7 @@ public class BlockList
 
 	//region Earth Obelisk Blocks
 	public static Block earth_obelisk_block;
+	public static Block earth_obelisk_ore;
 	public static WallBlock earth_obelisk_wall;
 	public static SlabBlock earth_obelisk_slab;
 	public static StairsBlock earth_obelisk_stairs;
@@ -238,6 +239,7 @@ public class BlockList
 
 	//region Fire Obelisk
 	public static Block fire_obelisk_block;
+	public static Block fire_obelisk_ore;
 	public static WallBlock fire_obelisk_wall;
 	public static SlabBlock fire_obelisk_slab;
 	public static StairsBlock fire_obelisk_stairs;

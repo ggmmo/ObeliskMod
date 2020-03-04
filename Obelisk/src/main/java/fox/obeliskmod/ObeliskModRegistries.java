@@ -41,6 +41,7 @@ public class ObeliskModRegistries {
     public static final ItemGroup furniture = ObeliskMod.furniture;
     public static final ItemGroup customBlocks = ObeliskMod.customBlocks;
     public static final ItemGroup advancedTools = ObeliskMod.advancedTools;
+    public static final ItemGroup weapon = ObeliskMod.weapon;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
@@ -78,12 +79,17 @@ public class ObeliskModRegistries {
                         ItemList.copper_coin = new Item(new Item.Properties().group(misc)).setRegistryName(location("copper_coin")),
                         ItemList.silver_coin = new Item(new Item.Properties().group(misc)).setRegistryName(location("silver_coin")),
                         ItemList.gold_coin = new Item(new Item.Properties().group(misc)).setRegistryName(location("gold_coin")),
+                        ItemList.earth_ingot = new Item(new Item.Properties().group(misc)).setRegistryName(location("earth_ingot")),
+                        ItemList.fire_ingot = new Item(new Item.Properties().group(misc)).setRegistryName(location("fire_ingot")),
                         //endregion
 
                         //region Weapons
                         ItemList.stone_dagger = new SwordItem(ItemTier.STONE, 1, -1, new Item.Properties().group(misc)).setRegistryName(location("stone_dagger")),
                         ItemList.iron_dagger = new SwordItem(ItemTier.IRON, 1, -1, new Item.Properties().group(misc)).setRegistryName(location("iron_dagger")),
                         ItemList.long_sword = new SwordItem(ItemTier.IRON, 2, -1, new Item.Properties().group(misc)).setRegistryName(location("long_sword")),
+                        ItemList.earth_sword = new SwordItem(ItemTier.IRON,2,-1, new Item.Properties().group(weapon)).setRegistryName(location("earth_sword")),
+                        ItemList.earth_sword2 = new SwordItem(ItemTier.IRON,2,-1, new Item.Properties().group(weapon)).setRegistryName(location("earth_sword2")),
+                        ItemList.fire_sword = new SwordItem(ItemTier.IRON,2, -1, new Item.Properties().group(weapon)).setRegistryName(location("fire_sword")),
                         //ItemList.sling = (BowItem) = new CustomBow(null),
                         //endregion
 
@@ -93,6 +99,8 @@ public class ObeliskModRegistries {
                         //region Fire Obelisk
                         ItemList.fire_obelisk_block = new BlockItem(BlockList.fire_obelisk_block, new Item.Properties().group(customBlocks))
                                 .setRegistryName(BlockList.fire_obelisk_block.getRegistryName()),
+                        ItemList.fire_obelisk_ore = new BlockItem(BlockList.fire_obelisk_ore, new Item.Properties().group(customBlocks))
+                                .setRegistryName(BlockList.fire_obelisk_ore.getRegistryName()),
                         ItemList.fire_obelisk_stairs = new BlockItem(BlockList.fire_obelisk_stairs, new Item.Properties().group(customBlocks))
                                 .setRegistryName(BlockList.fire_obelisk_stairs.getRegistryName()),
                         ItemList.fire_obelisk_slab = new BlockItem(BlockList.fire_obelisk_slab, new Item.Properties().group(customBlocks)).setRegistryName(BlockList.fire_obelisk_slab.getRegistryName()),
@@ -102,6 +110,8 @@ public class ObeliskModRegistries {
                         //region Earth Obelisk
                         ItemList.earth_obelisk_block = new BlockItem(BlockList.earth_obelisk_block, new Item.Properties().group(customBlocks))
                                 .setRegistryName(BlockList.earth_obelisk_block.getRegistryName()),
+                        ItemList.earth_obelisk_ore = new BlockItem(BlockList.earth_obelisk_ore, new Item.Properties().group(customBlocks))
+                                .setRegistryName(BlockList.earth_obelisk_ore.getRegistryName()),
                         ItemList.earth_obelisk_wall = new BlockItem(BlockList.earth_obelisk_wall, new Item.Properties().group(customBlocks))
                                 .setRegistryName(BlockList.earth_obelisk_wall.getRegistryName()),
                         ItemList.earth_obelisk_slab = new BlockItem(BlockList.earth_obelisk_slab, new Item.Properties().group(customBlocks))
@@ -522,6 +532,9 @@ public class ObeliskModRegistries {
                         BlockList.earth_obelisk_block = new Block(Block.Properties.create(Material.IRON)
                                 .hardnessAndResistance(50f, 18000000.0f)
                                 .lightValue(15).sound(SoundType.METAL)).setRegistryName(location("earth_obelisk_block")),
+                        BlockList.earth_obelisk_ore = new Block(Block.Properties.create(Material.IRON)
+                                .hardnessAndResistance(50f,180f)
+                                .lightValue(15).sound(SoundType.METAL)).setRegistryName(location("earth_obelisk_ore")),
                         BlockList.earth_obelisk_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.earth_obelisk_block))
                                 .setRegistryName(location("earth_obelisk_wall")),
                         BlockList.earth_obelisk_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.earth_obelisk_block))
@@ -533,6 +546,7 @@ public class ObeliskModRegistries {
 
                         //region Fire Obelisk
                         BlockList.fire_obelisk_block = new Block(Block.Properties.from(BlockList.earth_obelisk_block)).setRegistryName(location("fire_obelisk_block")),
+                        BlockList.fire_obelisk_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(50f,180f).lightValue(15).sound(SoundType.METAL)).setRegistryName(location("fire_obelisk_ore")),
                         BlockList.fire_obelisk_stairs = (StairsBlock) new CustomStairsBlock(BlockList.fire_obelisk_block.getDefaultState(),
                                 Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_stairs")),
                         BlockList.fire_obelisk_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_slab")),
