@@ -27,7 +27,10 @@ public class ListWarpsCommand {
             }
         }
 
-        source.sendFeedback(new StringTextComponent("Warps: ").applyTextStyle(TextFormatting.YELLOW)
-                        .appendSibling(new StringTextComponent(outputText.toString()).applyTextStyle(TextFormatting.GOLD)), false);
+        if (warpNames.length <= 0)
+            source.sendFeedback(new StringTextComponent("No warps to display!").applyTextStyles(TextFormatting.DARK_GRAY, TextFormatting.ITALIC), false);
+        else
+            source.sendFeedback(new StringTextComponent("Warps: ").applyTextStyle(TextFormatting.YELLOW)
+                    .appendSibling(new StringTextComponent(outputText.toString()).applyTextStyle(TextFormatting.GOLD)), false);
     }
 }
