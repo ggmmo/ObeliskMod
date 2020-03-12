@@ -11,6 +11,7 @@ import net.minecraft.util.text.TextFormatting;
 
 import static com.mojang.brigadier.arguments.StringArgumentType.getString;
 import static com.mojang.brigadier.arguments.StringArgumentType.string;
+import static fox.obeliskmod.ObeliskMod.warpDestinations;
 
 public final class WarpCommand {
     private WarpCommand() {}
@@ -19,13 +20,19 @@ public final class WarpCommand {
         dispatcher.register(Commands.literal("warp")
                 .then(Commands.argument("WaypointName", string())
                         .executes(context -> {
-                            warpToWaypoint(context.getSource(), getString(context, "WaypointName"), context.getSource().asPlayer());
-                            return 1;
+                            return warpToWaypoint(context.getSource(), getString(context, "WaypointName"), context.getSource().asPlayer());
                         })
                 ));
     }
 
     private static int warpToWaypoint(CommandSource source, String waypointName, ServerPlayerEntity serverPlayerEntity) {
+        if (!(warpDestinations.containsKey(waypointName))) {
+            source.sendFeedback(new StringTextComponent("Warp does not exist: ").applyTextStyles(TextFormatting.DARK_GRAY, TextFormatting.ITALIC)
+                            .appendSibling(new StringTextComponent(waypointName).applyTextStyles(TextFormatting.GOLD)),
+                    false);
+            return -1;
+        }
+
         BlockPos targetPos = ObeliskMod.warpDestinations.get(waypointName).getBlockPos();
         serverPlayerEntity.teleport(serverPlayerEntity.getServerWorld(), targetPos.getX(), targetPos.getY(), targetPos.getZ(), serverPlayerEntity.rotationYaw, serverPlayerEntity.rotationPitch);
 
