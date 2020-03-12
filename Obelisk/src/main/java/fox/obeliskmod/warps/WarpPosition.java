@@ -30,4 +30,9 @@ public class WarpPosition implements Serializable {
     public double getZ() {
         return this.z;
     }
+
+    @Override
+    public String toString() {
+        return new StringBuffer(String.valueOf(this.x)).append(", ").append(String.valueOf(this.y)).append(", ").append(String.valueOf(this.z)).toString();
+    }
 }

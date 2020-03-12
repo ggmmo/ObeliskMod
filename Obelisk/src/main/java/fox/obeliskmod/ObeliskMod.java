@@ -1,10 +1,12 @@
 package fox.obeliskmod;
 
+import fox.obeliskmod.commands.ClearWarpCommand;
 import fox.obeliskmod.commands.ListWarpsCommand;
 import fox.obeliskmod.commands.SetWarpCommand;
 import fox.obeliskmod.commands.WarpCommand;
 import fox.obeliskmod.itemgroups.*;
 import fox.obeliskmod.warps.WarpPosition;
+import fox.obeliskmod.warps.WarpUtils;
 import net.minecraft.util.FileUtil;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
@@ -80,15 +82,19 @@ public class ObeliskMod
 		// do something when the server starts
 		ObeliskMod.logger.info("Starting up server functions...");
 
+		// Check to see if there are any saved warps upon startup
+		WarpUtils.loadWarpData();
+
 		// Register commands
 		WarpCommand.register(event.getCommandDispatcher());
 		SetWarpCommand.register(event.getCommandDispatcher());
-		SetWarpCommand.loadWarpData(); // Check to see if there are any saved warps upon startup
+		ClearWarpCommand.register(event.getCommandDispatcher());
 		ListWarpsCommand.register(event.getCommandDispatcher());
 	}
 
 	@SubscribeEvent
 	public void onServerStopping(FMLServerStoppingEvent event) {
-		SetWarpCommand.saveWarpData();
+		// Save any existing warps to a datafile upon closing the server connection
+		WarpUtils.saveWarpData();
 	}
 }
