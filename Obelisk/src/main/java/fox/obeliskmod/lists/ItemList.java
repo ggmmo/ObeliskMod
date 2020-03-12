@@ -372,5 +372,13 @@ public class ItemList
 	//region Chairs
 	public static Item spruce_chair;
 	//endregion
+
+	//region Iron
+	public static Item iron_wall;
+	public static Item iron_snow;
+	public static Item iron_slab;
+	public static Item iron_stairs;
+	public static Item iron_vert_slab;
+	//endregion
 	//endregion
 }

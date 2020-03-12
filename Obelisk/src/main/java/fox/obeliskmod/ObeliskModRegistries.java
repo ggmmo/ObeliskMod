@@ -492,7 +492,15 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Chairs
-                        ItemList.spruce_chair = new BlockItem(BlockList.spruce_chair, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_chair.getRegistryName())
+                        ItemList.spruce_chair = new BlockItem(BlockList.spruce_chair, new Item.Properties().group(furniture)).setRegistryName(BlockList.spruce_chair.getRegistryName()),
+                        //endregion
+
+                        //region Iron
+                        ItemList.iron_wall = new BlockItem(BlockList.iron_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_wall.getRegistryName()),
+                        ItemList.iron_snow = new BlockItem(BlockList.iron_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_snow.getRegistryName()),
+                        ItemList.iron_slab = new BlockItem(BlockList.iron_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_slab.getRegistryName()),
+                        ItemList.iron_stairs = new BlockItem(BlockList.iron_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_stairs.getRegistryName()),
+                        ItemList.iron_vert_slab = new BlockItem(BlockList.iron_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_vert_slab.getRegistryName())
                         //endregion
 
                         //endregion
@@ -570,7 +578,7 @@ public class ObeliskModRegistries {
                         BlockList.coarse_dirt_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.coarse_dirt_slab)).setRegistryName(location("coarse_dirt_snow")),
                         BlockList.dirt_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dirt_slab)).setRegistryName(location("dirt_vert_slab")),
                         BlockList.coarse_dirt_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.coarse_dirt_slab)).setRegistryName(location("coarse_dirt_vert_slab")),
-                        //endregion
+                        //endregion hoi hoi hiuhuhuhuhuh
 
                         //region Grass
                         BlockList.grass_block_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.dirt_slab)).setRegistryName(location("grass_block_slab")),
@@ -927,7 +935,15 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Chairs
-                        BlockList.spruce_chair = (Chair) new Chair(Block.Properties.from(BlockList.spruce_cauldron)).setRegistryName(location("spruce_chair"))
+                        BlockList.spruce_chair = (Chair) new Chair(Block.Properties.from(BlockList.spruce_cauldron)).setRegistryName(location("spruce_chair")),
+                        //endregion
+
+                        //region Iron
+                        BlockList.iron_wall = (WallBlock) new WallBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(0.5f, 0.5f).sound(SoundType.METAL)).setRegistryName(location("iron_wall")),
+                        BlockList.iron_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_snow")),
+                        BlockList.iron_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_slab")),
+                        BlockList.iron_stairs = (CustomStairsBlock) new CustomStairsBlock(BlockList.iron_slab.getDefaultState(), Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_stairs")),
+                        BlockList.iron_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_vert_slab"))
                         //endregion
                 );
 

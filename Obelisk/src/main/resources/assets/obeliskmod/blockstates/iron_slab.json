@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/iron_slab" },
+        "type=top": { "model": "obeliskmod:block/iron_slab_top" },
+        "type=double": { "model": "minecraft:block/iron" }
+    }
+}

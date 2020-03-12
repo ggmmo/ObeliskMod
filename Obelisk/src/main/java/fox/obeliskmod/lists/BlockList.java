@@ -354,6 +354,14 @@ public class BlockList
 	//region Chairs
 	public static Chair spruce_chair;
 	//endregion
+
+	//region Iron
+	public static WallBlock iron_wall;
+	public static SnowBlock iron_snow;
+	public static SlabBlock iron_slab;
+	public static StairsBlock iron_stairs;
+	public static VertSlabBlock iron_vert_slab;
+	//endregion
 }
 
 
