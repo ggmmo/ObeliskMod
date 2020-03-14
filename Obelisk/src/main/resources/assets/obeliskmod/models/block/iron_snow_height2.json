@@ -1,7 +1,7 @@
 {   "parent": "block/thin_block",
     "textures": {
-        "particle": "minecraft:block/iron",
-        "texture": "minecraft:block/iron"
+        "particle": "minecraft:block/iron_block",
+        "texture": "minecraft:block/iron_block"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],
