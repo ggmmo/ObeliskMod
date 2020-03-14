@@ -285,6 +285,11 @@
 	"block.obeliskmod.oak_wood_bars": "Oak Wood Bars",
 	"block.obeliskmod.grass_block_slab": "Grass Block Slab",
 	"block.obeliskmod.spruce_cauldron": "Spruce Cauldron",
+	"block.obeliskmod.iron_wall": "Iron Wall",
+	"block.obeliskmod.iron_snow": "Iron Snow",
+	"block.obeliskmod.iron_slab": "Iron Slab",
+	"block.obeliskmod.iron_stairs": "Iron Stairs",
+	"block.obeliskmod.iron_vert_slab": "Iron Vertical Slab",
 
 
 	"_comment": "Group Names",
