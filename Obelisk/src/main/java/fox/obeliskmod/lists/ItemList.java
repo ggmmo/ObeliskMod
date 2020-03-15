@@ -380,5 +380,9 @@ public class ItemList
 	public static Item iron_stairs;
 	public static Item iron_vert_slab;
 	//endregion
+
+	//region Lecterns
+	public static Item oak_lectern;
+	//endregion
 	//endregion
 }

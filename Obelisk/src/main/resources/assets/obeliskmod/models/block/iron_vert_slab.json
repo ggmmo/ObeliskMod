@@ -1,9 +1,9 @@
 {
 		"parent": "block/block",
   	"textures": {
-    	"end": "minecraft:block/iron",
-		"side": "minecraft:block/iron",
-    	"particle": "minecraft:block/iron"
+    	"end": "minecraft:block/iron_block",
+		"side": "minecraft:block/iron_block",
+    	"particle": "minecraft:block/iron_block"
 		},
 	
 	"credit": "Made with Blockbench",

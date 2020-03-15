@@ -500,9 +500,12 @@ public class ObeliskModRegistries {
                         ItemList.iron_snow = new BlockItem(BlockList.iron_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_snow.getRegistryName()),
                         ItemList.iron_slab = new BlockItem(BlockList.iron_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_slab.getRegistryName()),
                         ItemList.iron_stairs = new BlockItem(BlockList.iron_stairs, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_stairs.getRegistryName()),
-                        ItemList.iron_vert_slab = new BlockItem(BlockList.iron_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_vert_slab.getRegistryName())
+                        ItemList.iron_vert_slab = new BlockItem(BlockList.iron_vert_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.iron_vert_slab.getRegistryName()),
                         //endregion
 
+                        //region Lecterns
+                        ItemList.oak_lectern = new BlockItem(BlockList.oak_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.oak_lectern.getRegistryName())
+                        //endregion
                         //endregion
                 );
 
@@ -525,7 +528,7 @@ public class ObeliskModRegistries {
                                 .hardnessAndResistance(0.05f, 1f).sound(SoundType.GLASS))
                                 .setRegistryName(location("earthenware_mug")),
                         BlockList.earthenware_set = (EarthenwareSet) new EarthenwareSet(Block.Properties.create(Material.GLASS)
-                                .hardnessAndResistance(0.2f,1f).sound(SoundType.GLASS))
+                                .hardnessAndResistance(0.2f, 1f).sound(SoundType.GLASS))
                                 .setRegistryName(location("earthenware_set")),
                         //endregion
 
@@ -541,7 +544,7 @@ public class ObeliskModRegistries {
                                 .hardnessAndResistance(50f, 18000000.0f)
                                 .lightValue(15).sound(SoundType.METAL)).setRegistryName(location("earth_obelisk_block")),
                         BlockList.earth_obelisk_ore = new Block(Block.Properties.create(Material.IRON)
-                                .hardnessAndResistance(50f,180f)
+                                .hardnessAndResistance(50f, 180f)
                                 .lightValue(15).sound(SoundType.METAL)).setRegistryName(location("earth_obelisk_ore")),
                         BlockList.earth_obelisk_wall = (WallBlock) new WallBlock(Block.Properties.from(BlockList.earth_obelisk_block))
                                 .setRegistryName(location("earth_obelisk_wall")),
@@ -554,7 +557,7 @@ public class ObeliskModRegistries {
 
                         //region Fire Obelisk
                         BlockList.fire_obelisk_block = new Block(Block.Properties.from(BlockList.earth_obelisk_block)).setRegistryName(location("fire_obelisk_block")),
-                        BlockList.fire_obelisk_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(50f,180f).lightValue(15).sound(SoundType.METAL)).setRegistryName(location("fire_obelisk_ore")),
+                        BlockList.fire_obelisk_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(50f, 180f).lightValue(15).sound(SoundType.METAL)).setRegistryName(location("fire_obelisk_ore")),
                         BlockList.fire_obelisk_stairs = (StairsBlock) new CustomStairsBlock(BlockList.fire_obelisk_block.getDefaultState(),
                                 Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_stairs")),
                         BlockList.fire_obelisk_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.fire_obelisk_block)).setRegistryName(location("fire_obelisk_slab")),
@@ -943,7 +946,11 @@ public class ObeliskModRegistries {
                         BlockList.iron_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_snow")),
                         BlockList.iron_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_slab")),
                         BlockList.iron_stairs = (CustomStairsBlock) new CustomStairsBlock(BlockList.iron_slab.getDefaultState(), Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_stairs")),
-                        BlockList.iron_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_vert_slab"))
+                        BlockList.iron_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.iron_wall)).setRegistryName(location("iron_vert_slab")),
+                        //endregion
+
+                        //region Lecterns
+                        BlockList.oak_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("oak_lectern"))
                         //endregion
                 );
 
