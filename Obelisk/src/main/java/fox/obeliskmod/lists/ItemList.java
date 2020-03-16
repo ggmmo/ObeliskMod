@@ -384,5 +384,14 @@ public class ItemList
 	public static Item iron_stairs;
 	public static Item iron_vert_slab;
 	//endregion
+
+	//region Lecterns
+	public static Item oak_lectern;
+	public static Item spruce_lectern;
+	public static Item birch_lectern;
+	public static Item dark_oak_lectern;
+	public static Item acacia_lectern;
+	public static Item jungle_lectern;
+	//endregion
 	//endregion
 }

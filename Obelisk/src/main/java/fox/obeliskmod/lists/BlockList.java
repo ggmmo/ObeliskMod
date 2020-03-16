@@ -13,14 +13,7 @@ import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
 import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
-import net.minecraft.block.Block;
-import net.minecraft.block.CauldronBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.PaneBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.SnowBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.WallBlock;
+import net.minecraft.block.*;
 
 public class BlockList 
 {
@@ -367,6 +360,15 @@ public class BlockList
 	public static SlabBlock iron_slab;
 	public static StairsBlock iron_stairs;
 	public static VertSlabBlock iron_vert_slab;
+	//endregion
+
+	//region Lecterns
+	public static LecternBlock oak_lectern;
+	public static LecternBlock spruce_lectern;
+	public static LecternBlock birch_lectern;
+	public static LecternBlock dark_oak_lectern;
+	public static LecternBlock acacia_lectern;
+	public static LecternBlock jungle_lectern;
 	//endregion
 }
 

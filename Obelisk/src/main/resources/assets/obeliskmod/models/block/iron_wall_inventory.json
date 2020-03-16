@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:block/wall_inventory",
     "textures": {
-        "wall": "minecraft:block/iron"
+        "wall": "minecraft:block/iron_block"
     }
 }
