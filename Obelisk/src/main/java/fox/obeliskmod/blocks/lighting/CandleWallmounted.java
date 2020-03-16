@@ -26,8 +26,16 @@ public class CandleWallmounted extends HorizontalBlock {
     }
 
     @Override
-    public int getLightValue(BlockState state, IEnviromentBlockReader world, BlockPos pos) {
-        return 12;
+    public int getLightValue(BlockState state) {
+        switch(state.get(ObeliskBlockStateProperties.CANDLE_SIZE)) {
+            case TALL:
+            default:
+                return 12;
+            case MEDIUM:
+                return 8;
+            case SHORT:
+                return 4;
+        }
     }
 
     @Override
@@ -41,9 +49,29 @@ public class CandleWallmounted extends HorizontalBlock {
      */
     @Override
     public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-        double d0 = (double)pos.getX() + 0.5D;
-        double d2 = (double)pos.getZ() + 0.625D;
+        double d0;
+        double d2;
         double d1;
+
+        switch(stateIn.getBlockState().get(BlockStateProperties.HORIZONTAL_FACING)) {
+            case NORTH:
+            default:
+                d0 = (double)pos.getX() + 0.5D;
+                d2 = (double)pos.getZ() + 0.375D;
+                break;
+            case EAST:
+                d0 = (double)pos.getX() + 0.625D;
+                d2 = (double)pos.getZ() + 0.5D;
+                break;
+            case SOUTH:
+                d0 = (double)pos.getX() + 0.5D;
+                d2 = (double)pos.getZ() + 0.625D;
+                break;
+            case WEST:
+                d0 = (double)pos.getX() + 0.375D;
+                d2 = (double)pos.getZ() + 0.5D;
+                break;
+        }
 
         switch (stateIn.getBlockState().get(ObeliskBlockStateProperties.CANDLE_SIZE)) {
             case TALL:
