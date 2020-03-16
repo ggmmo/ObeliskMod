@@ -31,6 +31,8 @@
 	"entity.obeliskmod.test_entity": "Test Entity",
 	
 	"_comment": "Fluids",
+	"block.obeliskmod.molten1": "Molten Earth Obelisk Block",
+	"item.obeliskmod.molten1_bucket": "Molten Earth Obelisk Bucket",
 	
 	
 	"_comment": "Blocks",

@@ -53,7 +53,8 @@ public class ItemList
 	public static Item test_entity_egg;
 	//endregion
 
-	//region Fluids
+	//region Buckets
+	public static Item molten1_bucket;
 	//endregion
 	
 	

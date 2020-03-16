@@ -2,6 +2,7 @@ package fox.obeliskmod;
 
 
 import fox.obeliskmod.blocks.*;
+import fox.obeliskmod.blocks.fluids.MoltenEarthObeliskFluid;
 import fox.obeliskmod.blocks.lighting.CandleWallmounted;
 import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
@@ -10,18 +11,16 @@ import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
 import fox.obeliskmod.gui.container.UltrahotbarContainer;
 import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.lists.EntityList;
+import fox.obeliskmod.lists.FluidList;
 import fox.obeliskmod.lists.ItemList;
 import fox.obeliskmod.tools.UltraHotbar;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityType;
 
+import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemTier;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.extensions.IForgeContainerType;
@@ -97,6 +96,10 @@ public class ObeliskModRegistries {
                         ItemList.earth_sword2 = new SwordItem(ItemTier.IRON,2,-1, new Item.Properties().group(weapon)).setRegistryName(location("earth_sword2")),
                         ItemList.fire_sword = new SwordItem(ItemTier.IRON,2, -1, new Item.Properties().group(weapon)).setRegistryName(location("fire_sword")),
                         //ItemList.sling = (BowItem) = new CustomBow(null),
+                        //endregion
+
+                        //region Buckets
+                        ItemList.molten1_bucket = new BucketItem(() -> FluidList.molten1, new Item.Properties().group(misc).maxStackSize(1)).setRegistryName("molten1_bucket"),
                         //endregion
 
 
@@ -1006,7 +1009,11 @@ public class ObeliskModRegistries {
                         BlockList.birch_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("birch_leaves_snow")),
                         BlockList.dark_oak_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("dark_oak_leaves_snow")),
                         BlockList.acacia_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("acacia_leaves_snow")),
-                        BlockList.jungle_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("jungle_leaves_snow"))
+                        BlockList.jungle_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("jungle_leaves_snow")),
+                        //endregion
+
+                        //region Fluids
+                        BlockList.molten1 = new FlowingFluidBlock(() -> FluidList.molten1, Block.Properties.create(Material.LAVA).doesNotBlockMovement().noDrops()).setRegistryName(location("molten1"))
                         //endregion
                 );
 
@@ -1038,5 +1045,16 @@ public class ObeliskModRegistries {
 
     public static ResourceLocation location(String name) {
         return new ResourceLocation(modid, name);
+    }
+
+    @SubscribeEvent
+    public static void registerFluids(final RegistryEvent.Register<Fluid> event)
+    {
+        event.getRegistry().registerAll
+                (
+                    FluidList.flowing_molten1 = (MoltenEarthObeliskFluid.Flowing) new MoltenEarthObeliskFluid.Flowing().setRegistryName(location("flowing_molten1")),
+                    FluidList.molten1 = (MoltenEarthObeliskFluid.Source) new MoltenEarthObeliskFluid.Source().setRegistryName(location("molten1"))
+                );
+
     }
 }

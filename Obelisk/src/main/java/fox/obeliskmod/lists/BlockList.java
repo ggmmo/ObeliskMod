@@ -384,7 +384,10 @@ public class BlockList
 	public static SnowBlock dark_oak_leaves_snow;
 	public static SnowBlock acacia_leaves_snow;
 	public static SnowBlock jungle_leaves_snow;
+	//endregion
 
+	//region Fluids
+	public static Block molten1;
 	//endregion
 }
 
