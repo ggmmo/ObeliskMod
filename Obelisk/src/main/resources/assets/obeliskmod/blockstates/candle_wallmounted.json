@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "facing=north,size=tall": {"model": "obeliskmod:block/candle_wallmount_tall"},
+    "facing=east,size=tall": {"model": "obeliskmod:block/candle_wallmount_tall", "y": 90},
+    "facing=south,size=tall": {"model": "obeliskmod:block/candle_wallmount_tall", "y": 180},
+    "facing=west,size=tall": {"model": "obeliskmod:block/candle_wallmount_tall", "y": 270},
+
+    "facing=north,size=medium": {"model": "obeliskmod:block/candle_wallmount_medium"},
+    "facing=east,size=medium": {"model": "obeliskmod:block/candle_wallmount_medium", "y": 90},
+    "facing=south,size=medium": {"model": "obeliskmod:block/candle_wallmount_medium", "y": 180},
+    "facing=west,size=medium": {"model": "obeliskmod:block/candle_wallmount_medium", "y": 270},
+
+    "facing=north,size=short": {"model": "obeliskmod:block/candle_wallmount_short"},
+    "facing=east,size=short": {"model": "obeliskmod:block/candle_wallmount_short", "y": 90},
+    "facing=south,size=short": {"model": "obeliskmod:block/candle_wallmount_short", "y": 180},
+    "facing=west,size=short": {"model": "obeliskmod:block/candle_wallmount_short", "y": 270}
+  }
+}

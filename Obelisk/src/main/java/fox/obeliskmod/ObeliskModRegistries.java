@@ -2,6 +2,7 @@ package fox.obeliskmod;
 
 
 import fox.obeliskmod.blocks.*;
+import fox.obeliskmod.blocks.lighting.CandleWallmounted;
 import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
 import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
@@ -69,6 +70,11 @@ public class ObeliskModRegistries {
                         //region Merchant Deco
                         ItemList.merchant_sign = new BlockItem(BlockList.merchant_sign, new Item.Properties().group(obelisk))
                                 .setRegistryName(BlockList.merchant_sign.getRegistryName()),
+                        //endregion
+
+                        //region Lighting
+                        ItemList.candle_wallmounted = new BlockItem(BlockList.candle_wallmounted, new Item.Properties().group(misc))
+                                .setRegistryName(BlockList.candle_wallmounted.getRegistryName()),
                         //endregion
 
                         //endregion
@@ -526,6 +532,12 @@ public class ObeliskModRegistries {
                                 .hardnessAndResistance(0.75f, 50f).sound(SoundType.WOOD))
                                 .setRegistryName(location("merchant_sign")),
                         //endregion
+
+                        //region Lighting
+                        BlockList.candle_wallmounted = (CandleWallmounted) new CandleWallmounted(Block.Properties.create(Material.ROCK)
+                                .hardnessAndResistance(0.15f, 1f).sound(SoundType.STONE))
+                                .setRegistryName(location("candle_wallmounted")),
+                        //endregion
                         //endregion
 
                         //region Earth Obelisk
@@ -845,7 +857,8 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Cauldrons
-                        BlockList.spruce_cauldron = (CauldronBlock) new CauldronBlock(Block.Properties.from(BlockList.stone_bricks_vert_slab)).setRegistryName(location("spruce_cauldron")),
+                        BlockList.spruce_cauldron = (CauldronBlock) new CauldronBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2f, 10f).sound(SoundType.WOOD))
+                                .setRegistryName(location("spruce_cauldron")),
                         //endregion
 
                         //region Tables

@@ -23,6 +23,10 @@ public class ItemList
 	public static Item merchant_sign;
 	//endregion
 
+	//region Lighting
+	public static Item candle_wallmounted;
+	//endregion
+
 	//endregion
 	//endregion
 

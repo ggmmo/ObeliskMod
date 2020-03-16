@@ -8,6 +8,7 @@ import fox.obeliskmod.blocks.Stool;
 import fox.obeliskmod.blocks.Table;
 import fox.obeliskmod.blocks.VertSlabBlock;
 import fox.obeliskmod.blocks.Wagon;
+import fox.obeliskmod.blocks.lighting.CandleWallmounted;
 import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
 import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
@@ -33,6 +34,11 @@ public class BlockList
 	//region Merchant Deco
 	public static MerchantSign merchant_sign;
 	//endregion
+
+	//region Lighting
+	public static CandleWallmounted candle_wallmounted;
+	//endregion
+
 	//endregion
 
 	//region Earth Obelisk Blocks
