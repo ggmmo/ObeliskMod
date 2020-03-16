@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "obeliskmod:block/spruce_lectern"
+        },
+        "facing=south": {
+            "model": "obeliskmod:block/spruce_lectern",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "obeliskmod:block/spruce_lectern",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "obeliskmod:block/spruce_lectern",
+            "y": 90
+        }
+    }
+}
