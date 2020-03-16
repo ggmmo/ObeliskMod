@@ -1,5 +1,6 @@
 package fox.obeliskmod.lists;
 
+import fox.obeliskmod.blocks.LockedDoor;
 import fox.obeliskmod.gui.container.UltrahotbarContainer;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
@@ -393,5 +394,14 @@ public class ItemList
 	public static Item acacia_lectern;
 	public static Item jungle_lectern;
 	//endregion
+	//endregion
+
+	//region Locked Doors
+	public static Item locked_oak_door;
+	public static Item locked_spruce_door;
+	public static Item locked_birch_door;
+	public static Item locked_dark_oak_door;
+	public static Item locked_acacia_door;
+	public static Item locked_jungle_door;
 	//endregion
 }
