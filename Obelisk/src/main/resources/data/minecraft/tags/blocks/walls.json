@@ -33,6 +33,7 @@
 	"obeliskmod:gravel_wall",
 	"obeliskmod:fire_obelisk_wall",
 	"obeliskmod:cracked_stone_brick_wall",
-	"obeliskmod:iron_wall"
+	"obeliskmod:iron_wall",
+	"obeliskmod:stone_wall"
   ]
 }

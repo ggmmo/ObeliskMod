@@ -1,3 +1,4 @@
+
 package fox.obeliskmod.lists;
 
 import fox.obeliskmod.blocks.LockedDoor;
@@ -55,6 +56,10 @@ public class ItemList
 	//endregion
 
 	//region Fluids
+	//endregion
+  
+  //region Buckets
+	public static Item molten1_bucket;
 	//endregion
 	
 	
@@ -259,6 +264,7 @@ public class ItemList
 	public static Item cracked_stone_brick_snow;
 	public static Item cracked_stone_brick_wall;
 	public static Item cracked_stone_brick_fence;
+  public static Item stone_wall;
 	//endregion
 
 	//region Fire Obelisk
@@ -397,6 +403,15 @@ public class ItemList
 	//endregion
 	//endregion
 
+   //region Leaves;
+	public static Item oak_leaves_snow;
+	public static Item spruce_leaves_snow;
+	public static Item birch_leaves_snow;
+	public static Item dark_oak_leaves_snow;
+	public static Item acacia_leaves_snow;
+	public static Item jungle_leaves_snow;
+  //endregion
+  
 	//region Locked Blocks
 	//region Doors
 	public static Item locked_oak_door;

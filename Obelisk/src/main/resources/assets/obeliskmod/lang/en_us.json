@@ -31,7 +31,8 @@
 	"entity.obeliskmod.test_entity": "Test Entity",
 	
 	"_comment": "Fluids",
-	
+	"block.obeliskmod.molten1": "Molten Earth Obelisk Block",
+	"item.obeliskmod.molten1_bucket": "Molten Earth Obelisk Bucket",
 	
 	"_comment": "Blocks",
 	"block.obeliskmod.earth_obelisk_block": "Earth Obelisk Block",
@@ -310,6 +311,13 @@
 	"block.obeliskmod.locked_birch_trapdoor": "Locked Birch Trapdoor",
 	"block.obeliskmod.locked_acacia_trapdoor": "Locked Acacia Trapdoor",
 	"block.obeliskmod.bottles": "Bottles",
+  "block.obeliskmod.stone_wall": "Stone Wall",
+	"block.obeliskmod.oak_leaves_snow": "Oak Leaves Snow",
+	"block.obeliskmod.spruce_leaves_snow": "Spruce Leaves Snow",
+	"block.obeliskmod.birch_leaves_snow": "Birch Leaves Snow",
+	"block.obeliskmod.dark_oak_leaves_snow": "Dark Oak Leaves Snow",
+	"block.obeliskmod.acacia_leaves_snow": "Acacia Leaves Snow",
+	"block.obeliskmod.jungle_leaves_snow": "Jungle Leaves Snow",
 
 
 	"_comment": "Group Names",
@@ -319,4 +327,3 @@
 	"itemGroup.customBlocks": "Obelisk Custom Blocks",
 	"itemGroup.advancedTools": "Obelisk Dev Tools",
 	"itemGroup.weapon": "Obelisk Weapons"
-}

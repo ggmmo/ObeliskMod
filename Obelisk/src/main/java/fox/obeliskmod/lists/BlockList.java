@@ -230,6 +230,7 @@ public class BlockList
 	public static StairsBlock cracked_stone_brick_stairs;
 	public static FenceBlock cracked_stone_brick_fence;
 	public static SnowBlock cracked_stone_brick_snow;
+  public static WallBlock stone_wall;
 	//endregion
 
 	//region Fire Obelisk
@@ -393,6 +394,17 @@ public class BlockList
 	//region Not A Pickle
 	public static NotAPickle bottles;
 	//endregion
+  
+  //region Leaves
+	public static SnowBlock oak_leaves_snow;
+	public static SnowBlock spruce_leaves_snow;
+	public static SnowBlock birch_leaves_snow;
+	public static SnowBlock dark_oak_leaves_snow;
+	public static SnowBlock acacia_leaves_snow;
+	public static SnowBlock jungle_leaves_snow;
+	//endregion
+
+	//region Fluids
+	public static Block molten1;
+	//endregion
 }
-
-
