@@ -258,6 +258,7 @@ public class ItemList
 	public static Item cracked_stone_brick_snow;
 	public static Item cracked_stone_brick_wall;
 	public static Item cracked_stone_brick_fence;
+	public static Item stone_wall;
 	//endregion
 
 	//region Fire Obelisk

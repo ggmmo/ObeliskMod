@@ -297,12 +297,16 @@
 	"block.obeliskmod.dark_oak_lectern": "Dark Oak Lectern",
 	"block.obeliskmod.acacia_lectern": "Acacia Lectern",
 	"block.obeliskmod.jungle_lectern": "Jungle Lectern",
+<<<<<<< Updated upstream
 	"block.obeliskmod.locked_oak_door": "Locked Oak Door",
 	"block.obeliskmod.locked_spruce_door": "Locked Spruce Door",
 	"block.obeliskmod.locked_dark_oak_door": "Locked Dark Oak Door",
 	"block.obeliskmod.locked_birch_door": "Locked Birch Door",
 	"block.obeliskmod.locked_jungle_door": "Locked Jungle Door",
 	"block.obeliskmod.locked_acacia_door": "Locked Acacia Door",
+=======
+	"block.obeliskmod.stone_wall": "Stone Wall",
+>>>>>>> Stashed changes
 
 
 	"_comment": "Group Names",

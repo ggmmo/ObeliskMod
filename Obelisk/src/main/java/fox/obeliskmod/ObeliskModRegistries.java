@@ -452,6 +452,7 @@ public class ObeliskModRegistries {
                         ItemList.cobblestone_jungle_planks_table = new BlockItem(BlockList.cobblestone_jungle_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_jungle_planks_table.getRegistryName()),
                         ItemList.cobblestone_acacia_planks_table = new BlockItem(BlockList.cobblestone_acacia_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_acacia_planks_table.getRegistryName()),
                         ItemList.cobblestone_dark_oak_planks_table = new BlockItem(BlockList.cobblestone_dark_oak_planks_table, new Item.Properties().group(furniture)).setRegistryName(BlockList.cobblestone_dark_oak_planks_table.getRegistryName()),
+                        ItemList.stone_wall = new BlockItem(BlockList.stone_wall, new Item.Properties().group(obelisk)).setRegistryName(BlockList.stone_wall.getRegistryName()),
                         //endregion
 
                         //region Stools
@@ -839,6 +840,7 @@ public class ObeliskModRegistries {
                                 .setRegistryName(location("cracked_stone_brick_fence")),
                         BlockList.smooth_stone_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.cracked_stone_brick_fence))
                                 .setRegistryName(location("smooth_stone_vert_slab")),
+                        BlockList.stone_wall  = (WallBlock) new WallBlock(Block.Properties.from(BlockList.stone_vert_slab)).setRegistryName(location("stone_wall")),
                         //endregion
 
                         //region Gravel
