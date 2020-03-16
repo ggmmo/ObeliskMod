@@ -504,7 +504,12 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Lecterns
-                        ItemList.oak_lectern = new BlockItem(BlockList.oak_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.oak_lectern.getRegistryName())
+                        ItemList.oak_lectern = new BlockItem(BlockList.oak_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.oak_lectern.getRegistryName()),
+                        ItemList.spruce_lectern = new BlockItem(BlockList.spruce_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.spruce_lectern.getRegistryName()),
+                        ItemList.birch_lectern = new BlockItem(BlockList.birch_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.birch_lectern.getRegistryName()),
+                        ItemList.dark_oak_lectern = new BlockItem(BlockList.dark_oak_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.dark_oak_lectern.getRegistryName()),
+                        ItemList.acacia_lectern = new BlockItem(BlockList.acacia_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.acacia_lectern.getRegistryName()),
+                        ItemList.jungle_lectern = new BlockItem(BlockList.jungle_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.jungle_lectern.getRegistryName())
                         //endregion
                         //endregion
                 );
@@ -950,7 +955,12 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Lecterns
-                        BlockList.oak_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("oak_lectern"))
+                        BlockList.oak_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.oak_log_slab)).setRegistryName(location("oak_lectern")),
+                        BlockList.spruce_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.spruce_log_slab)).setRegistryName(location("spruce_lectern")),
+                        BlockList.birch_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.birch_log_slab)).setRegistryName(location("birch_lectern")),
+                        BlockList.dark_oak_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_lectern")),
+                        BlockList.acacia_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_lectern")),
+                        BlockList.jungle_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_lectern"))
                         //endregion
                 );
 

@@ -358,6 +358,11 @@ public class BlockList
 
 	//region Lecterns
 	public static LecternBlock oak_lectern;
+	public static LecternBlock spruce_lectern;
+	public static LecternBlock birch_lectern;
+	public static LecternBlock dark_oak_lectern;
+	public static LecternBlock acacia_lectern;
+	public static LecternBlock jungle_lectern;
 	//endregion
 }
 

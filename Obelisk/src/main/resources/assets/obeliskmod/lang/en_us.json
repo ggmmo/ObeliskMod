@@ -291,6 +291,11 @@
 	"block.obeliskmod.iron_stairs": "Iron Stairs",
 	"block.obeliskmod.iron_vert_slab": "Iron Vertical Slab",
 	"block.obeliskmod.oak_lectern": "Oak Lectern",
+	"block.obeliskmod.spruce_lectern": "Spruce Lectern",
+	"block.obeliskmod.birch_lectern": "Birch Lectern",
+	"block.obeliskmod.dark_oak_lectern": "Dark Oak Lectern",
+	"block.obeliskmod.acacia_lectern": "Acacia Lectern",
+	"block.obeliskmod.jungle_lectern": "Jungle Lectern",
 
 
 	"_comment": "Group Names",

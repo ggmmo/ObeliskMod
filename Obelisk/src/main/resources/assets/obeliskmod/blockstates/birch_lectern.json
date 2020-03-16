@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "obeliskmod:block/birch_lectern"
+        },
+        "facing=south": {
+            "model": "obeliskmod:block/birch_lectern",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "obeliskmod:block/birch_lectern",
+            "y": 270
+        },
+        "facing=east": {
+            "model": "obeliskmod:block/birch_lectern",
+            "y": 90
+        }
+    }
+}
