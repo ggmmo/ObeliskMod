@@ -368,7 +368,7 @@ public class BlockList
 	public static LecternBlock jungle_lectern;
 	//endregion
 
-<<<<<<< Updated upstream
+
 	//region Locked Doors
 	public static LockedDoor locked_oak_door;
 	public static LockedDoor locked_spruce_door;
@@ -376,10 +376,15 @@ public class BlockList
 	public static LockedDoor locked_dark_oak_door;
 	public static LockedDoor locked_acacia_door;
 	public static LockedDoor locked_jungle_door;
-=======
+
 	//region Leaves
-	public static SnowBlock Oak
->>>>>>> Stashed changes
+	public static SnowBlock oak_leaves_snow;
+	public static SnowBlock spruce_leaves_snow;
+	public static SnowBlock birch_leaves_snow;
+	public static SnowBlock dark_oak_leaves_snow;
+	public static SnowBlock acacia_leaves_snow;
+	public static SnowBlock jungle_leaves_snow;
+
 	//endregion
 }
 

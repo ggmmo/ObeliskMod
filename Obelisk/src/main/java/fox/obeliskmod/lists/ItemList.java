@@ -395,7 +395,7 @@ public class ItemList
 	public static Item acacia_lectern;
 	public static Item jungle_lectern;
 	//endregion
-	//endregion
+
 
 	//region Locked Doors
 	public static Item locked_oak_door;
@@ -404,5 +404,15 @@ public class ItemList
 	public static Item locked_dark_oak_door;
 	public static Item locked_acacia_door;
 	public static Item locked_jungle_door;
+	//endregion
+
+	//region Leaves;
+	public static Item oak_leaves_snow;
+	public static Item spruce_leaves_snow;
+	public static Item birch_leaves_snow;
+	public static Item dark_oak_leaves_snow;
+	public static Item acacia_leaves_snow;
+	public static Item jungle_leaves_snow;
+	//endregion
 	//endregion
 }

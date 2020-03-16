@@ -522,7 +522,16 @@ public class ObeliskModRegistries {
                         ItemList.birch_lectern = new BlockItem(BlockList.birch_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.birch_lectern.getRegistryName()),
                         ItemList.dark_oak_lectern = new BlockItem(BlockList.dark_oak_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.dark_oak_lectern.getRegistryName()),
                         ItemList.acacia_lectern = new BlockItem(BlockList.acacia_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.acacia_lectern.getRegistryName()),
-                        ItemList.jungle_lectern = new BlockItem(BlockList.jungle_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.jungle_lectern.getRegistryName())
+                        ItemList.jungle_lectern = new BlockItem(BlockList.jungle_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.jungle_lectern.getRegistryName()),
+                        //endregion
+
+                        //region Leaves
+                        ItemList.oak_leaves_snow = new BlockItem(BlockList.oak_leaves_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.oak_leaves_snow.getRegistryName()),
+                        ItemList.spruce_leaves_snow = new BlockItem(BlockList.spruce_leaves_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.spruce_leaves_snow.getRegistryName()),
+                        ItemList.birch_leaves_snow = new BlockItem(BlockList.birch_leaves_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.birch_leaves_snow.getRegistryName()),
+                        ItemList.dark_oak_leaves_snow = new BlockItem(BlockList.dark_oak_leaves_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.dark_oak_leaves_snow.getRegistryName()),
+                        ItemList.acacia_leaves_snow = new BlockItem(BlockList.acacia_leaves_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.acacia_leaves_snow.getRegistryName()),
+                        ItemList.jungle_leaves_snow = new BlockItem(BlockList.jungle_leaves_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.jungle_leaves_snow.getRegistryName())
                         //endregion
                         //endregion
 
@@ -988,7 +997,16 @@ public class ObeliskModRegistries {
                         BlockList.birch_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.birch_log_slab)).setRegistryName(location("birch_lectern")),
                         BlockList.dark_oak_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_lectern")),
                         BlockList.acacia_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_lectern")),
-                        BlockList.jungle_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_lectern"))
+                        BlockList.jungle_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_lectern")),
+                        //endregion
+
+                        //region Leaves
+                        BlockList.oak_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.create(Material.ORGANIC).hardnessAndResistance(0.5f, 0.5f).sound(SoundType.PLANT)).setRegistryName(location("oak_leaves_snow")),
+                        BlockList.spruce_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("spruce_leaves_snow")),
+                        BlockList.birch_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("birch_leaves_snow")),
+                        BlockList.dark_oak_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("dark_oak_leaves_snow")),
+                        BlockList.acacia_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("acacia_leaves_snow")),
+                        BlockList.jungle_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("jungle_leaves_snow"))
                         //endregion
                 );
 
