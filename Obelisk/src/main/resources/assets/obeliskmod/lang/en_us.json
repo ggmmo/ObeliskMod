@@ -31,6 +31,8 @@
 	"entity.obeliskmod.test_entity": "Test Entity",
 	
 	"_comment": "Fluids",
+	"block.obeliskmod.molten1": "Molten Earth Obelisk Block",
+	"item.obeliskmod.molten1_bucket": "Molten Earth Obelisk Bucket",
 	
 	
 	"_comment": "Blocks",
@@ -303,6 +305,15 @@
 	"block.obeliskmod.locked_birch_door": "Locked Birch Door",
 	"block.obeliskmod.locked_jungle_door": "Locked Jungle Door",
 	"block.obeliskmod.locked_acacia_door": "Locked Acacia Door",
+
+	"block.obeliskmod.stone_wall": "Stone Wall",
+	"block.obeliskmod.oak_leaves_snow": "Oak Leaves Snow",
+	"block.obeliskmod.spruce_leaves_snow": "Spruce Leaves Snow",
+	"block.obeliskmod.birch_leaves_snow": "Birch Leaves Snow",
+	"block.obeliskmod.dark_oak_leaves_snow": "Dark Oak Leaves Snow",
+	"block.obeliskmod.acacia_leaves_snow": "Acacia Leaves Snow",
+	"block.obeliskmod.jungle_leaves_snow": "Jungle Leaves Snow",
+
 	"block.obeliskmod.locked_oak_trapdoor": "Locked Oak Trapdoor",
 	"block.obeliskmod.locked_spruce_trapdoor": "Locked Spruce Trapdoor",
 	"block.obeliskmod.locked_dark_oak_trapdoor": "Locked Dark Oak Trapdoor",
