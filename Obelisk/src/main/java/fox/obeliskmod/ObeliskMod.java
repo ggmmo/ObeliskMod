@@ -2,15 +2,13 @@ package fox.obeliskmod;
 
 import fox.obeliskmod.client.render.ObeliskRenderRegistry;
 import fox.obeliskmod.commands.ClearWarpCommand;
->>>>>>> master
 import fox.obeliskmod.commands.ListWarpsCommand;
 import fox.obeliskmod.commands.SetWarpCommand;
 import fox.obeliskmod.commands.WarpCommand;
 import fox.obeliskmod.config.Config;
 import fox.obeliskmod.itemgroups.*;
 import fox.obeliskmod.warps.WarpPosition;
-<<<<<<< HEAD
-=======
+
 import fox.obeliskmod.warps.WarpUtils;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
