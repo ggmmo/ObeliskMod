@@ -99,7 +99,7 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Buckets
-                        ItemList.molten1_bucket = new BucketItem(() -> FluidList.molten1, new Item.Properties().group(misc).maxStackSize(1)).setRegistryName("molten1_bucket"),
+                        //ItemList.molten1_bucket = new BucketItem(() -> FluidList.molten1, new Item.Properties().group(misc).maxStackSize(1)).setRegistryName("molten1_bucket"),
                         //endregion
 
 
@@ -1032,11 +1032,11 @@ public class ObeliskModRegistries {
                         BlockList.birch_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("birch_leaves_snow")),
                         BlockList.dark_oak_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("dark_oak_leaves_snow")),
                         BlockList.acacia_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("acacia_leaves_snow")),
-                        BlockList.jungle_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("jungle_leaves_snow")),
+                        BlockList.jungle_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("jungle_leaves_snow"))
                         //endregion
 
                         //region Fluids
-                        BlockList.molten1 = new FlowingFluidBlock(() -> FluidList.molten1, Block.Properties.create(Material.LAVA).doesNotBlockMovement().noDrops()).setRegistryName(location("molten1"))
+                        //BlockList.molten1 = new FlowingFluidBlock(() -> FluidList.molten1, Block.Properties.create(Material.LAVA).doesNotBlockMovement().noDrops()).setRegistryName(location("molten1"))
 
                         //endregion
                 );
@@ -1076,8 +1076,8 @@ public class ObeliskModRegistries {
     {
         event.getRegistry().registerAll
                 (
-                    FluidList.flowing_molten1 = (MoltenEarthObeliskFluid.Flowing) new MoltenEarthObeliskFluid.Flowing().setRegistryName(location("flowing_molten1")),
-                    FluidList.molten1 = (MoltenEarthObeliskFluid.Source) new MoltenEarthObeliskFluid.Source().setRegistryName(location("molten1"))
+                    //FluidList.flowing_molten1 = (MoltenEarthObeliskFluid.Flowing) new MoltenEarthObeliskFluid.Flowing().setRegistryName(location("flowing_molten1")),
+                    //FluidList.molten1 = (MoltenEarthObeliskFluid.Source) new MoltenEarthObeliskFluid.Source().setRegistryName(location("molten1"))
                 );
 
     }
