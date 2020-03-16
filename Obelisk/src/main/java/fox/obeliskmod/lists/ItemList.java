@@ -397,8 +397,17 @@ public class ItemList
 	public static Item jungle_lectern;
 	//endregion
 
+  //region Leaves;
+	public static Item oak_leaves_snow;
+	public static Item spruce_leaves_snow;
+	public static Item birch_leaves_snow;
+	public static Item dark_oak_leaves_snow;
+	public static Item acacia_leaves_snow;
+	public static Item jungle_leaves_snow;
+  //endregion
 
-	//region Locked Doors
+	//region Locked Blocks
+	//region Doors
 	public static Item locked_oak_door;
 	public static Item locked_spruce_door;
 	public static Item locked_birch_door;
@@ -407,13 +416,17 @@ public class ItemList
 	public static Item locked_jungle_door;
 	//endregion
 
-	//region Leaves;
-	public static Item oak_leaves_snow;
-	public static Item spruce_leaves_snow;
-	public static Item birch_leaves_snow;
-	public static Item dark_oak_leaves_snow;
-	public static Item acacia_leaves_snow;
-	public static Item jungle_leaves_snow;
+
+	//region Trapdoors
+	public static Item locked_oak_trapdoor;
+	public static Item locked_spruce_trapdoor;
+	public static Item locked_birch_trapdoor;
+	public static Item locked_dark_oak_trapdoor;
+	public static Item locked_acacia_trapdoor;
+	public static Item locked_jungle_trapdoor;
+	//endregion
+
+	//region Fence Gates
 	//endregion
 	//endregion
 }

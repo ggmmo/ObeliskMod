@@ -369,7 +369,8 @@ public class BlockList
 	//endregion
 
 
-	//region Locked Doors
+	//region Locked Blocks
+	//region Doors
 	public static LockedDoor locked_oak_door;
 	public static LockedDoor locked_spruce_door;
 	public static LockedDoor locked_birch_door;
@@ -388,6 +389,19 @@ public class BlockList
 
 	//region Fluids
 	public static Block molten1;
+	//endregion
+
+	//region Trap Doors
+	public static LockedTrapDoor locked_oak_trapdoor;
+	public static LockedTrapDoor locked_spruce_trapdoor;
+	public static LockedTrapDoor locked_birch_trapdoor;
+	public static LockedTrapDoor locked_dark_oak_trapdoor;
+	public static LockedTrapDoor locked_acacia_trapdoor;
+	public static LockedTrapDoor locked_jungle_trapdoor;
+	//endregion
+
+	//region Fence Gates
+	//endregion
 	//endregion
 }
 
