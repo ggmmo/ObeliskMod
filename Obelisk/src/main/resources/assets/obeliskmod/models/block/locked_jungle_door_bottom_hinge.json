@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_bottom_rh",
+    "textures": {
+        "bottom": "minecraft:block/jungle_door_bottom",
+        "top": "minecraft:block/jungle_door_top"
+    }
+}

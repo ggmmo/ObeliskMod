@@ -1,19 +1,15 @@
 package fox.obeliskmod.lists;
 
 
-import fox.obeliskmod.blocks.Bench;
-import fox.obeliskmod.blocks.Chair;
-import fox.obeliskmod.blocks.LongTable;
-import fox.obeliskmod.blocks.Stool;
-import fox.obeliskmod.blocks.Table;
-import fox.obeliskmod.blocks.VertSlabBlock;
-import fox.obeliskmod.blocks.Wagon;
+import fox.obeliskmod.blocks.*;
 import fox.obeliskmod.blocks.lighting.CandleWallmounted;
 import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
 import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
 import net.minecraft.block.*;
+import net.minecraft.client.renderer.entity.ItemFrameRenderer;
+import net.minecraft.entity.item.ItemFrameEntity;
 
 public class BlockList 
 {
@@ -369,6 +365,15 @@ public class BlockList
 	public static LecternBlock dark_oak_lectern;
 	public static LecternBlock acacia_lectern;
 	public static LecternBlock jungle_lectern;
+	//endregion
+
+	//region Locked Doors
+	public static LockedDoor locked_oak_door;
+	public static LockedDoor locked_spruce_door;
+	public static LockedDoor locked_birch_door;
+	public static LockedDoor locked_dark_oak_door;
+	public static LockedDoor locked_acacia_door;
+	public static LockedDoor locked_jungle_door;
 	//endregion
 }
 
