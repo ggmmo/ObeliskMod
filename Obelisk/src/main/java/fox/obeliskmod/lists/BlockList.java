@@ -389,6 +389,10 @@ public class BlockList
 	//region Fence Gates
 	//endregion
 	//endregion
+
+	//region Not A Pickle
+	public static NotAPickle bottles;
+	//endregion
 }
 
 

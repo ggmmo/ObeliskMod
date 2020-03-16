@@ -527,7 +527,11 @@ public class ObeliskModRegistries {
                         ItemList.birch_lectern = new BlockItem(BlockList.birch_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.birch_lectern.getRegistryName()),
                         ItemList.dark_oak_lectern = new BlockItem(BlockList.dark_oak_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.dark_oak_lectern.getRegistryName()),
                         ItemList.acacia_lectern = new BlockItem(BlockList.acacia_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.acacia_lectern.getRegistryName()),
-                        ItemList.jungle_lectern = new BlockItem(BlockList.jungle_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.jungle_lectern.getRegistryName())
+                        ItemList.jungle_lectern = new BlockItem(BlockList.jungle_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.jungle_lectern.getRegistryName()),
+                        //endregion
+
+                        //region NotAPickle
+                        ItemList.bottles = new BlockItem(BlockList.bottles, new Item.Properties().group(furniture)).setRegistryName(BlockList.bottles.getRegistryName())
                         //endregion
                         //endregion
 
@@ -998,7 +1002,11 @@ public class ObeliskModRegistries {
                         BlockList.birch_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.birch_log_slab)).setRegistryName(location("birch_lectern")),
                         BlockList.dark_oak_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.dark_oak_log_slab)).setRegistryName(location("dark_oak_lectern")),
                         BlockList.acacia_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.acacia_log_slab)).setRegistryName(location("acacia_lectern")),
-                        BlockList.jungle_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_lectern"))
+                        BlockList.jungle_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_lectern")),
+                        //endregion
+
+                        //region Not A Pickle
+                        BlockList.bottles = (NotAPickle) new NotAPickle(Block.Properties.create(Material.GLASS)).setRegistryName(location("bottles"))
                         //endregion
                 );
 

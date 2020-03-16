@@ -1,6 +1,7 @@
 package fox.obeliskmod.lists;
 
 import fox.obeliskmod.blocks.LockedDoor;
+import fox.obeliskmod.blocks.NotAPickle;
 import fox.obeliskmod.gui.container.UltrahotbarContainer;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
@@ -417,5 +418,9 @@ public class ItemList
 
 	//region Fence Gates
 	//endregion
+	//endregion
+
+	//region Not A Pickle
+	public static Item bottles;
 	//endregion
 }
