@@ -1,0 +1,29 @@
+{
+    "variants": {
+        
+        "pickles=1": [
+            { "model": "obeliskmod:block/bottles" },
+            { "model": "obeliskmod:block/bottles", "y": 90 },
+            { "model": "obeliskmod:block/bottles", "y": 180 },
+            { "model": "obeliskmod:block/bottles", "y": 270 }
+        ],
+        "pickles=2": [
+            { "model": "obeliskmod:block/bottles_two" },
+            { "model": "obeliskmod:block/bottles_two", "y": 90 },
+            { "model": "obeliskmod:block/bottles_two", "y": 180 },
+            { "model": "obeliskmod:block/bottles_two", "y": 270 }
+        ],
+        "pickles=3": [
+            { "model": "obeliskmod:block/bottles_three" },
+            { "model": "obeliskmod:block/bottles_three", "y": 90 },
+            { "model": "obeliskmod:block/bottles_three", "y": 180 },
+            { "model": "obeliskmod:block/bottles_three", "y": 270 }
+        ],
+        "pickles=4": [
+            { "model": "obeliskmod:block/bottles_four" },
+            { "model": "obeliskmod:block/bottles_four", "y": 90 },
+            { "model": "obeliskmod:block/bottles_four", "y": 180 },
+            { "model": "obeliskmod:block/bottles_four", "y": 270 }
+        ]
+  }
+}
