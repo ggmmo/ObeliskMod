@@ -536,7 +536,7 @@ public class ObeliskModRegistries {
 
 
                         //region NotAPickle
-                        ItemList.bottles = new BlockItem(BlockList.bottles, new Item.Properties().group(furniture)).setRegistryName(BlockList.bottles.getRegistryName())
+                        ItemList.bottles = new BlockItem(BlockList.bottles, new Item.Properties().group(furniture)).setRegistryName(BlockList.bottles.getRegistryName()),
                         //endregion
           
                         //region Leaves
@@ -1023,7 +1023,7 @@ public class ObeliskModRegistries {
 
 
                         //region Not A Pickle
-                        BlockList.bottles = (NotAPickle) new NotAPickle(Block.Properties.create(Material.GLASS)).setRegistryName(location("bottles"))
+                        BlockList.bottles = (NotAPickle) new NotAPickle(Block.Properties.create(Material.GLASS)).setRegistryName(location("bottles")),
                         //endregion
           
                         //region Leaves

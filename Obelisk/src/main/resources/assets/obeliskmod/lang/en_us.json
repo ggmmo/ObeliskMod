@@ -9,13 +9,15 @@
 	"block.obeliskmod.merchant_sign": "Blank Merchant Sign",
 	"block.obeliskmod.candle_wallmounted": "Wall-Mounted Candle",
 
+	"_comment": "=============================================================================",
+
 	"_comment": "Items",
 	"item.obeliskmod.copper_coin": "Copper Coin",
 	"item.obeliskmod.silver_coin": "Silver Coin",
 	"item.obeliskmod.gold_coin": "Gold Coin",
 	"item.obeliskmod.earth_ingot": "Earth Ingot",
 	"item.obeliskmod.fire_ingot": "Fire Ingot",
-	
+
 	"_comment": "Weapons",
 	"item.obeliskmod.stone_dagger": "Stone Dagger",
 	"item.obeliskmod.iron_dagger": "Iron Dagger",
@@ -23,17 +25,17 @@
 	"item.obeliskmod.earth_sword": "Earth Sword",
 	"item.obeliskmod.earth_sword2": "Earth Sword 2",
 	"item.obeliskmod.fire_sword": "Fire Sword",
-	
+
 	"_comment": "Entity Eggs",
 	"item.obeliskmod.test_entity_egg": "Test Entity Egg",
-	
+
 	"_comment": "Entities",
 	"entity.obeliskmod.test_entity": "Test Entity",
-	
+
 	"_comment": "Fluids",
 	"block.obeliskmod.molten1": "Molten Earth Obelisk Block",
 	"item.obeliskmod.molten1_bucket": "Molten Earth Obelisk Bucket",
-	
+
 	"_comment": "Blocks",
 	"block.obeliskmod.earth_obelisk_block": "Earth Obelisk Block",
 	"block.obeliskmod.earth_obelisk_slab": "Earth Obelisk Slab",
@@ -311,7 +313,7 @@
 	"block.obeliskmod.locked_birch_trapdoor": "Locked Birch Trapdoor",
 	"block.obeliskmod.locked_acacia_trapdoor": "Locked Acacia Trapdoor",
 	"block.obeliskmod.bottles": "Bottles",
-  "block.obeliskmod.stone_wall": "Stone Wall",
+	"block.obeliskmod.stone_wall": "Stone Wall",
 	"block.obeliskmod.oak_leaves_snow": "Oak Leaves Snow",
 	"block.obeliskmod.spruce_leaves_snow": "Spruce Leaves Snow",
 	"block.obeliskmod.birch_leaves_snow": "Birch Leaves Snow",
@@ -327,3 +329,4 @@
 	"itemGroup.customBlocks": "Obelisk Custom Blocks",
 	"itemGroup.advancedTools": "Obelisk Dev Tools",
 	"itemGroup.weapon": "Obelisk Weapons"
+}
