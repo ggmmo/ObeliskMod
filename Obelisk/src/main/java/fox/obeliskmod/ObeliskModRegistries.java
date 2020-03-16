@@ -190,6 +190,7 @@ public class ObeliskModRegistries {
                         ItemList.stripped_oak_vert_slab = new BlockItem(BlockList.stripped_oak_vert_slab, new Item.Properties().group(obelisk))
                                 .setRegistryName(BlockList.stripped_oak_vert_slab.getRegistryName()),
                         ItemList.locked_oak_door = new BlockItem(BlockList.locked_oak_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_oak_door.getRegistryName()),
+                        ItemList.locked_oak_trapdoor = new BlockItem(BlockList.locked_oak_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_oak_trapdoor.getRegistryName()),
                         //endregion
 
                         //region Spruce
@@ -218,6 +219,7 @@ public class ObeliskModRegistries {
                         ItemList.stripped_spruce_vert_slab = new BlockItem(BlockList.stripped_spruce_vert_slab, new Item.Properties().group(obelisk))
                                 .setRegistryName(BlockList.stripped_spruce_vert_slab.getRegistryName()),
                         ItemList.locked_spruce_door = new BlockItem(BlockList.locked_spruce_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_spruce_door.getRegistryName()),
+                        ItemList.locked_spruce_trapdoor = new BlockItem(BlockList.locked_spruce_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_spruce_trapdoor.getRegistryName()),
                         //endregion
 
                         //region Dark Oak
@@ -251,6 +253,7 @@ public class ObeliskModRegistries {
                         ItemList.stripped_dark_oak_vert_slab = new BlockItem(BlockList.stripped_dark_oak_vert_slab, new Item.Properties().group(obelisk))
                                 .setRegistryName(BlockList.stripped_dark_oak_vert_slab.getRegistryName()),
                         ItemList.locked_dark_oak_door = new BlockItem(BlockList.locked_dark_oak_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_dark_oak_door.getRegistryName()),
+                        ItemList.locked_dark_oak_trapdoor = new BlockItem(BlockList.locked_dark_oak_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_dark_oak_trapdoor.getRegistryName()),
                         //endregion
 
                         //region Birch
@@ -279,6 +282,7 @@ public class ObeliskModRegistries {
                         ItemList.stripped_birch_vert_slab = new BlockItem(BlockList.stripped_birch_vert_slab, new Item.Properties().group(obelisk))
                                 .setRegistryName(BlockList.stripped_birch_vert_slab.getRegistryName()),
                         ItemList.locked_birch_door = new BlockItem(BlockList.locked_birch_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_birch_door.getRegistryName()),
+                        ItemList.locked_birch_trapdoor = new BlockItem(BlockList.locked_birch_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_birch_trapdoor.getRegistryName()),
                         //endregion
 
                         //region Acacia
@@ -307,6 +311,7 @@ public class ObeliskModRegistries {
                         ItemList.stripped_acacia_vert_slab = new BlockItem(BlockList.stripped_acacia_vert_slab, new Item.Properties().group(obelisk))
                                 .setRegistryName(BlockList.stripped_acacia_vert_slab.getRegistryName()),
                         ItemList.locked_acacia_door = new BlockItem(BlockList.locked_acacia_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_acacia_door.getRegistryName()),
+                        ItemList.locked_acacia_trapdoor = new BlockItem(BlockList.locked_acacia_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_acacia_trapdoor.getRegistryName()),
                         //endregion
 
                         //region Jungle
@@ -335,6 +340,7 @@ public class ObeliskModRegistries {
                         ItemList.stripped_jungle_vert_slab = new BlockItem(BlockList.stripped_jungle_vertslab, new Item.Properties().group(obelisk))
                                 .setRegistryName(BlockList.stripped_jungle_vertslab.getRegistryName()),
                         ItemList.locked_jungle_door = new BlockItem(BlockList.locked_jungle_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_jungle_door.getRegistryName()),
+                        ItemList.locked_jungle_trapdoor = new BlockItem(BlockList.locked_jungle_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_jungle_trapdoor.getRegistryName()),
                         //endregion
 
                         //region Stone
@@ -658,6 +664,7 @@ public class ObeliskModRegistries {
                         BlockList.stripped_oak_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.stripped_oak_wood_slab))
                                 .setRegistryName(location("stripped_oak_vert_slab")),
                         BlockList.locked_oak_door = (LockedDoor) new LockedDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_oak_door")),
+                        BlockList.locked_oak_trapdoor = (LockedTrapDoor) new LockedTrapDoor(Block.Properties.create(Material.IRON)) .setRegistryName((location("locked_oak_trapdoor"))),
                         //endregion
 
                         //region Spruce
@@ -684,6 +691,7 @@ public class ObeliskModRegistries {
                         BlockList.stripped_spruce_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.spruce_log_stairs))
                                 .setRegistryName(location("stripped_spruce_vert_slab")),
                         BlockList.locked_spruce_door = (LockedDoor) new LockedDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_spruce_door")),
+                        BlockList.locked_spruce_trapdoor = (LockedTrapDoor) new LockedTrapDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_spruce_trapdoor")),
                         //endregion
 
                         //region Dark Oak
@@ -714,6 +722,7 @@ public class ObeliskModRegistries {
                         BlockList.stripped_dark_oak_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.dark_oak_log_stairs))
                                 .setRegistryName(location("stripped_dark_oak_vert_slab")),
                         BlockList.locked_dark_oak_door = (LockedDoor) new LockedDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_dark_oak_door")),
+                        BlockList.locked_dark_oak_trapdoor = (LockedTrapDoor) new LockedTrapDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_dark_oak_trapdoor")),
                         //endregion
 
                         //region Birch
@@ -740,6 +749,7 @@ public class ObeliskModRegistries {
                         BlockList.stripped_birch_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.birch_log_stairs))
                                 .setRegistryName(location("stripped_birch_vert_slab")),
                         BlockList.locked_birch_door = (LockedDoor) new LockedDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_birch_door")),
+                        BlockList.locked_birch_trapdoor = (LockedTrapDoor) new LockedTrapDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_birch_trapdoor")),
                         //endregion
 
                         //region Acacia
@@ -765,6 +775,7 @@ public class ObeliskModRegistries {
                         BlockList.stripped_acacia_vert_slab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.acacia_log_stairs))
                                 .setRegistryName(location("stripped_acacia_vert_slab")),
                         BlockList.locked_acacia_door = (LockedDoor) new LockedDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_acacia_door")),
+                        BlockList.locked_acacia_trapdoor = (LockedTrapDoor) new LockedTrapDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_acacia_trapdoor")),
                         //endregion
 
                         //region Jungle
@@ -791,6 +802,7 @@ public class ObeliskModRegistries {
                         BlockList.stripped_jungle_vertslab = (VertSlabBlock) new VertSlabBlock(Block.Properties.from(BlockList.jungle_log_stairs))
                                 .setRegistryName(location("stripped_jungle_vert_slab")),
                         BlockList.locked_jungle_door = (LockedDoor) new LockedDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_jungle_door")),
+                        BlockList.locked_jungle_trapdoor = (LockedTrapDoor) new LockedTrapDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_jungle_trapdoor")),
                         //endregion
 
                         //region Stone

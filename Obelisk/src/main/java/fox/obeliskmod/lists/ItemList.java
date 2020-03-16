@@ -396,12 +396,26 @@ public class ItemList
 	//endregion
 	//endregion
 
-	//region Locked Doors
+	//region Locked Blocks
+	//region Doors
 	public static Item locked_oak_door;
 	public static Item locked_spruce_door;
 	public static Item locked_birch_door;
 	public static Item locked_dark_oak_door;
 	public static Item locked_acacia_door;
 	public static Item locked_jungle_door;
+	//endregion
+
+	//region Trapdoors
+	public static Item locked_oak_trapdoor;
+	public static Item locked_spruce_trapdoor;
+	public static Item locked_birch_trapdoor;
+	public static Item locked_dark_oak_trapdoor;
+	public static Item locked_acacia_trapdoor;
+	public static Item locked_jungle_trapdoor;
+	//endregion
+
+	//region Fence Gates
+	//endregion
 	//endregion
 }
