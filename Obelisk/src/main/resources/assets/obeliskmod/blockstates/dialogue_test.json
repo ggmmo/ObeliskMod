@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "obeliskmod:block/dialogue_test" },
+    "facing=east": { "model": "obeliskmod:block/dialogue_test", "y": 90 },
+    "facing=south": { "model": "obeliskmod:block/dialogue_test", "y": 180 },
+    "facing=west": { "model": "obeliskmod:block/dialogue_test", "y": 270 }
+  }
+}

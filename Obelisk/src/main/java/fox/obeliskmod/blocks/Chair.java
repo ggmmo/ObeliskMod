@@ -3,6 +3,7 @@ package fox.obeliskmod.blocks;
 import javax.annotation.Nullable;
 
 import fox.obeliskmod.entities.blocks.ChairEntity;
+import fox.obeliskmod.utility.VoxelShapeHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
@@ -21,19 +22,7 @@ import net.minecraft.world.World;
 
 public class Chair extends HorizontalBlock
 {
-	public static final VoxelShape frontRightLeg = Block.makeCuboidShape(1, 0, 1, 3, 8, 3);
-	public static final VoxelShape backRightLeg = Block.makeCuboidShape(1, 0, 13, 3, 8, 15);
-	public static final VoxelShape frontLeftLeg = Block.makeCuboidShape(13, 0, 1, 15, 8, 3);
-	public static final VoxelShape backLeftLeg = Block.makeCuboidShape(13, 0, 13, 15, 8, 15);
-	public static final VoxelShape seat = Block.makeCuboidShape(0, 8, 0, 16, 9, 16);
-	public static final VoxelShape backrest = Block.makeCuboidShape(1, 9, 14, 15, 25, 15);
-	public static final VoxelShape armPoleRight = Block.makeCuboidShape(1, 9, 1, 2, 13, 2);
-	public static final VoxelShape armPoleLeft = Block.makeCuboidShape(14, 9, 1, 15, 13, 2);
-	public static final VoxelShape armRestRight = Block.makeCuboidShape(0, 13, 0, 2, 14, 16);
-	public static final VoxelShape armRestLeft = Block.makeCuboidShape(14, 13, 0, 16, 14, 16);
-	
-	
-	public Chair(Properties properties) 
+	public Chair(Properties properties)
 	{
         super(properties);
     }
@@ -42,7 +31,17 @@ public class Chair extends HorizontalBlock
     @Deprecated
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) 
     {
-        
+        VoxelShape frontRightLeg = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING), 1, 0, 1, 3, 8, 3);
+        VoxelShape backRightLeg = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),1, 0, 13, 3, 8, 15);
+        VoxelShape frontLeftLeg = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),13, 0, 1, 15, 8, 3);
+        VoxelShape backLeftLeg = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),13, 0, 13, 15, 8, 15);
+        VoxelShape seat = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),0, 8, 0, 16, 9, 16);
+        VoxelShape backrest = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),1, 9, 14, 15, 25, 15);
+        VoxelShape armPoleRight = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),1, 9, 1, 2, 13, 2);
+        VoxelShape armPoleLeft = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),14, 9, 1, 15, 13, 2);
+        VoxelShape armRestRight = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),0, 13, 0, 2, 14, 16);
+        VoxelShape armRestLeft = VoxelShapeHelper.createRotatedShape(state.get(BlockStateProperties.HORIZONTAL_FACING),14, 13, 0, 16, 14, 16);
+
         return VoxelShapes.or(frontRightLeg, backRightLeg, frontLeftLeg, backLeftLeg, seat, backrest, armPoleRight, armPoleLeft, armRestRight, armRestLeft);
     }
 

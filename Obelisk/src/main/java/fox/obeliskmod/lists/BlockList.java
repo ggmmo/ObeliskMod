@@ -7,13 +7,22 @@ import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
 import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
+import fox.obeliskmod.tileentities.DialogueTestBlock;
+import fox.obeliskmod.tileentities.DialogueTestTile;
 import net.minecraft.block.*;
-import net.minecraft.client.renderer.entity.ItemFrameRenderer;
-import net.minecraft.entity.item.ItemFrameEntity;
+import net.minecraft.tileentity.TileEntityType;
+import net.minecraftforge.registries.ObjectHolder;
 
 public class BlockList 
 {
 	//region Trepi
+	//region Tile Entities
+	public static DialogueTestBlock dialogue_test;
+
+	@ObjectHolder("obeliskmod:dialogue_test")
+	public static TileEntityType<DialogueTestTile> dialogue_test_tile;
+	//endregion
+
 	//region Interior Deco
 	public static EarthenwarePlate earthenware_plate;
 	public static EarthenwareMug earthenware_mug;

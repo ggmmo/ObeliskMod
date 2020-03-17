@@ -1,6 +1,7 @@
 {
 	"_comment": "Advanced Tools",
 	"item.obeliskmod.ultrahotbar": "U.H. - WIP",
+	"block.obeliskmod.dialogue_test": "Dialogue Placeholder Entity",
 
 	"_comment": "Trepi",
 	"block.obeliskmod.earthenware_plate": "Earthenware Plate",
@@ -268,7 +269,7 @@
 	"block.obeliskmod.jungle_log_stool": "Jungle Log Stool",
 	"block.obeliskmod.acacia_log_stool": "Acacia Log Stool",
 	"block.obeliskmod.dark_oak_log_stool": "Dark Oak Log Stool",
-	"block.obeliskmod.cobblestone_stool": "Cobblestone Stone",
+	"block.obeliskmod.cobblestone_stool": "Cobblestone Stool",
 	"block.obeliskmod.stone_stool": "Stone Stool",
 	"block.obeliskmod.stone_bricks_stool": "Stone Bricks Stool",
 	"block.obeliskmod.cracked_stone_bricks_stool": "Cracked Stone Bricks Stool",

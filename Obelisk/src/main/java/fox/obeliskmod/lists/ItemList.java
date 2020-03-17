@@ -16,6 +16,10 @@ public class ItemList
 	//endregion
 
 	//region Blocks
+	//region Tile Entities
+	public static Item dialogue_test;
+	//endregion
+
 	//region Interior Deco
 	public static Item earthenware_plate;
 	public static Item earthenware_mug;

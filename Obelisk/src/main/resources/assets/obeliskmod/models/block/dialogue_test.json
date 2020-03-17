@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "obeliskmod:block/dialog_entity_casing",
+    "north": "obeliskmod:block/dialog_entity_front",
+    "south": "obeliskmod:block/dialog_entity_casing",
+    "east": "obeliskmod:block/dialog_entity_casing",
+    "west": "obeliskmod:block/dialog_entity_casing",
+    "up": "obeliskmod:block/dialog_entity_casing",
+    "down": "obeliskmod:block/dialog_entity_casing"
+  }
+}
