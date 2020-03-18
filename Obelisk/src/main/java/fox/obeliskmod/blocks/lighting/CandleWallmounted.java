@@ -14,7 +14,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.IEnviromentBlockReader;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
@@ -106,5 +105,6 @@ public class CandleWallmounted extends HorizontalBlock {
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> container) {
         container.add(BlockStateProperties.HORIZONTAL_FACING);
         container.add(ObeliskBlockStateProperties.CANDLE_SIZE);
+        container.add(ObeliskBlockStateProperties.CANDLE_TYPE);
     }
 }

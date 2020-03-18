@@ -1,31 +1,34 @@
 package fox.obeliskmod;
 
 
-import com.mojang.datafixers.DataFixUtils;
-import com.mojang.datafixers.DataFixerBuilder;
 import fox.obeliskmod.blocks.*;
 import fox.obeliskmod.blocks.lighting.CandleWallmounted;
 import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
 import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
-import fox.obeliskmod.gui.container.UltrahotbarContainer;
 import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.lists.EntityList;
 import fox.obeliskmod.lists.ItemList;
-import fox.obeliskmod.tileentities.DialogueTestBlock;
-import fox.obeliskmod.tileentities.DialogueTestTile;
+import fox.obeliskmod.tileentities.Dialogue.DialogueTestBlock;
+import fox.obeliskmod.tileentities.Dialogue.DialogueTestContainer;
+import fox.obeliskmod.tileentities.Dialogue.DialogueTestTile;
 import fox.obeliskmod.tools.UltraHotbar;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityType;
 
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.*;
 
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -1077,12 +1080,13 @@ public class ObeliskModRegistries {
         logger.info("\n\n======================================\n\nRegistered Tile Entities\n\n======================================\n\n");
     }
 
+    @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public static void registerContainers(final RegistryEvent.Register<ContainerType<?>> event) {
-        event.getRegistry().registerAll
-                (
-
-                );
+        event.getRegistry().register(IForgeContainerType.create((windowId, inv, data) -> {
+            BlockPos pos = data.readBlockPos();
+            return new DialogueTestContainer(windowId, Minecraft.getInstance().world, pos, inv);
+        }).setRegistryName("dialogue_test"));
     }
 
     public static ResourceLocation location(String name) {
