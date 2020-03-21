@@ -2,7 +2,6 @@ package fox.obeliskmod;
 
 
 import fox.obeliskmod.blocks.*;
-import fox.obeliskmod.blocks.fluids.MoltenEarthObeliskFluid;
 import fox.obeliskmod.blocks.lighting.CandleWallmounted;
 import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
@@ -11,7 +10,6 @@ import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
 import fox.obeliskmod.gui.container.UltrahotbarContainer;
 import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.lists.EntityList;
-import fox.obeliskmod.lists.FluidList;
 import fox.obeliskmod.lists.ItemList;
 import fox.obeliskmod.tools.UltraHotbar;
 import net.minecraft.block.*;
@@ -194,6 +192,7 @@ public class ObeliskModRegistries {
                                 .setRegistryName(BlockList.stripped_oak_vert_slab.getRegistryName()),
                         ItemList.locked_oak_door = new BlockItem(BlockList.locked_oak_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_oak_door.getRegistryName()),
                         ItemList.locked_oak_trapdoor = new BlockItem(BlockList.locked_oak_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_oak_trapdoor.getRegistryName()),
+
                         //endregion
 
                         //region Spruce
@@ -223,6 +222,7 @@ public class ObeliskModRegistries {
                                 .setRegistryName(BlockList.stripped_spruce_vert_slab.getRegistryName()),
                         ItemList.locked_spruce_door = new BlockItem(BlockList.locked_spruce_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_spruce_door.getRegistryName()),
                         ItemList.locked_spruce_trapdoor = new BlockItem(BlockList.locked_spruce_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_spruce_trapdoor.getRegistryName()),
+                        ItemList.spruce_crate = new BlockItem(BlockList.spruce_crate, new Item.Properties().group(misc)).setRegistryName(BlockList.spruce_crate.getRegistryName()),
                         //endregion
 
                         //region Dark Oak
@@ -715,6 +715,7 @@ public class ObeliskModRegistries {
                                 .setRegistryName(location("stripped_spruce_vert_slab")),
                         BlockList.locked_spruce_door = (LockedDoor) new LockedDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_spruce_door")),
                         BlockList.locked_spruce_trapdoor = (LockedTrapDoor) new LockedTrapDoor(Block.Properties.create(Material.IRON)).setRegistryName(location("locked_spruce_trapdoor")),
+                        BlockList.spruce_crate = new Block(Block.Properties.from(BlockList.spruce_log_slab)).setRegistryName(location("spruce_crate")),
                         //endregion
 
                         //region Dark Oak
@@ -1043,10 +1044,7 @@ public class ObeliskModRegistries {
                         BlockList.jungle_leaves_snow = (CustomSnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.oak_leaves_snow)).setRegistryName(location("jungle_leaves_snow"))
                         //endregion
 
-                        //region Fluids
-                        //BlockList.molten1 = new FlowingFluidBlock(() -> FluidList.molten1, Block.Properties.create(Material.LAVA).doesNotBlockMovement().noDrops()).setRegistryName(location("molten1"))
 
-                        //endregion
                 );
 
 
