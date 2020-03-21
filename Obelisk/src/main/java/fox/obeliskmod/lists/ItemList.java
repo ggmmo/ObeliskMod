@@ -157,6 +157,7 @@ public class ItemList
 	public static Item stripped_spruce_wood_slab;
 	public static Item stripped_spruce_wood_wall;
 	public static Item stripped_spruce_vert_slab;
+	public static Item spruce_crate;
 	//endregion
 
 	//region Dark Oak

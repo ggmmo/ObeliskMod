@@ -131,6 +131,7 @@ public class BlockList
 	public static SlabBlock stripped_spruce_wood_slab;
 	public static VertSlabBlock stripped_spruce_vert_slab;
 	public static StairsBlock stripped_spruce_wood_stairs;
+	public static Block spruce_crate;
 	//endregion
 
 	//region Dark Oak Blocks
@@ -418,7 +419,5 @@ public class BlockList
 	public static SnowBlock jungle_leaves_snow;
 	//endregion
 
-	//region Fluids
-	public static Block molten1;
-	//endregion
+
 }
