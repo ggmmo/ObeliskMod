@@ -420,6 +420,7 @@ public class ItemList
 	public static Item locked_dark_oak_door;
 	public static Item locked_acacia_door;
 	public static Item locked_jungle_door;
+	public static Item locked_braced_door;
 	//endregion
 
 	//region Trapdoors
@@ -429,6 +430,7 @@ public class ItemList
 	public static Item locked_dark_oak_trapdoor;
 	public static Item locked_acacia_trapdoor;
 	public static Item locked_jungle_trapdoor;
+	public static Item locked_braced_trapdoor;
 	//endregion
 
 	//region Fence Gates
