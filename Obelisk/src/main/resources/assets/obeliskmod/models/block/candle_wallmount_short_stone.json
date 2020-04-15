@@ -1,0 +1,167 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"0": "obeliskmod:block/candle_wallmount_stone",
+		"particle": "obeliskmod:block/candle_wallmount_stone"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [5, 2, 0],
+			"to": [11, 8, 1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 9]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 5], "texture": "#0"},
+				"south": {"uv": [0, 0, 5, 5], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 5], "texture": "#0"},
+				"up": {"uv": [0, 0, 5, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 5, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "base_01",
+			"from": [6, 3, 1],
+			"to": [10, 7, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 9]},
+			"faces": {
+				"east": {"uv": [0, 0, 1, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 4], "texture": "#0"},
+				"up": {"uv": [0, 0, 4, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 4, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "stem_01",
+			"from": [7, 4, 2],
+			"to": [9, 6, 5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 9]},
+			"faces": {
+				"east": {"uv": [6, 0, 8, 3], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [6, 0, 8, 3], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [6, 0, 8, 3], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [6, 0, 8, 3], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [6, 0, 8, 3], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"name": "stem_joint",
+			"from": [7, 5, 5],
+			"to": [9, 6, 6],
+			"faces": {
+				"east": {"uv": [6, 1, 7, 2], "texture": "#0"},
+				"south": {"uv": [6, 0, 8, 1], "texture": "#0"},
+				"west": {"uv": [6, 1, 7, 2], "texture": "#0"},
+				"down": {"uv": [6, 2, 8, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "stem_joint_01",
+			"from": [7, 6, 4],
+			"to": [9, 7, 5],
+			"faces": {
+				"north": {"uv": [6, 2, 8, 3], "texture": "#0"},
+				"east": {"uv": [7, 0, 8, 1], "texture": "#0"},
+				"west": {"uv": [6, 0, 7, 1], "texture": "#0"},
+				"up": {"uv": [6, 2, 8, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "stem_02",
+			"from": [7, 6, 5],
+			"to": [9, 9, 7],
+			"faces": {
+				"north": {"uv": [6, 0, 8, 3], "texture": "#0"},
+				"east": {"uv": [6, 0, 8, 3], "texture": "#0"},
+				"south": {"uv": [6, 0, 8, 3], "texture": "#0"},
+				"west": {"uv": [6, 0, 8, 3], "texture": "#0"},
+				"up": {"uv": [6, 0, 8, 3], "texture": "#0"},
+				"down": {"uv": [6, 0, 8, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "candle_plate",
+			"from": [6, 9, 4],
+			"to": [10, 10, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 1], "texture": "#0"},
+				"east": {"uv": [1, 1, 5, 2], "texture": "#0"},
+				"south": {"uv": [0, 1, 4, 2], "texture": "#0"},
+				"west": {"uv": [1, 4, 5, 5], "texture": "#0"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "plate_side_01",
+			"from": [5, 10, 4],
+			"to": [6, 11, 8],
+			"faces": {
+				"north": {"uv": [1, 4, 5, 5], "texture": "#0"},
+				"east": {"uv": [1, 4, 5, 5], "texture": "#0"},
+				"south": {"uv": [1, 4, 5, 5], "texture": "#0"},
+				"west": {"uv": [1, 4, 5, 5], "texture": "#0"},
+				"up": {"uv": [1, 4, 5, 5], "texture": "#0"},
+				"down": {"uv": [1, 4, 5, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "plate_side_02",
+			"from": [10, 10, 4],
+			"to": [11, 11, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 1, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 1, 4], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 4], "texture": "#0"},
+				"up": {"uv": [0, 0, 1, 4], "texture": "#0"},
+				"down": {"uv": [0, 0, 1, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "plate_side_03",
+			"from": [6, 10, 3],
+			"to": [10, 11, 4],
+			"faces": {
+				"north": {"uv": [1, 3, 5, 4], "texture": "#0"},
+				"east": {"uv": [1, 3, 5, 4], "texture": "#0"},
+				"south": {"uv": [1, 3, 5, 4], "texture": "#0"},
+				"west": {"uv": [1, 3, 5, 4], "texture": "#0"},
+				"up": {"uv": [1, 3, 5, 4], "texture": "#0"},
+				"down": {"uv": [1, 3, 5, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "plate_side_04",
+			"from": [6, 10, 8],
+			"to": [10, 11, 9],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 1], "texture": "#0"},
+				"east": {"uv": [0, 0, 4, 1], "texture": "#0"},
+				"south": {"uv": [0, 0, 4, 1], "texture": "#0"},
+				"west": {"uv": [0, 0, 4, 1], "texture": "#0"},
+				"up": {"uv": [0, 0, 4, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 4, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "candle",
+			"from": [7, 10, 5],
+			"to": [9, 12, 7],
+			"faces": {
+				"north": {"uv": [11, 4, 13, 6], "texture": "#0"},
+				"east": {"uv": [11, 0, 13, 2], "texture": "#0"},
+				"south": {"uv": [11, 0, 13, 2], "texture": "#0"},
+				"west": {"uv": [11, 0, 13, 2], "texture": "#0"},
+				"up": {"uv": [11, 3, 13, 5], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "base",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+		}
+	]
+}

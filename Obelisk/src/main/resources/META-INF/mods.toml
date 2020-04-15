@@ -26,14 +26,14 @@ displayName="Obelisk Mod" #mandatory
 # A text field displayed in the mod UI
 credits="Created by TheBuildTeam" #optional
 # A text field displayed in the mod UI
-authors="Love, Cheese and small house plants" #optional
+authors="Intrepid249, The_Pale_One, Dishonored_Fox, MeiBei" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This is a long form description of the mod. You can write whatever you want here
+Obelisk is a fantasy RPG that focuses more on engaging with the player and challenging the way they think and interact with gameplay elements.
+The mod is set in a low-fantasy medieval world, using a “hard” magic system for those inclined toward the archaic studies and is designed for play on a server.
 
-Have some lorem ipsum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis lacinia magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sagittis luctus odio eu tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque volutpat ligula eget lacus auctor sagittis. In hac habitasse platea dictumst. Nunc gravida elit vitae sem vehicula efficitur. Donec mattis ipsum et arcu lobortis, eleifend sagittis sem rutrum. Cras pharetra quam eget posuere fermentum. Sed id tincidunt justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+6 Different Obelisks lie scattered across the realm. Each Obelisk holds secrets to a different source of elemental power, which many have come to call magic.
+Players will begin at the City of the Earth Obelisk, where a new journey awaits!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional

@@ -2,27 +2,33 @@ package fox.obeliskmod;
 
 
 import fox.obeliskmod.blocks.*;
-import fox.obeliskmod.blocks.fluids.MoltenEarthObeliskFluid;
 import fox.obeliskmod.blocks.lighting.CandleWallmounted;
 import fox.obeliskmod.blocks.merchantdeco.MerchantSign;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareMug;
 import fox.obeliskmod.blocks.tabledeco.EarthenwarePlate;
 import fox.obeliskmod.blocks.tabledeco.EarthenwareSet;
-import fox.obeliskmod.gui.container.UltrahotbarContainer;
 import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.lists.EntityList;
-import fox.obeliskmod.lists.FluidList;
 import fox.obeliskmod.lists.ItemList;
+import fox.obeliskmod.tileentities.Dialogue.DialogueTestBlock;
+import fox.obeliskmod.tileentities.Dialogue.DialogueTestContainer;
+import fox.obeliskmod.tileentities.Dialogue.DialogueTestTile;
 import fox.obeliskmod.tools.UltraHotbar;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityType;
 
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.*;
 
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -57,6 +63,11 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Blocks
+                        //region Tile Entities
+                        ItemList.dialogue_test = new BlockItem(BlockList.dialogue_test, new Item.Properties().group(advancedTools))
+                                .setRegistryName(BlockList.dialogue_test.getRegistryName()),
+                        //endregion
+
                         //region Interior Deco
                         ItemList.earthenware_plate = new BlockItem(BlockList.earthenware_plate, new Item.Properties().group(misc))
                                 .setRegistryName(BlockList.earthenware_plate.getRegistryName()),
@@ -567,6 +578,10 @@ public class ObeliskModRegistries {
         event.getRegistry().registerAll
                 (
                         //region Trepi
+                        //region Tile Entities
+                        BlockList.dialogue_test = (DialogueTestBlock) new DialogueTestBlock().setRegistryName(location("dialogue_test")),
+                        //endregion
+
                         //region Interior Deco
                         BlockList.earthenware_plate = (EarthenwarePlate) new EarthenwarePlate(Block.Properties.create(Material.GLASS)
                                 .hardnessAndResistance(0.15f, 1f).sound(SoundType.GLASS))
@@ -1065,14 +1080,20 @@ public class ObeliskModRegistries {
     }
 
     @SubscribeEvent
+    public static void registerTileEntities(final RegistryEvent.Register<TileEntityType<?>> event) {
+        event.getRegistry().register(
+                //BlockList.dialogue_test_tile = (TileEntityType<DialogueTestTile>)
+                TileEntityType.Builder.create(DialogueTestTile::new, BlockList.dialogue_test).build(null).setRegistryName(location("dialogue_test"))
+        );
+        logger.info("\n\n======================================\n\nRegistered Tile Entities\n\n======================================\n\n");
+    }
+
+    @SubscribeEvent
     public static void registerContainers(final RegistryEvent.Register<ContainerType<?>> event) {
-        event.getRegistry().registerAll
-                (
-                        IForgeContainerType.create((windowId, inv, data) ->
-                        {
-                            return new UltrahotbarContainer(windowId, inv);
-                        }).setRegistryName(location("ultrahotbar"))
-                );
+        event.getRegistry().register(IForgeContainerType.create((windowId, inv, data) -> {
+            BlockPos pos = data.readBlockPos();
+            return new DialogueTestContainer(windowId, Minecraft.getInstance().world, pos, inv);
+        }).setRegistryName("dialogue_test"));
     }
 
     public static ResourceLocation location(String name) {

@@ -6,10 +6,12 @@ import fox.obeliskmod.commands.ListWarpsCommand;
 import fox.obeliskmod.commands.SetWarpCommand;
 import fox.obeliskmod.commands.WarpCommand;
 import fox.obeliskmod.config.Config;
-
 import fox.obeliskmod.itemgroups.*;
+import fox.obeliskmod.lists.BlockList;
+import fox.obeliskmod.tileentities.Dialogue.DialogueTestScreen;
 import fox.obeliskmod.warps.WarpPosition;
 import fox.obeliskmod.warps.WarpUtils;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -34,7 +36,7 @@ public class ObeliskMod
 	public static ObeliskMod instance;
 	public static final String modid = "obeliskmod";
 	public static final Logger logger = LogManager.getLogger(modid);
-	
+
 	public static final ItemGroup obelisk = new ObeliskItemGroup();
 	public static final ItemGroup misc = new ObeliskMiscItemGroup();
 	public static final ItemGroup furniture = new ObeliskFurnitureItemGroup();
@@ -71,6 +73,7 @@ public class ObeliskMod
 	private void clientRegistries(final FMLClientSetupEvent event) 
 	{
 		ObeliskRenderRegistry.registryEntityRender();
+		ScreenManager.registerFactory(BlockList.dialogue_test_container, DialogueTestScreen::new);
 
 		logger.info("clientRegistries method registered");
 	}

@@ -1,9 +1,8 @@
 {
-	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "obeliskmod:block/candle_wallmount",
-		"particle": "obeliskmod:block/candle_wallmount"
+		"0": "obeliskmod:block/candle_wallmount_metal",
+		"particle": "obeliskmod:block/candle_wallmount_metal"
 	},
 	"elements": [
 		{
@@ -148,16 +147,38 @@
 		{
 			"name": "candle",
 			"from": [7, 10, 5],
-			"to": [9, 14, 7],
+			"to": [9, 16, 7],
 			"faces": {
-				"north": {"uv": [11, 6, 13, 10], "texture": "#0"},
-				"east": {"uv": [11, 0, 13, 4], "texture": "#0"},
-				"south": {"uv": [11, 0, 13, 4], "texture": "#0"},
-				"west": {"uv": [11, 0, 13, 4], "texture": "#0"},
+				"north": {"uv": [11, 4, 13, 10], "texture": "#0"},
+				"east": {"uv": [11, 0, 13, 6], "texture": "#0"},
+				"south": {"uv": [11, 0, 13, 6], "texture": "#0"},
+				"west": {"uv": [11, 0, 13, 6], "texture": "#0"},
 				"up": {"uv": [11, 3, 13, 5], "texture": "#0"}
 			}
 		}
 	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 0, 1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 0, 1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"translation": [4.5, 0, 1.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_lefthand": {
+			"translation": [4.5, 0, 1.75],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"gui": {
+			"rotation": [24, -35, 0],
+			"translation": [-2.5, -2, 0]
+		}
+	},
 	"groups": [
 		{
 			"name": "base",
