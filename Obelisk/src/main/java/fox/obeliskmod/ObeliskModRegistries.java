@@ -545,6 +545,10 @@ public class ObeliskModRegistries {
                         ItemList.jungle_lectern = new BlockItem(BlockList.jungle_lectern, new Item.Properties().group(misc)).setRegistryName(BlockList.jungle_lectern.getRegistryName()),
                         //endregion
 
+                        //region Locked Things
+                        ItemList.locked_braced_door = new BlockItem(BlockList.locked_braced_door, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_braced_door.getRegistryName()),
+                        ItemList.locked_braced_trapdoor = new BlockItem(BlockList.locked_braced_trapdoor, new Item.Properties().group(misc)).setRegistryName(BlockList.locked_braced_trapdoor.getRegistryName()),
+                        //endregion
 
                         //region NotAPickle
                         ItemList.bottles = new BlockItem(BlockList.bottles, new Item.Properties().group(furniture)).setRegistryName(BlockList.bottles.getRegistryName()),
@@ -1036,6 +1040,10 @@ public class ObeliskModRegistries {
                         BlockList.jungle_lectern = (CustomLecternBlock) new CustomLecternBlock(Block.Properties.from(BlockList.jungle_log_slab)).setRegistryName(location("jungle_lectern")),
                         //endregion
 
+                        //region Locked Things
+                        BlockList.locked_braced_door = (LockedDoor) new LockedDoor(Block.Properties.from(BlockList.locked_oak_door)).setRegistryName(location("locked_braced_door")),
+                        BlockList.locked_braced_trapdoor = (LockedTrapDoor) new LockedTrapDoor(Block.Properties.from(BlockList.locked_oak_trapdoor)).setRegistryName(location("locked_braced_trapdoor")),
+                        //endregion
 
                         //region Not A Pickle
                         BlockList.bottles = (NotAPickle) new NotAPickle(Block.Properties.create(Material.GLASS)).setRegistryName(location("bottles")),

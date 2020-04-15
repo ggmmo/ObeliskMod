@@ -1,0 +1,7 @@
+{
+    "parent": "block/door_top_rh",
+    "textures": {
+        "bottom": "obeliskmod:block/braced_door_bottom",
+        "top": "obeliskmod:block/braced_door_top"
+    }
+}
