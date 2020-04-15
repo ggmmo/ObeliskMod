@@ -12,6 +12,8 @@ public class DialogueTestScreen extends ContainerScreen<DialogueTestContainer> {
 
     public DialogueTestScreen(DialogueTestContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
         super(screenContainer, inv, titleIn);
+        this.xSize = 256;
+        this.ySize = 166;
     }
 
     public void render(int mouseX, int mouseY, float partialTicks) {

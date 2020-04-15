@@ -6,7 +6,6 @@ import fox.obeliskmod.commands.ListWarpsCommand;
 import fox.obeliskmod.commands.SetWarpCommand;
 import fox.obeliskmod.commands.WarpCommand;
 import fox.obeliskmod.config.Config;
-
 import fox.obeliskmod.itemgroups.*;
 import fox.obeliskmod.lists.BlockList;
 import fox.obeliskmod.tileentities.Dialogue.DialogueTestScreen;

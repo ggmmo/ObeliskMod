@@ -1080,7 +1080,6 @@ public class ObeliskModRegistries {
         logger.info("\n\n======================================\n\nRegistered Tile Entities\n\n======================================\n\n");
     }
 
-    @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public static void registerContainers(final RegistryEvent.Register<ContainerType<?>> event) {
         event.getRegistry().register(IForgeContainerType.create((windowId, inv, data) -> {

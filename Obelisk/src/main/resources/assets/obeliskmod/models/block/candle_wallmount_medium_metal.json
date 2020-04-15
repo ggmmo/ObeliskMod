@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "Block/Block",
+	"parent": "block/block",
 	"textures": {
-		"0": "obeliskmod:block/candle_wallmount",
-		"particle": "obeliskmod:block/candle_wallmount"
+		"0": "obeliskmod:block/candle_wallmount_metal",
+		"particle": "obeliskmod:block/candle_wallmount_metal"
 	},
 	"elements": [
 		{

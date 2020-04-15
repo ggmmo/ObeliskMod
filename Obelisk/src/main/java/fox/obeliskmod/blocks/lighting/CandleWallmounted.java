@@ -2,6 +2,7 @@ package fox.obeliskmod.blocks.lighting;
 
 import fox.obeliskmod.blockstateproperties.ObeliskBlockStateProperties;
 import fox.obeliskmod.blockstateproperties.enumproperties.CandleSize;
+import fox.obeliskmod.blockstateproperties.enumproperties.CandleType;
 import fox.obeliskmod.utility.VoxelShapeHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -22,6 +23,7 @@ import java.util.Random;
 public class CandleWallmounted extends HorizontalBlock {
     public CandleWallmounted(Properties builder) {
         super(builder);
+        setDefaultState(getDefaultState().with(ObeliskBlockStateProperties.CANDLE_SIZE, CandleSize.TALL).with(ObeliskBlockStateProperties.CANDLE_TYPE, CandleType.METAL));
     }
 
     @Override
