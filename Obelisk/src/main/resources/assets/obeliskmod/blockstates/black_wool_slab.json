@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "obeliskmod:block/black_wool_slab" },
+        "type=top": { "model": "obeliskmod:block/black_wool_slab_top" },
+        "type=double": { "model": "minecraft:block/black_wool" }
+    }
+}

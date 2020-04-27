@@ -11,6 +11,7 @@ import fox.obeliskmod.tileentities.Dialogue.DialogueTestBlock;
 import fox.obeliskmod.tileentities.Dialogue.DialogueTestContainer;
 import fox.obeliskmod.tileentities.Dialogue.DialogueTestTile;
 import net.minecraft.block.*;
+import net.minecraft.entity.ai.brain.task.SleepAtHomeTask;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.registries.ObjectHolder;
@@ -268,6 +269,7 @@ public class BlockList
 	//endregion
 
 	//region Wool
+	//region SnowBlocks
 	public static SnowBlock white_wool_snow;
 	public static SnowBlock orange_wool_snow;
 	public static SnowBlock magenta_wool_snow;
@@ -283,6 +285,24 @@ public class BlockList
 	public static SnowBlock brown_wool_snow;
 	public static SnowBlock green_wool_snow;
 	public static SnowBlock red_wool_snow;
+	public static SnowBlock black_wool_snow;
+	//endregion
+	public static SlabBlock white_wool_slab;
+	public static SlabBlock orange_wool_slab;
+	public static SlabBlock magenta_wool_slab;
+	public static SlabBlock light_blue_wool_slab;
+	public static SlabBlock yellow_wool_slab;
+	public static SlabBlock lime_wool_slab;
+	public static SlabBlock pink_wool_slab;
+	public static SlabBlock gray_wool_slab;
+	public static SlabBlock light_gray_wool_slab;
+	public static SlabBlock cyan_wool_slab;
+	public static SlabBlock purple_wool_slab;
+	public static SlabBlock blue_wool_slab;
+	public static SlabBlock brown_wool_slab;
+	public static SlabBlock green_wool_slab;
+	public static SlabBlock red_wool_slab;
+	public static SlabBlock black_wool_slab;
 	//endregion
 
 	//region Cauldrons

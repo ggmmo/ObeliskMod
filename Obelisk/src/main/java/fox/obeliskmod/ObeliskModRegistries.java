@@ -431,6 +431,7 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Wool
+                        //region SnowBlocks
                         ItemList.white_wool_snow = new BlockItem(BlockList.white_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.white_wool_snow.getRegistryName()),
                         ItemList.orange_wool_snow = new BlockItem(BlockList.orange_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.orange_wool_snow.getRegistryName()),
                         ItemList.magenta_wool_snow = new BlockItem(BlockList.magenta_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.magenta_wool_snow.getRegistryName()),
@@ -446,6 +447,24 @@ public class ObeliskModRegistries {
                         ItemList.brown_wool_snow = new BlockItem(BlockList.brown_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.brown_wool_snow.getRegistryName()),
                         ItemList.green_wool_snow = new BlockItem(BlockList.green_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.green_wool_snow.getRegistryName()),
                         ItemList.red_wool_snow = new BlockItem(BlockList.red_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_wool_snow.getRegistryName()),
+                        ItemList.black_wool_snow = new BlockItem(BlockList.black_wool_snow, new Item.Properties().group(obelisk)).setRegistryName(BlockList.black_wool_snow.getRegistryName()),
+                        //endregion
+                        ItemList.white_wool_slab = new BlockItem(BlockList.white_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.white_wool_slab.getRegistryName()),
+                        ItemList.orange_wool_slab = new BlockItem(BlockList.orange_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.orange_wool_slab.getRegistryName()),
+                        ItemList.magenta_wool_slab = new BlockItem(BlockList.magenta_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.magenta_wool_slab.getRegistryName()),
+                        ItemList.light_blue_wool_slab = new BlockItem(BlockList.light_blue_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.light_blue_wool_slab.getRegistryName()),
+                        ItemList.yellow_wool_slab = new BlockItem(BlockList.yellow_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.yellow_wool_slab.getRegistryName()),
+                        ItemList.lime_wool_slab = new BlockItem(BlockList.lime_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.lime_wool_slab.getRegistryName()),
+                        ItemList.pink_wool_slab = new BlockItem(BlockList.pink_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.pink_wool_slab.getRegistryName()),
+                        ItemList.gray_wool_slab = new BlockItem(BlockList.gray_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.gray_wool_slab.getRegistryName()),
+                        ItemList.light_gray_wool_slab = new BlockItem(BlockList.light_gray_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.light_gray_wool_slab.getRegistryName()),
+                        ItemList.cyan_wool_slab = new BlockItem(BlockList.cyan_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.cyan_wool_slab.getRegistryName()),
+                        ItemList.purple_wool_slab = new BlockItem(BlockList.purple_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.purple_wool_slab.getRegistryName()),
+                        ItemList.blue_wool_slab = new BlockItem(BlockList.blue_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.blue_wool_slab.getRegistryName()),
+                        ItemList.brown_wool_slab = new BlockItem(BlockList.brown_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.brown_wool_slab.getRegistryName()),
+                        ItemList.green_wool_slab = new BlockItem(BlockList.green_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.green_wool_slab.getRegistryName()),
+                        ItemList.red_wool_slab = new BlockItem(BlockList.red_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.red_wool_slab.getRegistryName()),
+                        ItemList.black_wool_slab = new BlockItem(BlockList.black_wool_slab, new Item.Properties().group(obelisk)).setRegistryName(BlockList.black_wool_slab.getRegistryName()),
                         //endregion
 
                         //region Cauldrons
@@ -921,6 +940,7 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Wool
+                        //region SnowBlocks
                         BlockList.white_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.create(Material.WOOL)
                                 .hardnessAndResistance(0.6f, 3.0f).sound(SoundType.CLOTH)).setRegistryName(location("white_wool_snow")),
                         BlockList.orange_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("orange_wool_snow")),
@@ -937,6 +957,24 @@ public class ObeliskModRegistries {
                         BlockList.brown_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("brown_wool_snow")),
                         BlockList.green_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("green_wool_snow")),
                         BlockList.red_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("red_wool_snow")),
+                        BlockList.black_wool_snow = (SnowBlock) new CustomSnowBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName(location("black_wool_snow")),
+                        //endregion
+                        BlockList.white_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.white_wool_snow)).setRegistryName((location("white_wool_slab"))),
+                        BlockList.orange_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.orange_wool_snow)).setRegistryName(location("orange_wool_slab")),
+                        BlockList.magenta_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.magenta_wool_snow)).setRegistryName(location("magenta_wool_slab")),
+                        BlockList.light_blue_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.light_blue_wool_snow)).setRegistryName(location("light_blue_wool_slab")),
+                        BlockList.yellow_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.yellow_wool_snow)).setRegistryName(location("yellow_wool_slab")),
+                        BlockList.lime_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.lime_wool_snow)).setRegistryName(location("lime_wool_slab")),
+                        BlockList.pink_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.pink_wool_snow)).setRegistryName(location("pink_wool_slab")),
+                        BlockList.gray_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.gray_wool_snow)).setRegistryName(location("gray_wool_slab")),
+                        BlockList.light_gray_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.light_gray_wool_snow)).setRegistryName(location("light_gray_wool_slab")),
+                        BlockList.cyan_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.cyan_wool_snow)).setRegistryName(location("cyan_wool_slab")),
+                        BlockList.purple_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.purple_wool_snow)).setRegistryName(location("purple_wool_slab")),
+                        BlockList.blue_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.blue_wool_snow)).setRegistryName(location("blue_wool_slab")),
+                        BlockList.brown_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.brown_wool_snow)).setRegistryName(location("brown_wool_slab")),
+                        BlockList.green_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.green_wool_snow)).setRegistryName(location("green_wool_slab")),
+                        BlockList.red_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.red_wool_snow)).setRegistryName(location("red_wool_slab")),
+                        BlockList.black_wool_slab = (SlabBlock) new SlabBlock(Block.Properties.from(BlockList.black_wool_snow)).setRegistryName(location("black_wool_slab")),
                         //endregion
 
                         //region Cauldrons
