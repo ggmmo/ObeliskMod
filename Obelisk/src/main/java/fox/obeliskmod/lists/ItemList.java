@@ -157,6 +157,7 @@ public class ItemList
 	public static Item stripped_spruce_wood_slab;
 	public static Item stripped_spruce_wood_wall;
 	public static Item stripped_spruce_vert_slab;
+	public static Item spruce_crate;
 	//endregion
 
 	//region Dark Oak
@@ -293,6 +294,7 @@ public class ItemList
 	//endregion
 
 	//region Wool
+	//region SnowBlock
 	public static Item white_wool_snow;
 	public static Item magenta_wool_snow;
 	public static Item orange_wool_snow;
@@ -308,6 +310,25 @@ public class ItemList
 	public static Item brown_wool_snow;
 	public static Item green_wool_snow;
 	public static Item red_wool_snow;
+	public static Item black_wool_snow;
+	//endregion
+
+	public static Item white_wool_slab;
+	public static Item magenta_wool_slab;
+	public static Item orange_wool_slab;
+	public static Item light_blue_wool_slab;
+	public static Item yellow_wool_slab;
+	public static Item lime_wool_slab;
+	public static Item pink_wool_slab;
+	public static Item gray_wool_slab;
+	public static Item light_gray_wool_slab;
+	public static Item cyan_wool_slab;
+	public static Item purple_wool_slab;
+	public static Item blue_wool_slab;
+	public static Item brown_wool_slab;
+	public static Item green_wool_slab;
+	public static Item red_wool_slab;
+	public static Item black_wool_slab;
 	//endregion
 
 	//region Cauldrons
