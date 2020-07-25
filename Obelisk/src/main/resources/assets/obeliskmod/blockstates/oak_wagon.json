@@ -1,5 +1,10 @@
 {
-    "variants": {
-        "": { "model": "obeliskmod:block/oak_wagon" }
+    
+	"variants": {
+		"facing=north": { "model": "obeliskmod:block/oak_wagon" },
+	"facing=east": { "model": "obeliskmod:block/oak_wagon", "y": 90 },
+	"facing=south": { "model": "obeliskmod:block/oak_wagon", "y": 180 },
+	"facing=west": {"model": "obeliskmod:block/oak_wagon", "y": 270}
+		
     }
 }

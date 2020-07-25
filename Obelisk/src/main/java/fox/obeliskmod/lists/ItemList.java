@@ -379,6 +379,7 @@ public class ItemList
 
 	//region Wagons
 	public static Item oak_wagon;
+	public static Item oak_wagon_chest;
 	//endregion
 
 	//region Chairs

@@ -511,6 +511,8 @@ public class ObeliskModRegistries {
 
                         //region Wagons
                         ItemList.oak_wagon = new BlockItem(BlockList.oak_wagon, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_wagon.getRegistryName()),
+                        ItemList.oak_wagon_chest = new BlockItem(BlockList.oak_wagon_chest, new Item.Properties().group(furniture)).setRegistryName(BlockList.oak_wagon_chest.getRegistryName()),
+
                         //endregion
 
                         //region Chairs
@@ -1001,7 +1003,9 @@ public class ObeliskModRegistries {
                         //endregion
 
                         //region Wagons
-                        BlockList.oak_wagon = (Wagon) new Wagon(Block.Properties.from(BlockList.oak_wood_fence)).setRegistryName(location("oak_wagon")),
+                        BlockList.oak_wagon = (Wagon) new Wagon(Block.Properties.create(Material.WOOD)
+                                .hardnessAndResistance(0.7f, 2.5f).sound(SoundType.WOOD)).setRegistryName(location("oak_wagon")),
+                        BlockList.oak_wagon_chest = (Wagon) new Wagon(Block.Properties.from(BlockList.oak_wagon)).setRegistryName(location("oak_wagon_chest")),
                         //endregion
 
                         //region Chairs

@@ -344,7 +344,9 @@ public class BlockList
 	//endregion
 
 	//region Wagons
+
 	public static Wagon oak_wagon;
+	public static Wagon oak_wagon_chest;
 	//endregion
 
 	//region Chairs
